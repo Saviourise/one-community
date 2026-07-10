@@ -1,0 +1,284 @@
+- generic [ref=f80e2]:
+  - link "Skip to content" [ref=f80e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f80e4]:
+    - generic [ref=f80e5]:
+      - link "One Community Project, home" [ref=f80e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f80e9]:
+          - text: One Community
+          - generic [ref=f80e10]: Project
+      - navigation "Primary" [ref=f80e11]:
+        - link "Home" [ref=f80e13] [cursor=pointer]:
+          - /url: /
+        - link "Projects" [ref=f80e15] [cursor=pointer]:
+          - /url: /projects
+          - text: Projects
+          - img [ref=f80e16]
+        - link "About" [ref=f80e19] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f80e21] [cursor=pointer]:
+          - /url: /contact
+      - link "Host a watch party" [ref=f80e23] [cursor=pointer]:
+        - /url: /contact
+        - text: Host a watch party
+        - img [ref=f80e24]
+  - main [ref=f80e26]:
+    - region "Building one stronger community with a sense of belonging." [ref=f80e27]:
+      - img "The One Community Concert, hundreds of neighbours together" [ref=f80e28]
+      - generic [ref=f80e30]:
+        - generic [ref=f80e31]: One Community Project
+        - heading "Building one stronger community with a sense of belonging." [level=1] [ref=f80e32]:
+          - generic [ref=f80e33]: Building one stronger community
+          - generic [ref=f80e34]: with a sense of belonging.
+        - paragraph [ref=f80e35]: We believe change happens in the space between people, one small encounter at a time. Explore the projects turning everyday moments into lifelong transformation.
+        - generic [ref=f80e36]:
+          - link "See our projects" [ref=f80e37] [cursor=pointer]:
+            - /url: /projects
+            - text: See our projects
+            - img [ref=f80e38]
+          - link "Our story" [ref=f80e40] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=f80e41]: Scroll
+    - generic [ref=f80e45]:
+      - generic [ref=f80e46]:
+        - generic [ref=f80e47]: Happening now
+        - heading "Host a watch party in your city" [level=2] [ref=f80e48]
+        - paragraph [ref=f80e49]: Gather your people, press play on our community documentary, and let the conversation do the rest. From Lagos to Cape Town to Sydney, belonging is a local thing that travels.
+        - generic [ref=f80e50]:
+          - generic [ref=f80e51]: Lagos
+          - generic [ref=f80e52]: Cape Town
+          - generic [ref=f80e53]: Sydney
+          - generic [ref=f80e54]: Berlin
+          - generic [ref=f80e55]: Your city
+        - link "Register to host a watch party" [ref=f80e56] [cursor=pointer]:
+          - /url: /contact
+          - text: Register to host a watch party
+          - img [ref=f80e57]
+      - img "Neighbours gathered together at a community event" [ref=f80e59]: LIVE
+    - region "Our story, on the TEDx stage" [ref=f80e60]:
+      - generic [ref=f80e61]:
+        - link "Watch the TEDx Talk, TEDx Talk" [ref=f80e63] [cursor=pointer]:
+          - /url: /projects/tedx-talk
+          - img [ref=f80e65]
+          - generic [ref=f80e68]: Watch the TEDx Talk
+        - generic [ref=f80e69]:
+          - generic [ref=f80e70]: TEDx
+          - heading "Our story, on the TEDx stage" [level=2] [ref=f80e71]
+          - paragraph [ref=f80e72]: Our story on the TEDx stage, an idea worth spreading about how community and belonging are built between people. An idea worth spreading, and a way of being with one another.
+          - link "Learn more about the talk" [ref=f80e73] [cursor=pointer]:
+            - /url: /projects/tedx-talk
+            - text: Learn more about the talk
+            - img [ref=f80e74]
+    - region "“Belonging is built, not found, one encounter at a time.”" [ref=f80e76]:
+      - generic [ref=f80e78]:
+        - generic [ref=f80e79]:
+          - generic [ref=f80e80]: "2018"
+          - generic [ref=f80e81]: growing community since
+          - paragraph [ref=f80e82]: Not a campaign with an end date, but a way of being with one another that keeps rippling outward.
+        - generic [ref=f80e83]:
+          - generic [ref=f80e84]: Why it matters
+          - paragraph [ref=f80e85]: “Belonging is built, not found, one encounter at a time.”
+          - paragraph [ref=f80e86]: Every concert, class and conversation is a small proof that a stronger community is something we make together. That is the work, and it is only getting started.
+          - link "Explore our projects" [ref=f80e87] [cursor=pointer]:
+            - /url: /projects
+            - text: Explore our projects
+            - img [ref=f80e88]
+    - region "Projects turning moments into belonging" [ref=f80e90]:
+      - generic [ref=f80e91]:
+        - generic [ref=f80e92]:
+          - generic [ref=f80e93]: What we do
+          - heading "Projects turning moments into belonging" [level=2] [ref=f80e94]
+        - link "See all projects" [ref=f80e95] [cursor=pointer]:
+          - /url: /projects
+          - text: See all projects
+          - img [ref=f80e96]
+      - generic [ref=f80e98]:
+        - 'link "One Community Concert Flagship event One Community Concert A night where the whole community shows up: music, colour and hundreds of neighbours in one room. 2 editions and counting 100s of neighbours together Explore project" [ref=f80e100] [cursor=pointer]':
+          - /url: /projects/one-community-concert
+          - generic [ref=f80e101]:
+            - img "One Community Concert" [ref=f80e102]
+            - generic [ref=f80e103]: Flagship event
+          - generic [ref=f80e104]:
+            - heading "One Community Concert" [level=3] [ref=f80e105]
+            - paragraph [ref=f80e106]: "A night where the whole community shows up: music, colour and hundreds of neighbours in one room."
+            - generic [ref=f80e107]:
+              - generic [ref=f80e108]:
+                - generic [ref=f80e109]: "2"
+                - text: editions and counting
+              - generic [ref=f80e110]:
+                - generic [ref=f80e111]: 100s
+                - text: of neighbours together
+            - generic [ref=f80e113]:
+              - text: Explore project
+              - img [ref=f80e114]
+        - link "Tanz Gala Dance gala Tanz Gala An evening of dance where every generation and background shares the same floor. 2022 first held 1 shared dance floor Explore project" [ref=f80e117] [cursor=pointer]:
+          - /url: /projects/tanz-gala
+          - generic [ref=f80e118]:
+            - img "Tanz Gala" [ref=f80e119]
+            - generic [ref=f80e120]: Dance gala
+          - generic [ref=f80e121]:
+            - heading "Tanz Gala" [level=3] [ref=f80e122]
+            - paragraph [ref=f80e123]: An evening of dance where every generation and background shares the same floor.
+            - generic [ref=f80e124]:
+              - generic [ref=f80e125]:
+                - generic [ref=f80e126]: "2022"
+                - text: first held
+              - generic [ref=f80e127]:
+                - generic [ref=f80e128]: "1"
+                - text: shared dance floor
+            - generic [ref=f80e130]:
+              - text: Explore project
+              - img [ref=f80e131]
+        - 'link "Homies & Omies Ongoing project Homies & Omies Bringing generations together: younger and older neighbours meeting, mentoring and simply spending time. Since 2018 All ages welcome Explore project" [ref=f80e134] [cursor=pointer]':
+          - /url: /projects/homies-and-omies
+          - generic [ref=f80e135]:
+            - img "Homies & Omies" [ref=f80e136]
+            - generic [ref=f80e137]: Ongoing project
+          - generic [ref=f80e138]:
+            - heading "Homies & Omies" [level=3] [ref=f80e139]
+            - paragraph [ref=f80e140]: "Bringing generations together: younger and older neighbours meeting, mentoring and simply spending time."
+            - generic [ref=f80e141]:
+              - generic [ref=f80e142]:
+                - generic [ref=f80e143]: Since
+                - text: "2018"
+              - generic [ref=f80e144]:
+                - generic [ref=f80e145]: All
+                - text: ages welcome
+            - generic [ref=f80e147]:
+              - text: Explore project
+              - img [ref=f80e148]
+    - region "Small encounters. Measurable change." [ref=f80e150]:
+      - generic [ref=f80e151]:
+        - generic [ref=f80e152]: The shape of belonging
+        - heading "Small encounters. Measurable change." [level=2] [ref=f80e153]
+        - paragraph [ref=f80e154]: We don’t count events. We count the people who now have someone to call, a table to sit at, and a reason to come back.
+      - generic [ref=f80e155]:
+        - generic [ref=f80e156]:
+          - generic [ref=f80e157]: "0"
+          - paragraph [ref=f80e158]: years turning strangers into neighbours
+        - generic [ref=f80e159]:
+          - generic [ref=f80e161]: 0+
+          - paragraph [ref=f80e162]: meals shared at community tables
+        - generic [ref=f80e163]:
+          - generic [ref=f80e165]: 0+
+          - paragraph [ref=f80e166]: children welcomed back to school
+        - generic [ref=f80e167]:
+          - generic [ref=f80e169]: 0+
+          - paragraph [ref=f80e170]: cities running their own encounters
+    - region "Trusted company" [ref=f80e171]:
+      - generic [ref=f80e172]:
+        - generic [ref=f80e173]:
+          - generic [ref=f80e174]: Recognised & supported by
+          - generic [ref=f80e175]: Trusted company
+        - generic [ref=f80e176]:
+          - generic [ref=f80e177]:
+            - generic [ref=f80e178]:
+              - text: TED
+              - superscript [ref=f80e179]: x
+            - generic [ref=f80e180]: Featured talk
+          - generic [ref=f80e181]:
+            - generic [ref=f80e182]: Community Foundation
+            - generic [ref=f80e183]: Grant partner
+          - generic [ref=f80e184]:
+            - generic [ref=f80e185]: City of Lagos
+            - generic [ref=f80e186]: Civic partner
+          - generic [ref=f80e187]:
+            - generic [ref=f80e188]: Cape Town Collective
+            - generic [ref=f80e189]: Host network
+          - generic [ref=f80e190]:
+            - generic [ref=f80e191]: The Belonging Fund
+            - generic [ref=f80e192]: Supporter
+          - generic [ref=f80e193]:
+            - generic [ref=f80e194]: Neighbourhood Trust
+            - generic [ref=f80e195]: Programme partner
+    - region "Stories worth passing on" [ref=f80e196]:
+      - generic [ref=f80e197]:
+        - generic [ref=f80e198]:
+          - generic [ref=f80e199]: From the community
+          - heading "Stories worth passing on" [level=2] [ref=f80e200]
+        - link "More stories" [ref=f80e201] [cursor=pointer]:
+          - /url: /projects
+      - generic [ref=f80e202]:
+        - link "One Community Concert June 2026 The night the whole city sang Behind the scenes of the One Community Concert, where hundreds of neighbours became one audience, and then one community. Read story" [ref=f80e204] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f80e206]:
+            - generic [ref=f80e207]:
+              - generic [ref=f80e208]: One Community Concert
+              - generic [ref=f80e210]: June 2026
+            - heading "The night the whole city sang" [level=3] [ref=f80e211]
+            - paragraph [ref=f80e212]: Behind the scenes of the One Community Concert, where hundreds of neighbours became one audience, and then one community.
+            - generic [ref=f80e213]: Read story
+        - link "Back to School May 2026 What a first day should feel like Why a single welcoming face changes how a child sees the whole school year ahead. Read story" [ref=f80e215] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f80e217]:
+            - generic [ref=f80e218]:
+              - generic [ref=f80e219]: Back to School
+              - generic [ref=f80e221]: May 2026
+            - heading "What a first day should feel like" [level=3] [ref=f80e222]
+            - paragraph [ref=f80e223]: Why a single welcoming face changes how a child sees the whole school year ahead.
+            - generic [ref=f80e224]: Read story
+        - link "Documentary April 2026 One more waltz, one more chance to meet The making of “Noch einmal Walzer”, and the strangers who became a cast, and then friends. Read story" [ref=f80e226] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f80e228]:
+            - generic [ref=f80e229]:
+              - generic [ref=f80e230]: Documentary
+              - generic [ref=f80e232]: April 2026
+            - heading "One more waltz, one more chance to meet" [level=3] [ref=f80e233]
+            - paragraph [ref=f80e234]: The making of “Noch einmal Walzer”, and the strangers who became a cast, and then friends.
+            - generic [ref=f80e235]: Read story
+    - region "Belonging starts with one encounter." [ref=f80e236]:
+      - generic [ref=f80e239]:
+        - generic [ref=f80e240]: Come closer
+        - heading "Belonging starts with one encounter." [level=2] [ref=f80e241]
+        - paragraph [ref=f80e242]: Whether you host a watch party, join a project, or simply say hello, every small step widens the circle.
+        - generic [ref=f80e243]:
+          - link "Get in touch" [ref=f80e244] [cursor=pointer]:
+            - /url: /contact
+            - text: Get in touch
+            - img [ref=f80e245]
+          - link "Explore projects" [ref=f80e247] [cursor=pointer]:
+            - /url: /projects
+  - contentinfo [ref=f80e248]:
+    - generic [ref=f80e249]:
+      - generic [ref=f80e250]:
+        - generic [ref=f80e251]: One Community Project
+        - paragraph [ref=f80e254]: One Community Project brings people together through small, human encounters, building belonging across neighbourhoods and borders.
+        - generic [ref=f80e255]:
+          - link "Instagram" [ref=f80e256] [cursor=pointer]:
+            - /url: "#"
+          - link "YouTube" [ref=f80e257] [cursor=pointer]:
+            - /url: "#"
+          - link "LinkedIn" [ref=f80e258] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=f80e259]:
+        - paragraph [ref=f80e260]: Explore
+        - list [ref=f80e261]:
+          - listitem [ref=f80e262]:
+            - link "Projects" [ref=f80e263] [cursor=pointer]:
+              - /url: /projects
+          - listitem [ref=f80e264]:
+            - link "About us" [ref=f80e265] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f80e266]:
+            - link "Contact" [ref=f80e267] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=f80e268]:
+        - paragraph [ref=f80e269]: Projects
+        - list [ref=f80e270]:
+          - listitem [ref=f80e271]:
+            - link "TEDx Talk" [ref=f80e272] [cursor=pointer]:
+              - /url: /projects/tedx-talk
+          - listitem [ref=f80e273]:
+            - link "One Community Concert" [ref=f80e274] [cursor=pointer]:
+              - /url: /projects/one-community-concert
+          - listitem [ref=f80e275]:
+            - link "Tanz Gala" [ref=f80e276] [cursor=pointer]:
+              - /url: /projects/tanz-gala
+    - generic [ref=f80e277]:
+      - generic [ref=f80e278]: © 2026 One Community Project. Made with care by the community.
+      - navigation "Legal" [ref=f80e279]:
+        - link "Privacy Policy" [ref=f80e280] [cursor=pointer]:
+          - /url: /contact
+        - link "Imprint" [ref=f80e281] [cursor=pointer]:
+          - /url: /contact

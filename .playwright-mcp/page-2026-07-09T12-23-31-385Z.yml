@@ -1,0 +1,116 @@
+- generic [ref=f26e1]:
+  - iframe [ref=f26e2]:
+    
+  - region
+  - generic [ref=f26e4]:
+    - navigation [ref=f26e5]:
+      - button "Skip to main content" [ref=f26e7] [cursor=pointer]:
+        - generic [ref=f26e9]: Skip to main content
+      - button "Keyboard shortcuts" [ref=f26e11] [cursor=pointer]:
+        - generic [ref=f26e13]: Keyboard shortcuts
+      - button "Accessibility feedback" [ref=f26e15] [cursor=pointer]:
+        - generic [ref=f26e17]: Accessibility feedback
+    - banner [ref=f26e19]:
+      - generic [ref=f26e20]:
+        - link "Drive" [ref=f26e24] [cursor=pointer]:
+          - /url: https://drive.google.com/?tab=oo
+          - img [ref=f26e25]
+          - generic [ref=f26e26]: Drive
+        - generic [ref=f26e28]:
+          - button "Google apps" [ref=f26e32] [cursor=pointer]:
+            - img [ref=f26e33]
+          - link "Sign in" [ref=f26e36] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?hl=en-GB&passive=true&continue=https://drive.google.com/drive/folders/16FTs8r5pnw_wv2XU_zF2HtTdiL22qbmW&service=writely&ec=GAZAMQ
+    - generic [ref=f26e37]:
+      - generic [ref=f26e46]:
+        - navigation [ref=f26e50]:
+          - heading "Folder Path" [ref=f26e51]
+          - list "Folder Path" [ref=f26e52]:
+            - listitem [ref=f26e53]:
+              - link "7 OCG Tanz Gala - 06/2022" [ref=f26e54]
+        - toolbar [ref=f26e55]:
+          - generic [ref=f26e56]:
+            - button "Download all" [ref=f26e57] [cursor=pointer]
+            - radiogroup "List or grid layout (⌥V then L)" [ref=f26e62]:
+              - generic [ref=f26e63]:
+                - radio "Lists" [checked] [ref=f26e64] [cursor=pointer]:
+                  - generic [ref=f26e65]:
+                    - img [ref=f26e66]
+                    - img [ref=f26e70]
+                - radio "Grid" [ref=f26e73] [cursor=pointer]:
+                  - generic [ref=f26e74]:
+                    - img [ref=f26e75]
+                    - img [ref=f26e79]
+      - main [ref=f26e83]:
+        - region [active] [ref=f26e89]:
+          - generic [ref=f26e90]:
+            - grid "Item list" [ref=f26e93]:
+              - rowgroup [ref=f26e94]:
+                - generic [ref=f26e95] [cursor=pointer]: Name
+                - img [ref=f26e97] [cursor=pointer]
+                - text: Owner
+                - generic [ref=f26e99] [cursor=pointer]: Date modified
+                - text: File size
+                - generic [ref=f26e105]:
+                  - button "Sort" [ref=f26e107] [cursor=pointer]:
+                    - img [ref=f26e111]
+                    - generic [ref=f26e113]: Sort
+                  - tooltip [ref=f26e114]: View sort options
+              - rowgroup [ref=f26e115]:
+                - row "Fotografin - klein Shared folder Owned by Owner hidden Modified 21 May Size not available" [ref=f26e116]:
+                  - gridcell "Fotografin - klein Shared folder" [ref=f26e117]:
+                    - generic [ref=f26e119]:
+                      - img [ref=f26e125]
+                      - generic "Fotografin - klein Shared folder" [ref=f26e131]:
+                        - strong [ref=f26e134]: Fotografin - klein
+                  - gridcell "Owned by Owner hidden" [ref=f26e135]:
+                    - generic "Owned by Owner hidden" [ref=f26e139]:
+                      - img [ref=f26e142]
+                      - generic [ref=f26e145]: Owner hidden
+                  - gridcell "Modified 21 May" [ref=f26e146]:
+                    - generic "Modified 21 May" [ref=f26e150]:
+                      - generic [ref=f26e151]: 21 May
+                  - gridcell "Size not available" [ref=f26e152]:
+                    - generic "Size not available" [ref=f26e156]:
+                      - generic [ref=f26e157]: —
+                  - gridcell [ref=f26e158]
+                - row "Photobox Shared folder Owned by Owner hidden Modified 21 May Size not available" [ref=f26e162]:
+                  - gridcell "Photobox Shared folder" [ref=f26e163]:
+                    - generic [ref=f26e165]:
+                      - img [ref=f26e171]
+                      - generic "Photobox Shared folder" [ref=f26e177]:
+                        - strong [ref=f26e180]: Photobox
+                  - gridcell "Owned by Owner hidden" [ref=f26e181]:
+                    - generic "Owned by Owner hidden" [ref=f26e185]:
+                      - img [ref=f26e188]
+                      - generic [ref=f26e191]: Owner hidden
+                  - gridcell "Modified 21 May" [ref=f26e192]:
+                    - generic "Modified 21 May" [ref=f26e196]:
+                      - generic [ref=f26e197]: 21 May
+                  - gridcell "Size not available" [ref=f26e198]:
+                    - generic "Size not available" [ref=f26e202]:
+                      - generic [ref=f26e203]: —
+                  - gridcell [ref=f26e204]
+                - 'row "Copy of 00_OCG.mp4 Video Shared Owned by Owner hidden Modified 4 Jul 2022 Size: 40.6 MB Storage used: 40.6 MB" [ref=f26e208]':
+                  - gridcell "Copy of 00_OCG.mp4 Video Shared" [ref=f26e209]:
+                    - generic [ref=f26e211]:
+                      - img [ref=f26e217]
+                      - generic "Copy of 00_OCG.mp4 Video Shared" [ref=f26e220]:
+                        - strong [ref=f26e223]: Copy of 00_OCG.mp4
+                        - img "Shared" [ref=f26e225]:
+                          - img [ref=f26e226]
+                          - generic [ref=f26e229]: Shared
+                  - gridcell "Owned by Owner hidden" [ref=f26e230]:
+                    - generic "Owned by Owner hidden" [ref=f26e234]:
+                      - img [ref=f26e237]
+                      - generic [ref=f26e240]: Owner hidden
+                  - gridcell "Modified 4 Jul 2022" [ref=f26e241]:
+                    - generic "Modified 4 Jul 2022" [ref=f26e245]:
+                      - generic [ref=f26e246]: 4 Jul 2022
+                  - 'gridcell "Size: 40.6 MB Storage used: 40.6 MB" [ref=f26e247]':
+                    - 'generic "Size: 40.6 MB Storage used: 40.6 MB" [ref=f26e251]':
+                      - generic [ref=f26e252]: 40.6 MB
+                  - gridcell [ref=f26e253]
+            - progressbar [ref=f26e259]:
+              - img [ref=f26e261]
+  - region

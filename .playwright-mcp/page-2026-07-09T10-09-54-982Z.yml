@@ -1,0 +1,278 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "One Community Project — home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e9]:
+          - text: One Community
+          - generic [ref=e10]: Project
+      - navigation "Primary" [ref=e11]:
+        - link "Home" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "Projects" [ref=e15] [cursor=pointer]:
+          - /url: /projects
+          - text: Projects
+          - img [ref=e16]
+        - link "About" [ref=e19] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e21] [cursor=pointer]:
+          - /url: /contact
+      - link "Host a watch party" [ref=e23] [cursor=pointer]:
+        - /url: /contact
+        - text: Host a watch party
+        - img [ref=e24]
+  - main [ref=e26]:
+    - region "Building one stronger community with a sense of belonging." [ref=e27]:
+      - img "Community members gathered together, smiling" [ref=e28]
+      - generic [ref=e30]:
+        - generic [ref=e31]: One Community Project
+        - heading "Building one stronger community with a sense of belonging." [level=1] [ref=e32]:
+          - generic [ref=e33]: Building one stronger community
+          - generic [ref=e34]: with a sense of belonging.
+        - paragraph [ref=e35]: We believe change happens in the space between people — one small encounter at a time. Explore the projects turning everyday moments into lifelong transformation.
+        - generic [ref=e36]:
+          - link "See our projects" [ref=e37] [cursor=pointer]:
+            - /url: /projects
+            - text: See our projects
+            - img [ref=e38]
+          - link "Our story" [ref=e40] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=e41]: Scroll
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]: Happening now
+        - heading "Host a watch party in your city" [level=2] [ref=e48]
+        - paragraph [ref=e49]: Gather your people, press play on Knock Ima Vaza, and let the conversation do the rest. From Lagos to Cape Town to Sydney — belonging is a local thing that travels.
+        - generic [ref=e50]:
+          - generic [ref=e51]: Lagos
+          - generic [ref=e52]: Cape Town
+          - generic [ref=e53]: Sydney
+          - generic [ref=e54]: Berlin
+          - generic [ref=e55]: Your city
+        - link "Register to host a watch party" [ref=e56] [cursor=pointer]:
+          - /url: /contact
+          - text: Register to host a watch party
+          - img [ref=e57]
+      - img "People gathered around a screen at a community watch party" [ref=e59]: LIVE
+    - region "Small Encounters on the TED stage" [ref=e60]:
+      - generic [ref=e61]:
+        - link "Watch the TED Talk — Small Encounters" [ref=e63] [cursor=pointer]:
+          - /url: /projects/small-encounters
+          - img [ref=e65]
+          - generic [ref=e68]: Watch the TED Talk
+        - generic [ref=e69]:
+          - generic [ref=e70]: A movement, not an event
+          - heading "Small Encounters on the TED stage" [level=2] [ref=e71]
+          - paragraph [ref=e72]: A movement built on the belief that brief, genuine encounters can spark lifelong transformation. It began as an idea worth spreading — and became a way of being with one another.
+          - link "Learn more about Small Encounters" [ref=e73] [cursor=pointer]:
+            - /url: /projects/small-encounters
+            - text: Learn more about Small Encounters
+            - img [ref=e74]
+    - region "“We believe in the power of small encounters to spark lifelong transformations.”" [ref=e76]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: "15"
+          - generic [ref=e81]: years of impact
+          - paragraph [ref=e82]: Not a campaign with an end date — a way of meeting one another that keeps rippling outward.
+        - generic [ref=e83]:
+          - generic [ref=e84]: Why it matters
+          - paragraph [ref=e85]: “We believe in the power of small encounters to spark lifelong transformations.”
+          - paragraph [ref=e86]: Every shared moment is a small proof that belonging is built, not found. That’s the work — and it’s only getting started.
+          - link "Learn more about Small Encounters" [ref=e87] [cursor=pointer]:
+            - /url: /projects/small-encounters
+            - text: Learn more about Small Encounters
+            - img [ref=e88]
+    - region "Projects turning moments into belonging" [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - generic [ref=e93]: What we do
+          - heading "Projects turning moments into belonging" [level=2] [ref=e94]
+        - link "See all projects" [ref=e95] [cursor=pointer]:
+          - /url: /projects
+          - text: See all projects
+          - img [ref=e96]
+      - generic [ref=e98]:
+        - link "Seasonal initiative Back to School Making sure no child starts the school year feeling left out — with supplies, mentors and a warm welcome. 1,200+ children supported 18 partner schools Explore project" [ref=e100] [cursor=pointer]:
+          - /url: /projects/back-to-school
+          - generic [ref=e102]: Seasonal initiative
+          - generic [ref=e103]:
+            - heading "Back to School" [level=3] [ref=e104]
+            - paragraph [ref=e105]: Making sure no child starts the school year feeling left out — with supplies, mentors and a warm welcome.
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e108]: 1,200+
+                - text: children supported
+              - generic [ref=e109]:
+                - generic [ref=e110]: "18"
+                - text: partner schools
+            - generic [ref=e112]:
+              - text: Explore project
+              - img [ref=e113]
+        - link "Documentary Knock Ima Vaza A documentary following the people whose small acts of courage quietly rebuild the community around them. 1 feature documentary 5 stories followed Explore project" [ref=e116] [cursor=pointer]:
+          - /url: /projects/knock-ima-vaza
+          - generic [ref=e118]: Documentary
+          - generic [ref=e119]:
+            - heading "Knock Ima Vaza" [level=3] [ref=e120]
+            - paragraph [ref=e121]: A documentary following the people whose small acts of courage quietly rebuild the community around them.
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - generic [ref=e124]: "1"
+                - text: feature documentary
+              - generic [ref=e125]:
+                - generic [ref=e126]: "5"
+                - text: stories followed
+            - generic [ref=e128]:
+              - text: Explore project
+              - img [ref=e129]
+        - link "Ongoing project The Community Table Long tables, shared food and no strangers by the end of the night — belonging you can taste. 9,000+ meals shared 120 tables hosted Explore project" [ref=e132] [cursor=pointer]:
+          - /url: /projects/community-table
+          - generic [ref=e134]: Ongoing project
+          - generic [ref=e135]:
+            - heading "The Community Table" [level=3] [ref=e136]
+            - paragraph [ref=e137]: Long tables, shared food and no strangers by the end of the night — belonging you can taste.
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - generic [ref=e140]: 9,000+
+                - text: meals shared
+              - generic [ref=e141]:
+                - generic [ref=e142]: "120"
+                - text: tables hosted
+            - generic [ref=e144]:
+              - text: Explore project
+              - img [ref=e145]
+    - region "Small encounters. Measurable change." [ref=e147]:
+      - generic [ref=e148]:
+        - generic [ref=e149]: The shape of belonging
+        - heading "Small encounters. Measurable change." [level=2] [ref=e150]
+        - paragraph [ref=e151]: We don’t count events. We count the people who now have someone to call, a table to sit at, and a reason to come back.
+      - generic [ref=e152]:
+        - generic [ref=e153]:
+          - generic [ref=e154]: "0"
+          - paragraph [ref=e155]: years turning strangers into neighbours
+        - generic [ref=e156]:
+          - generic [ref=e158]: 0+
+          - paragraph [ref=e159]: meals shared at community tables
+        - generic [ref=e160]:
+          - generic [ref=e162]: 0+
+          - paragraph [ref=e163]: children welcomed back to school
+        - generic [ref=e164]:
+          - generic [ref=e166]: 0+
+          - paragraph [ref=e167]: cities running their own encounters
+    - region "Trusted company" [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - generic [ref=e171]: Recognised & supported by
+          - generic [ref=e172]: Trusted company
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - text: TED
+              - superscript [ref=e176]: x
+            - generic [ref=e177]: Featured talk
+          - generic [ref=e178]:
+            - generic [ref=e179]: Community Foundation
+            - generic [ref=e180]: Grant partner
+          - generic [ref=e181]:
+            - generic [ref=e182]: City of Lagos
+            - generic [ref=e183]: Civic partner
+          - generic [ref=e184]:
+            - generic [ref=e185]: Cape Town Collective
+            - generic [ref=e186]: Host network
+          - generic [ref=e187]:
+            - generic [ref=e188]: The Belonging Fund
+            - generic [ref=e189]: Supporter
+          - generic [ref=e190]:
+            - generic [ref=e191]: Neighbourhood Trust
+            - generic [ref=e192]: Programme partner
+    - region "Stories worth passing on" [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - generic [ref=e196]: From the community
+          - heading "Stories worth passing on" [level=2] [ref=e197]
+        - link "More stories" [ref=e198] [cursor=pointer]:
+          - /url: /projects
+      - generic [ref=e199]:
+        - link "Small Encounters June 2026 The table that grew a street It started with six chairs on a Tuesday. A year later, the whole road eats together on the last Friday of the month. Read story" [ref=e201] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e203]:
+            - generic [ref=e204]:
+              - generic [ref=e205]: Small Encounters
+              - generic [ref=e207]: June 2026
+            - heading "The table that grew a street" [level=3] [ref=e208]
+            - paragraph [ref=e209]: It started with six chairs on a Tuesday. A year later, the whole road eats together on the last Friday of the month.
+            - generic [ref=e210]: Read story
+        - link "Back to School May 2026 What a first day should feel like Behind the scenes of Back to School — and why a single welcoming face changes how a child sees the whole year. Read story" [ref=e212] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - generic [ref=e216]: Back to School
+              - generic [ref=e218]: May 2026
+            - heading "What a first day should feel like" [level=3] [ref=e219]
+            - paragraph [ref=e220]: Behind the scenes of Back to School — and why a single welcoming face changes how a child sees the whole year.
+            - generic [ref=e221]: Read story
+        - link "Documentary April 2026 Why we knock first The making of Knock Ima Vaza, and the neighbours who taught us that courage is usually quiet. Read story" [ref=e223] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - generic [ref=e227]: Documentary
+              - generic [ref=e229]: April 2026
+            - heading "Why we knock first" [level=3] [ref=e230]
+            - paragraph [ref=e231]: The making of Knock Ima Vaza, and the neighbours who taught us that courage is usually quiet.
+            - generic [ref=e232]: Read story
+    - region "Belonging starts with one encounter." [ref=e233]:
+      - generic [ref=e236]:
+        - generic [ref=e237]: Come closer
+        - heading "Belonging starts with one encounter." [level=2] [ref=e238]
+        - paragraph [ref=e239]: Whether you host a watch party, join a project, or simply say hello — every small step widens the circle.
+        - generic [ref=e240]:
+          - link "Get in touch" [ref=e241] [cursor=pointer]:
+            - /url: /contact
+            - text: Get in touch
+            - img [ref=e242]
+          - link "Explore projects" [ref=e244] [cursor=pointer]:
+            - /url: /projects
+  - contentinfo [ref=e245]:
+    - generic [ref=e246]:
+      - generic [ref=e247]:
+        - generic [ref=e248]: One Community Project
+        - paragraph [ref=e251]: One Community Project brings people together through small, human encounters — building belonging across neighbourhoods and borders.
+        - generic [ref=e252]:
+          - link "Instagram" [ref=e253] [cursor=pointer]:
+            - /url: "#"
+          - link "YouTube" [ref=e254] [cursor=pointer]:
+            - /url: "#"
+          - link "LinkedIn" [ref=e255] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e256]:
+        - paragraph [ref=e257]: Explore
+        - list [ref=e258]:
+          - listitem [ref=e259]:
+            - link "Projects" [ref=e260] [cursor=pointer]:
+              - /url: /projects
+          - listitem [ref=e261]:
+            - link "About us" [ref=e262] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e263]:
+            - link "Contact" [ref=e264] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e265]:
+        - paragraph [ref=e266]: Projects
+        - list [ref=e267]:
+          - listitem [ref=e268]:
+            - link "Small Encounters" [ref=e269] [cursor=pointer]:
+              - /url: /projects/small-encounters
+          - listitem [ref=e270]:
+            - link "Back to School" [ref=e271] [cursor=pointer]:
+              - /url: /projects/back-to-school
+          - listitem [ref=e272]:
+            - link "Knock Ima Vaza" [ref=e273] [cursor=pointer]:
+              - /url: /projects/knock-ima-vaza
+    - generic [ref=e274]:
+      - generic [ref=e275]: © 2026 One Community Project. Made with care by the community.
+      - navigation "Legal" [ref=e276]:
+        - link "Privacy Policy" [ref=e277] [cursor=pointer]:
+          - /url: /contact
+        - link "Imprint" [ref=e278] [cursor=pointer]:
+          - /url: /contact

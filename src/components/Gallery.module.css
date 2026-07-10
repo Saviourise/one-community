@@ -1,0 +1,157 @@
+/* Masonry photo gallery (CSS multi-column).
+   Each image keeps its NATURAL height (full image, never cropped) while columns
+   keep everything gridded. Fewer columns = larger images. */
+.gallery {
+  columns: 3;
+  column-gap: 16px;
+}
+@media (max-width: 1000px) {
+  .gallery {
+    columns: 2;
+  }
+}
+@media (max-width: 560px) {
+  .gallery {
+    columns: 1;
+  }
+}
+
+.item {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 0 16px;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: zoom-in;
+  background: var(--green-tint);
+  box-shadow: var(--shadow-sm);
+  break-inside: avoid;
+}
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s var(--ease);
+}
+.item:hover .img {
+  transform: scale(1.04);
+}
+.item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 45, 26, 0);
+  transition: background 0.3s ease;
+}
+.item:hover::after,
+.item:focus-visible::after {
+  background: rgba(23, 45, 26, 0.16);
+}
+.expand {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary-deep);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.25s ease, transform 0.25s var(--ease);
+}
+.item:hover .expand,
+.item:focus-visible .expand {
+  opacity: 1;
+  transform: scale(1);
+}
+/* ---------------- lightbox ---------------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(14, 24, 16, 0.95);
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 0.5rem + 3vw, 4vw);
+}
+.stage {
+  position: relative;
+  max-width: 94vw;
+  max-height: 88vh;
+  display: grid;
+  place-items: center;
+}
+.stageImg {
+  max-width: 94vw;
+  max-height: 84vh;
+  border-radius: 10px;
+  box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.7);
+}
+.caption {
+  position: absolute;
+  bottom: -2.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.caption b {
+  color: #fff;
+}
+.ctrl {
+  position: fixed;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.ctrl:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.ctrl:focus-visible {
+  outline: 3px solid var(--cta);
+  outline-offset: 2px;
+}
+.close {
+  top: 20px;
+  right: 24px;
+}
+.prev {
+  left: clamp(0.6rem, 2vw, 2rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next {
+  right: clamp(0.6rem, 2vw, 2rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prev:hover,
+.next:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .img,
+  .expand {
+    transition: none;
+  }
+}

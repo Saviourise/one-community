@@ -1,0 +1,340 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background-color 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  border-bottom: 1px solid transparent;
+}
+.header.scrolled {
+  background: rgba(244, 247, 238, 0.82);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom-color: var(--line);
+  box-shadow: var(--shadow-sm);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 76px;
+}
+
+/* light-on-dark mode: navbar transparent over the dark hero (home, unscrolled) */
+.light .brand,
+.light .brandText b {
+  color: #fff;
+}
+.light .brandText span {
+  color: rgba(255, 255, 255, 0.78);
+}
+.light .navLink {
+  color: rgba(255, 255, 255, 0.92);
+}
+.light .navLink:hover,
+.light .navLink.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+}
+.light .navLink.active::after {
+  background: var(--warm);
+}
+.light .burger {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.light .burger span,
+.light .burger span::before,
+.light .burger span::after {
+  background: #fff;
+}
+
+/* ---- logo ---- */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.28rem;
+  letter-spacing: -0.02em;
+  color: var(--primary-deep);
+  line-height: 1;
+}
+.mark {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--primary-deep);
+  color: #fff;
+  overflow: hidden;
+  flex: none;
+}
+.mark::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background: var(--cta);
+}
+.markDot {
+  position: relative;
+  z-index: 1;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.28);
+}
+.brandText b {
+  font-weight: 600;
+}
+.brandText span {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--primary-600);
+  margin-top: 2px;
+}
+
+/* ---- desktop nav ---- */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.navItem {
+  position: relative;
+}
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  color: var(--ink);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.navLink:hover {
+  color: var(--primary-deep);
+  background: rgba(35, 74, 40, 0.05);
+}
+.navLink.active {
+  color: var(--primary-deep);
+}
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  left: 0.9rem;
+  right: 0.9rem;
+  bottom: 0.34rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--cta);
+}
+.caret {
+  transition: transform 0.3s var(--ease);
+}
+.navItem:hover .caret,
+.navItem:focus-within .caret {
+  transform: rotate(180deg);
+}
+
+/* ---- projects dropdown (hover / focus) ---- */
+.menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  width: min(560px, 92vw);
+  padding: 1.1rem 1.1rem 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0.25s;
+}
+.menuOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.menu::before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  height: 18px;
+}
+.menuHead {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary-600);
+  padding: 0 0.5rem 0.7rem;
+}
+.menuGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem 0.5rem;
+}
+.menuItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.7rem 0.75rem;
+  border-radius: 14px;
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+.menuItem:hover {
+  background: var(--green-tint);
+  transform: translateX(2px);
+}
+.menuDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: none;
+  margin-top: 6px;
+}
+.menuText {
+  display: grid;
+  gap: 1px;
+  line-height: 1.25;
+}
+.menuTitle {
+  font-weight: 700;
+  color: var(--primary-deep);
+}
+.menuKicker {
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+.menuFoot {
+  margin-top: 0.7rem;
+  border-top: 1px solid var(--line);
+  padding: 0.9rem 0.5rem 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.menuCount {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* ---- right side actions ---- */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.cta {
+  padding: 0.7em 1.15em;
+  font-size: var(--step--1);
+}
+
+/* ---- mobile ---- */
+.burger {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: var(--surface);
+  cursor: pointer;
+  place-items: center;
+}
+.burger span,
+.burger span::before,
+.burger span::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--primary-deep);
+  transition: transform 0.3s var(--ease), opacity 0.2s ease;
+}
+.burger span::before {
+  transform: translateY(-6px);
+}
+.burger span::after {
+  transform: translateY(4px);
+}
+.burger.open span {
+  background: transparent;
+}
+.burger.open span::before {
+  transform: rotate(45deg);
+}
+.burger.open span::after {
+  transform: rotate(-45deg) translateY(-1px);
+}
+
+.drawer {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .nav,
+  .actions .cta {
+    display: none;
+  }
+  .burger {
+    display: grid;
+  }
+  .drawer {
+    display: block;
+    overflow: hidden;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+  }
+  .drawerInner {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.8rem clamp(1.1rem, 0.5rem + 3vw, 2.5rem) 1.4rem;
+  }
+  .drawerLink {
+    padding: 0.85rem 0.4rem;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 560;
+    color: var(--primary-deep);
+    border-bottom: 1px solid var(--line);
+  }
+  .drawerSub {
+    display: grid;
+    gap: 0.1rem;
+    padding: 0.2rem 0 0.6rem 0.9rem;
+    border-left: 2px solid var(--green-tint);
+    margin-left: 0.4rem;
+  }
+  .drawerSub a {
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .drawerCta {
+    margin-top: 1rem;
+  }
+}

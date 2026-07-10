@@ -1,0 +1,91 @@
+- generic [active] [ref=f62e1]:
+  - iframe [ref=f62e2]:
+    
+  - region
+  - generic [ref=f62e4]:
+    - navigation [ref=f62e5]:
+      - button "Skip to main content" [ref=f62e7] [cursor=pointer]:
+        - generic [ref=f62e9]: Skip to main content
+      - button "Keyboard shortcuts" [ref=f62e11] [cursor=pointer]:
+        - generic [ref=f62e13]: Keyboard shortcuts
+      - button "Accessibility feedback" [ref=f62e15] [cursor=pointer]:
+        - generic [ref=f62e17]: Accessibility feedback
+    - banner [ref=f62e19]:
+      - generic [ref=f62e20]:
+        - link "Drive" [ref=f62e24] [cursor=pointer]:
+          - /url: https://drive.google.com/?tab=oo
+          - img [ref=f62e25]
+          - generic [ref=f62e26]: Drive
+        - generic [ref=f62e28]:
+          - button "Google apps" [ref=f62e32] [cursor=pointer]:
+            - img [ref=f62e33]
+          - link "Sign in" [ref=f62e36] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?hl=en-GB&passive=true&continue=https://drive.google.com/drive/folders/1t6WNoj-rihdb58A-RkCKwFrzUYI_EWdd&service=writely&ec=GAZAMQ
+    - generic [ref=f62e37]:
+      - generic [ref=f62e46]:
+        - generic [ref=f62e48]:
+          - generic:
+            - navigation:
+              - heading "Folder Path" [ref=f62e49]
+              - list "Folder Path"
+        - toolbar [ref=f62e50]:
+          - radiogroup "List or grid layout (⌥V then L)" [ref=f62e55]:
+            - generic [ref=f62e56]:
+              - radio "Lists" [checked] [ref=f62e57] [cursor=pointer]:
+                - generic [ref=f62e58]:
+                  - img [ref=f62e59]
+                  - img [ref=f62e63]
+              - radio "Grid" [ref=f62e66] [cursor=pointer]:
+                - generic [ref=f62e67]:
+                  - img [ref=f62e68]
+                  - img [ref=f62e72]
+      - main [ref=f62e76]:
+        - region [ref=f62e82]:
+          - generic [ref=f62e83]:
+            - grid "Item list" [ref=f62e86]:
+              - rowgroup [ref=f62e87]:
+                - generic [ref=f62e88] [cursor=pointer]: Name
+                - img [ref=f62e90] [cursor=pointer]
+                - generic [ref=f62e92] [cursor=pointer]: Date modified
+                - text: File size
+                - generic [ref=f62e98]:
+                  - button "Sort" [ref=f62e100] [cursor=pointer]:
+                    - img [ref=f62e104]
+                    - generic [ref=f62e106]: Sort
+                  - tooltip [ref=f62e107]: View sort options
+              - rowgroup [ref=f62e108]:
+                - 'row "safe_image.php.jpeg Image Shared Modified 12 Jan 2021 Size: 16 KB Storage used: 16 KB" [ref=f62e109]':
+                  - gridcell "safe_image.php.jpeg Image Shared" [ref=f62e110]:
+                    - generic [ref=f62e112]:
+                      - img [ref=f62e118]
+                      - generic "safe_image.php.jpeg Image Shared" [ref=f62e121]:
+                        - strong [ref=f62e124]: safe_image.php.jpeg
+                        - img "Shared" [ref=f62e126]:
+                          - img [ref=f62e127]
+                          - generic [ref=f62e130]: Shared
+                  - gridcell "Modified 12 Jan 2021" [ref=f62e131]:
+                    - generic "Modified 12 Jan 2021" [ref=f62e135]:
+                      - generic [ref=f62e136]: 12 Jan 2021
+                  - 'gridcell "Size: 16 KB Storage used: 16 KB" [ref=f62e137]':
+                    - 'generic "Size: 16 KB Storage used: 16 KB" [ref=f62e141]':
+                      - generic [ref=f62e142]: 16 KB
+                  - gridcell [ref=f62e143]
+                - 'row "YTDown_YouTube_Media_FpkOf7zGudA_001_480p.mp4 Video Shared Modified 21 May Size: 23.2 MB Storage used: 23.2 MB" [ref=f62e147]':
+                  - gridcell "YTDown_YouTube_Media_FpkOf7zGudA_001_480p.mp4 Video Shared" [ref=f62e148]:
+                    - generic [ref=f62e150]:
+                      - img [ref=f62e156]
+                      - generic "YTDown_YouTube_Media_FpkOf7zGudA_001_480p.mp4 Video Shared" [ref=f62e159]:
+                        - strong [ref=f62e162]: YTDown_YouTube_Media_FpkOf7zGudA_001_480p.mp4
+                        - img "Shared" [ref=f62e164]:
+                          - img [ref=f62e165]
+                          - generic [ref=f62e168]: Shared
+                  - gridcell "Modified 21 May" [ref=f62e169]:
+                    - generic "Modified 21 May" [ref=f62e173]:
+                      - generic [ref=f62e174]: 21 May
+                  - 'gridcell "Size: 23.2 MB Storage used: 23.2 MB" [ref=f62e175]':
+                    - 'generic "Size: 23.2 MB Storage used: 23.2 MB" [ref=f62e179]':
+                      - generic [ref=f62e180]: 23.2 MB
+                  - gridcell [ref=f62e181]
+            - progressbar [ref=f62e187]:
+              - img [ref=f62e189]
+  - region

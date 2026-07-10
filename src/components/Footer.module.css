@@ -1,0 +1,112 @@
+.footer {
+  position: relative;
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.82);
+  overflow: hidden;
+}
+.inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: clamp(2rem, 1rem + 4vw, 5rem);
+  padding-block: clamp(3rem, 2rem + 4vw, 5rem) 2rem;
+}
+.brandBlock {
+  max-width: 34ch;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.brand .mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.12);
+  display: grid;
+  place-items: center;
+}
+.brand .mark span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--cta);
+}
+.blurb {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+.social a {
+  padding: 0.5em 1em;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-pill);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: #fff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.social a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.colTitle {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--1);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 1rem;
+}
+.col ul {
+  display: grid;
+  gap: 0.65rem;
+}
+.col a {
+  color: rgba(255, 255, 255, 0.82);
+  transition: color 0.2s ease;
+}
+.col a:hover {
+  color: #fff;
+}
+.bottom {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.5rem 2.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: var(--step--1);
+  color: rgba(255, 255, 255, 0.6);
+}
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.legal a:hover {
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brandBlock {
+    grid-column: 1 / -1;
+  }
+}

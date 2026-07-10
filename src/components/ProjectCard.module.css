@@ -1,0 +1,154 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.1rem, 0.7rem + 1.5vw, 1.8rem);
+}
+.grid--two {
+  grid-template-columns: repeat(2, 1fr);
+}
+/* wrapper that makes a spotlight card span the full grid row */
+.spanFull {
+  grid-column: 1 / -1;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.3s ease;
+  height: 100%;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--line-strong);
+}
+
+/* Spotlight variant spans the full row and lays out side-by-side. */
+.card--spotlight {
+  grid-column: 1 / -1;
+  flex-direction: row;
+}
+.card--spotlight .media {
+  flex: 1.1;
+  aspect-ratio: auto;
+  min-height: 340px;
+}
+.card--spotlight .body {
+  flex: 1;
+  justify-content: center;
+  padding: clamp(1.6rem, 1rem + 3vw, 3rem);
+}
+.card--spotlight .title {
+  font-size: var(--step-3);
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--green-tint);
+}
+.mediaImg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s var(--ease);
+}
+.card:hover .mediaImg {
+  transform: scale(1.07);
+}
+.kicker {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.4em 0.9em;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary-deep);
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.4rem 1.4rem 1.6rem;
+  flex: 1;
+}
+.title {
+  font-size: var(--step-2);
+  transition: color 0.2s ease;
+}
+.card:hover .title {
+  color: var(--primary-600);
+}
+.desc {
+  color: var(--muted);
+  flex: 1;
+}
+.footRow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+}
+.explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: var(--primary-deep);
+  transition: gap 0.3s var(--ease), color 0.2s ease;
+}
+.card:hover .explore {
+  gap: 0.75rem;
+  color: var(--cta-hover);
+}
+.explore svg {
+  transition: transform 0.3s var(--ease);
+}
+.card:hover .explore svg {
+  transform: translateX(3px);
+}
+.miniStats {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.3rem;
+}
+.miniStat b {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--primary-deep);
+  display: block;
+  line-height: 1;
+}
+.miniStat span {
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card--spotlight {
+    flex-direction: column;
+  }
+  .card--spotlight .media {
+    min-height: 240px;
+  }
+}
+@media (max-width: 560px) {
+  .grid,
+  .grid--two {
+    grid-template-columns: 1fr;
+  }
+}

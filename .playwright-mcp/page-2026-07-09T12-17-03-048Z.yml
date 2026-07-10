@@ -1,0 +1,205 @@
+- generic [ref=f25e2]:
+  - link "Skip to content" [ref=f25e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f25e4]:
+    - generic [ref=f25e5]:
+      - link "One Community Project, home" [ref=f25e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f25e9]:
+          - text: One Community
+          - generic [ref=f25e10]: Project
+      - navigation "Primary" [ref=f25e11]:
+        - link "Home" [ref=f25e13] [cursor=pointer]:
+          - /url: /
+        - link "Projects" [ref=f25e15] [cursor=pointer]:
+          - /url: /projects
+          - text: Projects
+          - img [ref=f25e16]
+        - link "About" [ref=f25e19] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f25e21] [cursor=pointer]:
+          - /url: /contact
+      - link "Host a watch party" [ref=f25e23] [cursor=pointer]:
+        - /url: /contact
+        - text: Host a watch party
+        - img [ref=f25e24]
+  - main [ref=f25e26]:
+    - generic [ref=f25e28]:
+      - generic [ref=f25e29]: Our work
+      - heading "Every project is a way to come closer." [level=1] [ref=f25e30]
+      - paragraph [ref=f25e31]: One place, all our initiatives. From a movement that reached the TED stage to a documentary you can screen on your street, here’s what belonging looks like in practice.
+    - generic [ref=f25e33]:
+      - 'link "TEDx Talk TEDx TEDx Talk Our story on the TEDx stage, an idea worth spreading about how community and belonging are built between people. TEDx featured stage 1 idea: come closer Explore project" [ref=f25e35] [cursor=pointer]':
+        - /url: /projects/tedx-talk
+        - generic [ref=f25e36]:
+          - img "TEDx Talk" [ref=f25e37]
+          - generic [ref=f25e38]: TEDx
+        - generic [ref=f25e39]:
+          - heading "TEDx Talk" [level=3] [ref=f25e40]
+          - paragraph [ref=f25e41]: Our story on the TEDx stage, an idea worth spreading about how community and belonging are built between people.
+          - generic [ref=f25e42]:
+            - generic [ref=f25e43]:
+              - generic [ref=f25e44]: TEDx
+              - text: featured stage
+            - generic [ref=f25e45]:
+              - generic [ref=f25e46]: "1"
+              - text: "idea: come closer"
+          - generic [ref=f25e48]:
+            - text: Explore project
+            - img [ref=f25e49]
+      - 'link "One Community Concert Flagship event One Community Concert A night where the whole community shows up: music, colour and hundreds of neighbours in one room. 2 editions and counting 100s of neighbours together Explore project" [ref=f25e52] [cursor=pointer]':
+        - /url: /projects/one-community-concert
+        - generic [ref=f25e53]:
+          - img "One Community Concert" [ref=f25e54]
+          - generic [ref=f25e55]: Flagship event
+        - generic [ref=f25e56]:
+          - heading "One Community Concert" [level=3] [ref=f25e57]
+          - paragraph [ref=f25e58]: "A night where the whole community shows up: music, colour and hundreds of neighbours in one room."
+          - generic [ref=f25e59]:
+            - generic [ref=f25e60]:
+              - generic [ref=f25e61]: "2"
+              - text: editions and counting
+            - generic [ref=f25e62]:
+              - generic [ref=f25e63]: 100s
+              - text: of neighbours together
+          - generic [ref=f25e65]:
+            - text: Explore project
+            - img [ref=f25e66]
+      - 'link "Noch einmal Walzer Documentary Noch einmal Walzer A documentary following a community production: the rehearsals, the nerves and the moment it all comes together. 1 feature documentary Explore project" [ref=f25e69] [cursor=pointer]':
+        - /url: /projects/noch-einmal-walzer
+        - generic [ref=f25e70]:
+          - img "Noch einmal Walzer" [ref=f25e71]
+          - generic [ref=f25e72]: Documentary
+        - generic [ref=f25e73]:
+          - heading "Noch einmal Walzer" [level=3] [ref=f25e74]
+          - paragraph [ref=f25e75]: "A documentary following a community production: the rehearsals, the nerves and the moment it all comes together."
+          - generic [ref=f25e77]:
+            - generic [ref=f25e78]: "1"
+            - text: feature documentary
+          - generic [ref=f25e80]:
+            - text: Explore project
+            - img [ref=f25e81]
+    - generic [ref=f25e84]:
+      - generic [ref=f25e85]:
+        - generic [ref=f25e86]: More initiatives
+        - heading "Ongoing & seasonal projects" [level=2] [ref=f25e87]
+      - generic [ref=f25e88]:
+        - 'link "Homies & Omies Ongoing project Homies & Omies Bringing generations together: younger and older neighbours meeting, mentoring and simply spending time. Since 2018 All ages welcome Explore project" [ref=f25e90] [cursor=pointer]':
+          - /url: /projects/homies-and-omies
+          - generic [ref=f25e91]:
+            - img "Homies & Omies" [ref=f25e92]
+            - generic [ref=f25e93]: Ongoing project
+          - generic [ref=f25e94]:
+            - heading "Homies & Omies" [level=3] [ref=f25e95]
+            - paragraph [ref=f25e96]: "Bringing generations together: younger and older neighbours meeting, mentoring and simply spending time."
+            - generic [ref=f25e97]:
+              - generic [ref=f25e98]:
+                - generic [ref=f25e99]: Since
+                - text: "2018"
+              - generic [ref=f25e100]:
+                - generic [ref=f25e101]: All
+                - text: ages welcome
+            - generic [ref=f25e103]:
+              - text: Explore project
+              - img [ref=f25e104]
+        - link "One Community Gala Annual celebration One Community Gala An evening to honour the people and partners who make belonging happen all year round. Annual celebration Explore project" [ref=f25e107] [cursor=pointer]:
+          - /url: /projects/one-community-gala
+          - generic [ref=f25e108]:
+            - img "One Community Gala" [ref=f25e109]
+            - generic [ref=f25e110]: Annual celebration
+          - generic [ref=f25e111]:
+            - heading "One Community Gala" [level=3] [ref=f25e112]
+            - paragraph [ref=f25e113]: An evening to honour the people and partners who make belonging happen all year round.
+            - generic [ref=f25e115]:
+              - generic [ref=f25e116]: Annual
+              - text: celebration
+            - generic [ref=f25e118]:
+              - text: Explore project
+              - img [ref=f25e119]
+        - 'link "One Community Music Video Film One Community Music Video Our anthem, made with and for the community: one song, many voices, a single message of belonging. 1 community anthem Explore project" [ref=f25e122] [cursor=pointer]':
+          - /url: /projects/music-video
+          - generic [ref=f25e123]:
+            - img "One Community Music Video" [ref=f25e124]
+            - generic [ref=f25e125]: Film
+          - generic [ref=f25e126]:
+            - heading "One Community Music Video" [level=3] [ref=f25e127]
+            - paragraph [ref=f25e128]: "Our anthem, made with and for the community: one song, many voices, a single message of belonging."
+            - generic [ref=f25e130]:
+              - generic [ref=f25e131]: "1"
+              - text: community anthem
+            - generic [ref=f25e133]:
+              - text: Explore project
+              - img [ref=f25e134]
+        - link "Back to School Seasonal initiative Back to School Making sure no child starts the school year feeling left out, with supplies, mentors and a warm welcome. Seasonal initiative Explore project" [ref=f25e137] [cursor=pointer]:
+          - /url: /projects/back-to-school
+          - generic [ref=f25e138]:
+            - img "Back to School" [ref=f25e139]
+            - generic [ref=f25e140]: Seasonal initiative
+          - generic [ref=f25e141]:
+            - heading "Back to School" [level=3] [ref=f25e142]
+            - paragraph [ref=f25e143]: Making sure no child starts the school year feeling left out, with supplies, mentors and a warm welcome.
+            - generic [ref=f25e145]:
+              - generic [ref=f25e146]: Seasonal
+              - text: initiative
+            - generic [ref=f25e148]:
+              - text: Explore project
+              - img [ref=f25e149]
+    - paragraph [ref=f25e153]:
+      - text: We run occasional events too, screenings, community tables and watch parties. They’re moments within the movement rather than the headline.
+      - link "Ask what’s coming up" [ref=f25e154] [cursor=pointer]:
+        - /url: /contact
+    - region "Belonging starts with one encounter." [ref=f25e155]:
+      - generic [ref=f25e158]:
+        - generic [ref=f25e159]: Come closer
+        - heading "Belonging starts with one encounter." [level=2] [ref=f25e160]
+        - paragraph [ref=f25e161]: Whether you host a watch party, join a project, or simply say hello, every small step widens the circle.
+        - generic [ref=f25e162]:
+          - link "Get in touch" [ref=f25e163] [cursor=pointer]:
+            - /url: /contact
+            - text: Get in touch
+            - img [ref=f25e164]
+          - link "Explore projects" [ref=f25e166] [cursor=pointer]:
+            - /url: /projects
+  - contentinfo [ref=f25e167]:
+    - generic [ref=f25e168]:
+      - generic [ref=f25e169]:
+        - generic [ref=f25e170]: One Community Project
+        - paragraph [ref=f25e173]: One Community Project brings people together through small, human encounters, building belonging across neighbourhoods and borders.
+        - generic [ref=f25e174]:
+          - link "Instagram" [ref=f25e175] [cursor=pointer]:
+            - /url: "#"
+          - link "YouTube" [ref=f25e176] [cursor=pointer]:
+            - /url: "#"
+          - link "LinkedIn" [ref=f25e177] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=f25e178]:
+        - paragraph [ref=f25e179]: Explore
+        - list [ref=f25e180]:
+          - listitem [ref=f25e181]:
+            - link "Projects" [ref=f25e182] [cursor=pointer]:
+              - /url: /projects
+          - listitem [ref=f25e183]:
+            - link "About us" [ref=f25e184] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f25e185]:
+            - link "Contact" [ref=f25e186] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=f25e187]:
+        - paragraph [ref=f25e188]: Projects
+        - list [ref=f25e189]:
+          - listitem [ref=f25e190]:
+            - link "TEDx Talk" [ref=f25e191] [cursor=pointer]:
+              - /url: /projects/tedx-talk
+          - listitem [ref=f25e192]:
+            - link "One Community Concert" [ref=f25e193] [cursor=pointer]:
+              - /url: /projects/one-community-concert
+          - listitem [ref=f25e194]:
+            - link "Back to School" [ref=f25e195] [cursor=pointer]:
+              - /url: /projects/back-to-school
+    - generic [ref=f25e196]:
+      - generic [ref=f25e197]: © 2026 One Community Project. Made with care by the community.
+      - navigation "Legal" [ref=f25e198]:
+        - link "Privacy Policy" [ref=f25e199] [cursor=pointer]:
+          - /url: /contact
+        - link "Imprint" [ref=f25e200] [cursor=pointer]:
+          - /url: /contact

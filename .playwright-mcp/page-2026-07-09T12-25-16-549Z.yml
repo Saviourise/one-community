@@ -1,0 +1,52 @@
+- generic [active] [ref=f44e1]:
+  - iframe [ref=f44e2]:
+    
+  - region
+  - generic [ref=f44e4]:
+    - navigation [ref=f44e5]:
+      - button "Skip to main content" [ref=f44e7] [cursor=pointer]:
+        - generic [ref=f44e9]: Skip to main content
+      - button "Keyboard shortcuts" [ref=f44e11] [cursor=pointer]:
+        - generic [ref=f44e13]: Keyboard shortcuts
+      - button "Accessibility feedback" [ref=f44e15] [cursor=pointer]:
+        - generic [ref=f44e17]: Accessibility feedback
+    - banner [ref=f44e19]:
+      - generic [ref=f44e20]:
+        - link "Drive" [ref=f44e24] [cursor=pointer]:
+          - /url: https://drive.google.com/?tab=oo
+          - img [ref=f44e25]
+          - generic [ref=f44e26]: Drive
+        - generic [ref=f44e28]:
+          - button "Google apps" [ref=f44e32] [cursor=pointer]:
+            - img [ref=f44e33]
+          - link "Sign in" [ref=f44e36] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?hl=en-GB&passive=true&continue=https://drive.google.com/drive/folders/1TOlkjQdZB5AbOXWDFkqrPWmIxnN3Ge1n&service=writely&ec=GAZAMQ
+    - generic [ref=f44e37]:
+      - generic [ref=f44e46]:
+        - generic [ref=f44e48]:
+          - generic:
+            - navigation:
+              - heading "Folder Path" [ref=f44e49]
+              - list "Folder Path"
+        - toolbar [ref=f44e50]:
+          - radiogroup "List or grid layout (⌥V then L)" [ref=f44e55]:
+            - generic [ref=f44e56]:
+              - radio "Lists" [checked] [ref=f44e57] [cursor=pointer]:
+                - generic [ref=f44e58]:
+                  - img [ref=f44e59]
+                  - img [ref=f44e63]
+              - radio "Grid" [ref=f44e66] [cursor=pointer]:
+                - generic [ref=f44e67]:
+                  - img [ref=f44e68]
+                  - img [ref=f44e72]
+      - main [ref=f44e76]:
+        - region [ref=f44e82]:
+          - generic [ref=f44e83]:
+            - status [ref=f44e85]:
+              - generic "Drop files here or use the 'New' button." [ref=f44e86]:
+                - generic [ref=f44e87]:
+                  - generic [ref=f44e88]: Drop files here
+                  - generic [ref=f44e89]: or use the 'New' button.
+            - progressbar [ref=f44e92]:
+              - img [ref=f44e94]
+  - region

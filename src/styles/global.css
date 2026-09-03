@@ -1,55 +1,56 @@
 /* =========================================================================
-   One Community Project, design system
-   Palette: lighter Back-to-School green + coral accent
-   Type: Urbanist (display / logo + headings) + Hanken Grotesk (body)
+   One Community Project — design system
+   "Social club" editorial direction:
+   Palette: dark olive + warm cream + chartreuse-yellow accent
+   Type: Fraunces (editorial display / logo + headings) + Hanken Grotesk (body)
    ========================================================================= */
 
 :root {
   /* Core palette */
-  --canvas: #f4f7ee;        /* light green-cream */
-  --canvas-2: #eef3e3;      /* slightly deeper section band */
+  --canvas: #f2efe3;        /* warm cream */
+  --canvas-2: #e7e3d1;      /* deeper cream section band */
   --surface: #ffffff;
-  --primary: #5aa84f;       /* fresh green */
-  --primary-600: #4c9443;
-  --primary-deep: #234a28;  /* forest, headings / dark surfaces */
-  --primary-deep-2: #1c3c20;
-  --cta: #ff6b4a;           /* coral */
-  --cta-hover: #f0532f;
-  --warm: #f4a259;          /* amber */
+  --primary: #7c7a52;       /* mid olive */
+  --primary-600: #6a6844;
+  --primary-deep: #2f2e1d;  /* near-black olive, headings / dark surfaces */
+  --primary-deep-2: #232214;
+  --cta: #e6e84c;           /* chartreuse-yellow */
+  --cta-hover: #d9db3c;
+  --warm: #e6e84c;          /* same yellow, used as accent on dark */
 
-  --ink: #1b2e1f;
-  --muted: #5d6b5a;
-  --line: #e1e7d5;
-  --line-strong: #cdd7bc;
+  --ink: #26251a;
+  --muted: #6f6d59;
+  --line: #e1ddca;
+  --line-strong: #cbc6ac;
 
-  --green-tint: #e7f0de;
-  --coral-tint: #ffe9e2;
-  --amber-tint: #fdeed7;
+  --green-tint: #e9e6d1;
+  --coral-tint: #ece9d8;
+  --amber-tint: #f0eecd;
 
   /* Typography */
-  --font-display: 'Urbanist Variable', 'Urbanist', system-ui, -apple-system, sans-serif;
-  --font-body: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces Variable', 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Hanken Grotesk Variable', 'Hanken Grotesk', 'Urbanist Variable', system-ui, -apple-system, sans-serif;
 
   /* Fluid type scale */
   --step--1: clamp(0.83rem, 0.79rem + 0.2vw, 0.94rem);
-  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.15rem);
+  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.12rem);
   --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem);
   --step-2: clamp(1.5rem, 1.3rem + 1vw, 2.1rem);
   --step-3: clamp(2rem, 1.6rem + 2vw, 3.1rem);
-  --step-4: clamp(2.6rem, 2rem + 3.2vw, 4.6rem);
-  --step-5: clamp(3.1rem, 2.2rem + 4.8vw, 6rem);
+  --step-4: clamp(2.6rem, 2rem + 3.4vw, 4.8rem);
+  --step-5: clamp(3.2rem, 2.1rem + 5.4vw, 6.8rem);
 
   /* Space + form */
   --gap: clamp(1rem, 0.8rem + 1vw, 1.6rem);
   --section-y: clamp(3.5rem, 2.5rem + 5vw, 7rem);
-  --radius: 18px;
-  --radius-lg: 30px;
+  --radius: 6px;
+  --radius-lg: 12px;
   --radius-pill: 999px;
   --container: 1200px;
 
-  --shadow-sm: 0 2px 10px rgba(35, 74, 40, 0.06);
-  --shadow-md: 0 18px 40px -18px rgba(35, 74, 40, 0.28);
-  --shadow-lg: 0 40px 80px -30px rgba(35, 74, 40, 0.4);
+  --shadow-sm: 0 2px 10px rgba(47, 46, 29, 0.06);
+  --shadow-md: 0 18px 40px -20px rgba(47, 46, 29, 0.26);
+  --shadow-lg: 0 40px 80px -34px rgba(47, 46, 29, 0.38);
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -105,13 +106,13 @@ ol {
   padding: 0;
 }
 :focus-visible {
-  outline: 3px solid var(--cta);
+  outline: 3px solid var(--primary-deep);
   outline-offset: 3px;
   border-radius: 4px;
 }
 ::selection {
-  background: var(--primary);
-  color: #fff;
+  background: var(--cta);
+  color: var(--ink);
 }
 
 /* ---------- typography ---------- */
@@ -120,22 +121,27 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  font-weight: 560;
-  line-height: 1.04;
-  letter-spacing: -0.015em;
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
   color: var(--primary-deep);
   font-optical-sizing: auto;
+  font-variation-settings: 'SOFT' 40, 'WONK' 0;
   text-wrap: balance;
 }
 h1 {
   font-size: var(--step-5);
-  font-weight: 600;
+  font-weight: 400;
+  text-transform: lowercase;
 }
 h2 {
   font-size: var(--step-4);
+  font-weight: 420;
+  text-transform: lowercase;
 }
 h3 {
   font-size: var(--step-2);
+  font-weight: 460;
 }
 p {
   text-wrap: pretty;
@@ -164,18 +170,21 @@ p {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--step--1);
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--primary-600);
+  color: var(--muted);
 }
 .eyebrow::before {
-  content: '';
-  width: 26px;
-  height: 2px;
-  background: var(--cta);
-  border-radius: 2px;
+  content: '[';
+  font-weight: 500;
+  opacity: 0.8;
+}
+.eyebrow::after {
+  content: ']';
+  font-weight: 500;
+  opacity: 0.8;
 }
 .section-head {
   max-width: 44ch;
@@ -194,7 +203,7 @@ p {
 /* ---------- buttons ---------- */
 .btn {
   --btn-bg: var(--cta);
-  --btn-fg: #fff;
+  --btn-fg: var(--ink);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -211,30 +220,32 @@ p {
   border-radius: var(--radius-pill);
   cursor: pointer;
   transition:
-    transform 0.35s var(--ease),
-    box-shadow 0.35s var(--ease),
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease),
     background-color 0.25s ease,
-    color 0.25s ease;
+    color 0.25s ease,
+    border-color 0.25s ease;
   will-change: transform;
 }
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px -12px rgba(255, 107, 74, 0.6);
 }
 .btn:active {
   transform: translateY(0);
 }
 .btn--cta {
   --btn-bg: var(--cta);
+  --btn-fg: var(--ink);
 }
 .btn--cta:hover {
   background: var(--cta-hover);
 }
 .btn--dark {
   --btn-bg: var(--primary-deep);
+  --btn-fg: #fff;
 }
 .btn--dark:hover {
-  box-shadow: 0 14px 30px -12px rgba(35, 74, 40, 0.55);
+  box-shadow: 0 14px 30px -14px rgba(47, 46, 29, 0.55);
 }
 .btn--ghost {
   --btn-bg: transparent;
@@ -244,7 +255,7 @@ p {
 .btn--ghost:hover {
   border-color: var(--primary-deep);
   box-shadow: none;
-  background: rgba(35, 74, 40, 0.04);
+  background: rgba(47, 46, 29, 0.04);
 }
 .btn--on-dark {
   --btn-fg: #fff;
@@ -276,7 +287,7 @@ p {
 }
 .link-arrow:hover {
   gap: 0.7rem;
-  color: var(--cta-hover);
+  color: var(--primary-600);
 }
 
 /* ---------- forms ---------- */
@@ -297,14 +308,14 @@ p {
   padding: 0.85em 1em;
   background: var(--surface);
   border: 2px solid var(--line-strong);
-  border-radius: 14px;
+  border-radius: var(--radius);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .field input:focus,
 .field textarea:focus,
 .field select:focus {
   outline: none;
-  border-color: var(--primary);
+  border-color: var(--primary-deep);
   box-shadow: 0 0 0 4px var(--green-tint);
 }
 .field textarea {
@@ -313,12 +324,12 @@ p {
 }
 .field--error input,
 .field--error textarea {
-  border-color: var(--cta);
+  border-color: #b64a2e;
 }
 .field-error {
   font-size: var(--step--1);
   font-weight: 600;
-  color: var(--cta-hover);
+  color: #b64a2e;
 }
 
 /* ---------- misc ---------- */

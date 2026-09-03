@@ -38,6 +38,26 @@
   border-radius: 50%;
   background: var(--cta);
 }
+
+/* ---- oversized editorial wordmark ---- */
+.wordmarkWrap {
+  padding-block: clamp(1rem, 0.5rem + 2vw, 2.5rem) 0;
+}
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: -0.03em;
+  line-height: 0.88;
+  color: #fff;
+  font-size: clamp(3.5rem, 1rem + 16vw, 13rem);
+}
+.wordmark span {
+  display: block;
+}
+.wordmark span:last-child {
+  color: var(--cta);
+}
 .blurb {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;

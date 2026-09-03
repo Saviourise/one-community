@@ -16,7 +16,7 @@ const EXPAND = 'M9 4H5a1 1 0 0 0-1 1v4m11-5h4a1 1 0 0 1 1 1v4M9 20H5a1 1 0 0 1-1
  * so mixed portrait/landscape sit together cleanly with no cropping.
  * `images` is an array of Drive/asset ids; `label` names the set.
  */
-export default function Gallery({ images = [], label = 'Photos' }) {
+export default function Gallery({ images = [], label = 'Photos', credit = '' }) {
   const [open, setOpen] = useState(null) // index | null
   const count = images.length
   const reduce = useReducedMotion()
@@ -96,6 +96,12 @@ export default function Gallery({ images = [], label = 'Photos' }) {
         ))}
       </div>
 
+      {credit && (
+        <p className={styles.credit}>
+          Photos: {credit}
+        </p>
+      )}
+
       <AnimatePresence>
         {open !== null && (
           <motion.div
@@ -147,6 +153,7 @@ export default function Gallery({ images = [], label = 'Photos' }) {
               />
               <span className={styles.caption}>
                 <b>{label}</b> · {open + 1} / {count}
+                {credit && <> · Photo: {credit}</>}
               </span>
             </motion.div>
           </motion.div>

@@ -8,7 +8,7 @@ import SectionHeading from '../components/SectionHeading.jsx'
 import ClosingCTA from '../components/ClosingCTA.jsx'
 import Gallery from '../components/Gallery.jsx'
 import { getProject, projects } from '../data/projects.js'
-import { getGallery } from '../data/galleries.js'
+import { getGallery, getGalleryCredit } from '../data/galleries.js'
 import { brand } from '../data/siteContent.js'
 import { artworkCss, drive } from '../lib/placeholder.js'
 import pages from './pages.module.css'
@@ -123,7 +123,7 @@ export default function ProjectDetail() {
       {gallery.length > 0 && (
         <section className="section container">
           <SectionHeading eyebrow="Gallery" title={`Inside ${project.title}`} />
-          <Gallery images={gallery} label={project.title} />
+          <Gallery images={gallery} label={project.title} credit={getGalleryCredit(project.slug)} />
         </section>
       )}
 

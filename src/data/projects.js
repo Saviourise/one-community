@@ -26,7 +26,8 @@ export const projects = [
     tagline: 'Ideas worth spreading start with people worth knowing.',
     featuredHome: false,
     spotlight: true,
-    video: '',
+    // TEDxLinz — "The Power of Small Encounters" (Adetayo Manuwa).
+    video: 'https://www.youtube.com/embed/5Fbdq4iLK88',
     videoLabel: 'Watch the TEDx Talk',
     stats: [
       { value: 'TEDx', label: 'featured stage' },
@@ -36,7 +37,7 @@ export const projects = [
       'Being invited to the TEDx stage gave One Community a platform to share what we have learned: that belonging is not a nice-to-have, it is the foundation everything else is built on.',
       'The talk distils years of community work into a simple, shareable idea, and gives partners, funders and neighbours a way to understand what we do in under twenty minutes.',
     ],
-    links: [{ label: 'Get involved', to: '/contact' }],
+    links: [{ label: 'Partner with us', to: '/contact' }],
   },
   {
     slug: 'one-community-concert',
@@ -98,7 +99,7 @@ export const projects = [
     tagline: 'One more dance, and a whole community on its feet.',
     featuredHome: false,
     spotlight: true,
-    video: '',
+    video: 'https://www.youtube.com/embed/DzW-w96L9jo',
     videoLabel: 'Watch the documentary',
     stats: [{ value: '2023', label: 'film premiere' }],
     body: [
@@ -207,7 +208,7 @@ export const projects = [
     body: [
       'Our films are made to be watched together. Watch Parties give any community, from Lagos to Cape Town to Sydney, a simple way to host a screening and start the conversation that follows.',
     ],
-    links: [{ label: 'Host a watch party', to: '/contact' }],
+    links: [{ label: 'Host a watch party', to: '/contact?watch-party=1' }],
   },
   {
     slug: 'integrationspreis',

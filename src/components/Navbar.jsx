@@ -127,7 +127,7 @@ export default function Navbar() {
 
         <div className={styles.actions}>
           <Button to="/contact" variant="cta" className={styles.cta} arrow>
-            Host a watch party
+            Partner with us
           </Button>
           <button
             className={`${styles.burger} ${open ? styles.open : ''}`}
@@ -167,7 +167,7 @@ export default function Navbar() {
                 </div>
               ))}
               <Button to="/contact" variant="cta" className={styles.drawerCta} arrow>
-                Host a watch party
+                Partner with us
               </Button>
             </div>
           </motion.div>

@@ -1,7 +1,7 @@
 /* =========================================================================
    One Community Project, design system
    Palette: lighter Back-to-School green + coral accent
-   Type: Fraunces (display) + Hanken Grotesk (body)
+   Type: Urbanist (display / logo + headings) + Hanken Grotesk (body)
    ========================================================================= */
 
 :root {
@@ -27,7 +27,7 @@
   --amber-tint: #fdeed7;
 
   /* Typography */
-  --font-display: 'Fraunces Variable', 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-display: 'Urbanist Variable', 'Urbanist', system-ui, -apple-system, sans-serif;
   --font-body: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
 
   /* Fluid type scale */

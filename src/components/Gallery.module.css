@@ -70,6 +70,15 @@
   opacity: 1;
   transform: scale(1);
 }
+/* photo credit line under the grid */
+.credit {
+  margin-top: 1rem;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
 /* ---------------- lightbox ---------------- */
 .overlay {
   position: fixed;

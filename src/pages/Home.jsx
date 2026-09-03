@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import Hero from '../components/Hero.jsx'
+import DocumentaryFeature from '../components/DocumentaryFeature.jsx'
 import WatchPartyCard from '../components/WatchPartyCard.jsx'
 import FeaturedVideo from '../components/FeaturedVideo.jsx'
 import ImpactCard from '../components/ImpactCard.jsx'
@@ -10,6 +11,7 @@ import PartnerStrip from '../components/PartnerStrip.jsx'
 import BlogRow from '../components/BlogRow.jsx'
 import ClosingCTA from '../components/ClosingCTA.jsx'
 import ProjectGrid from '../components/ProjectGrid.jsx'
+import Workshops from '../components/Workshops.jsx'
 import Button from '../components/Button.jsx'
 
 import { projects } from '../data/projects.js'
@@ -28,8 +30,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <WatchPartyCard />
+      {/* Documentary video sits directly under the hero. */}
+      <DocumentaryFeature />
+      {/* TEDx video comes before the watch party section. */}
       <FeaturedVideo />
+      <WatchPartyCard />
       <ImpactCard />
 
       <section className="section container" aria-labelledby="proj-title">
@@ -44,6 +49,8 @@ export default function Home() {
         </div>
         <ProjectGrid projects={preview} enableSpotlight={false} showStats />
       </section>
+
+      <Workshops />
 
       <StatBand />
       <PartnerStrip />

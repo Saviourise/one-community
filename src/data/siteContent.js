@@ -64,15 +64,14 @@ export const footer = {
       ],
     },
   ],
-  // Compliance links called out in the planning notes (footer: privacy policy + imprint).
+  // Compliance links called out in the planning notes (footer).
   legal: [
     { label: 'Privacy Policy', to: '/contact' },
-    { label: 'Imprint', to: '/contact' },
   ],
   social: [
-    { label: 'Instagram', href: '#' },
-    { label: 'YouTube', href: '#' },
-    { label: 'LinkedIn', href: '#' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/one-community-projekt/' },
+    { label: 'Instagram', href: 'https://www.instagram.com/onecommunityprojekt/' },
+    { label: 'Facebook', href: 'https://www.facebook.com/share/1ECL7eBoxn/' },
   ],
   email: 'hello@onecommunityproject.org',
 }

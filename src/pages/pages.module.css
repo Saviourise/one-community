@@ -111,12 +111,15 @@
   /* solid scrim over the photo (no gradient) */
   background: rgba(23, 45, 26, 0.8);
 }
-.missionCard .eyebrow {
+/* `.eyebrow` is a global class, so it must be reached with :global() inside a
+   CSS module — without it the white colour never applied and the "Our mission"
+   label rendered dark green on the dark photo (invisible). */
+.missionCard :global(.eyebrow) {
   position: relative;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
   justify-content: center;
 }
-.missionCard .eyebrow::before {
+.missionCard :global(.eyebrow)::before {
   background: var(--warm);
 }
 .missionQuote {

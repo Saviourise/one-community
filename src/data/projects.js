@@ -128,7 +128,7 @@ export const projects = [
       { value: '2', label: 'editions and counting' },
     ],
     body: [
-      'The One Community Concert began in 2019 as a celebration of the many cultures that share Dessau-Roßlau, told through music, dance and performance.',
+      'The One Community Concert began in 2019 as a celebration of the many cultures that share the city’s streets, told through music, dance and performance.',
       'It became the one night a year when the whole community is unmistakably in the same room.',
     ],
     links: [{ label: 'Get involved', to: '/contact' }],

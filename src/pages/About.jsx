@@ -40,9 +40,9 @@ export default function About() {
           <span className="eyebrow">Our story</span>
           <h1>A project about repetition.</h1>
           <p className="lede">
-            The One Community Project has run in Dessau-Roßlau since 2019, in partnership with the
-            city’s integration office and Hochschule Anhalt. Its premise is simple and its method
-            is patient.
+            The One Community Project has run since 2019 — rooted in Dessau-Roßlau, in partnership
+            with the city’s integration office and Hochschule Anhalt, and now working well beyond
+            it. Its premise is simple and its method is patient.
           </p>
         </div>
       </header>

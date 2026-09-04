@@ -20,7 +20,7 @@ export const nav = [
 ]
 
 export const hero = {
-  eyebrow: 'Dessau-Roßlau, since 2019',
+  eyebrow: 'Since 2019',
   title: ['Belonging is built', 'through repetition.'],
   body: 'The One Community Project brings care-home residents, schoolchildren, international students, refugees and long-time locals into the same room, again and again. The methods are music, dance, storytelling and shared meals.',
   primary: { label: 'See the projects', to: '/projects' },
@@ -48,7 +48,7 @@ export const impactCard = {
 
 export const footer = {
   blurb:
-    'The One Community Project brings strangers into repeated contact through music, dance, storytelling and shared meals. Based in Dessau-Roßlau, active across Germany, Ireland and Austria.',
+    'The One Community Project brings strangers into repeated contact through music, dance, storytelling and shared meals. It grew out of a care home in Dessau-Roßlau and now runs across Germany, Ireland and Austria.',
   columns: [
     {
       title: 'Explore',

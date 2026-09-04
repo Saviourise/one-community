@@ -65,18 +65,18 @@ export const projects = [
   {
     slug: 'homies-and-omies',
     title: 'Homies & Omies',
-    kicker: 'Where it began, 2017',
+    kicker: 'Where it began, 2018',
     palette: 'amber',
     img: drive('1HBWVMpiDgcnBrFdawRmbPSzEvYAwNBFV', 1200),
     driveFolderId: '1T-_jJbAdvyX3OkPDlESQRKsAf-hNMP41',
     short:
-      'The weekly care-home music sessions the whole project grew out of, started by a newly arrived international student in 2017.',
+      'The weekly care-home music sessions the whole project grew out of, started by a newly arrived international student in 2018.',
     tagline: 'Nobody has to grow up, or grow old, alone.',
     featuredHome: true,
     spotlight: false,
     video: '',
     stats: [
-      { value: '2017', label: 'first weekly visits to the Marienheim' },
+      { value: '2018', label: 'first weekly visits to the Marienheim' },
       { value: '2019', label: 'formalised as the One Community Project' },
     ],
     body: [
@@ -93,7 +93,7 @@ export const projects = [
     img: drive('1CtYZynaNNnuXcWl5NDlJWByYzUEKDFRo', 1200),
     driveFolderId: '1GUHahUQmqSK_4eAR0rmZaOB4JGiLZ-mr',
     short:
-      'The TEDxLinz talk that lays out the premise: prejudice survives in the absence of contact, and contact has to repeat.',
+      'The TEDxLinz talk that lays out the premise: prejudice survives in silence, and contact has to repeat before it counts.',
     tagline: 'Not one encounter. The same one, again.',
     featuredHome: false,
     spotlight: true,

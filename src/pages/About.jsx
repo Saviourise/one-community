@@ -9,7 +9,7 @@ import pages from './pages.module.css'
 const values = [
   {
     title: 'Contact, repeated',
-    body: 'Prejudice survives in the absence of contact. One good encounter proves little; the same one, repeated, changes how people see each other. Everything is built around coming back.',
+    body: 'One good encounter proves little; the same one, repeated, changes how people see each other. Everything is built around coming back.',
   },
   {
     title: 'The person in front of you',
@@ -52,7 +52,7 @@ export default function About() {
           <Reveal>
             <div>
               <p className="lede">
-                It began in 2017, when a newly arrived international student started visiting the
+                It began in 2018, when a newly arrived international student started visiting the
                 Marienheim care home each week to make music with residents. That student
                 initiative — “Homies &amp; Omies” — was formalised in 2019 as the One Community
                 Project.
@@ -91,8 +91,8 @@ export default function About() {
           >
             <span className="eyebrow">The premise</span>
             <p className={pages.missionQuote}>
-              Prejudice survives in the absence of contact. Trust is built not in a single moment
-              but through repetition.
+              Prejudice survives in silence — in the spaces where we don’t meet, don’t speak,
+              don’t look at each other long enough.
             </p>
           </div>
         </Reveal>

@@ -37,12 +37,12 @@ export const closingCta = {
 
 // Brand-level statement (the dual-colour homepage card).
 export const impactCard = {
-  years: '2017',
+  years: '2018',
   yearsLabel: 'running since',
   kicker: 'It began when a newly arrived international student started visiting the Marienheim care home each week to make music with residents. It has not stopped since.',
   eyebrow: 'Why it works',
-  tagline: 'Prejudice survives in the absence of contact.',
-  body: 'Trust is not built in a single moment. It is built through repetition — the same people, the same room, again. Every class, concert and screening is one more repetition.',
+  tagline: 'Prejudice survives in silence.',
+  body: 'In the spaces where we don’t meet, don’t speak, don’t look at each other long enough, distance gives our fears room to grow. Trust needs the opposite: the same people, the same room, again.',
   cta: { label: 'Explore our projects', to: '/projects' },
 }
 
@@ -68,10 +68,11 @@ export const footer = {
     },
   ],
   legal: [{ label: 'Privacy Policy', to: '/contact' }],
+  // Placeholder address until the real inbox is set up.
   social: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/company/one-community-projekt/' },
     { label: 'Instagram', href: 'https://www.instagram.com/onecommunityprojekt/' },
     { label: 'Facebook', href: 'https://www.facebook.com/share/1ECL7eBoxn/' },
   ],
-  email: 'tutipsy@gmail.com',
+  email: 'hello@onecommunityproject.com',
 }

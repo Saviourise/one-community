@@ -17,7 +17,7 @@ const values = [
   },
   {
     title: 'Count what you can verify',
-    body: 'Figures come from the attendance record kept with the city’s integration office. Where a screening cannot be verified, it is left out — a documented floor, not a claim.',
+    body: 'Figures come from the attendance record kept with the city’s integration office. Where a screening cannot be verified, it is left out. A documented floor, not a claim.',
   },
 ]
 
@@ -40,9 +40,9 @@ export default function About() {
           <span className="eyebrow">Our story</span>
           <h1>A project about repetition.</h1>
           <p className="lede">
-            The One Community Project has run since 2019 — rooted in Dessau-Roßlau, in partnership
-            with the city’s integration office and Hochschule Anhalt, and now working well beyond
-            it. Its premise is simple and its method is patient.
+            The One Community Project has run since 2019. It is rooted in Dessau-Roßlau, in
+            partnership with the city’s integration office and Hochschule Anhalt, and now works
+            well beyond it. Its premise is simple and its method is patient.
           </p>
         </div>
       </header>
@@ -54,7 +54,7 @@ export default function About() {
               <p className="lede">
                 It began in 2018, when a newly arrived international student started visiting the
                 Marienheim care home each week to make music with residents. That student
-                initiative — “Homies &amp; Omies” — was formalised in 2019 as the One Community
+                initiative, “Homies &amp; Omies”, was formalised in 2019 as the One Community
                 Project.
               </p>
               <p>
@@ -64,8 +64,8 @@ export default function About() {
                 storytelling and shared meals.
               </p>
               <p>
-                In 2022 it ran five months of waltz classes bringing together thirty dancers —
-                among them refugees, migrants and international students — and twelve residents of
+                In 2022 it ran five months of waltz classes bringing together thirty dancers,
+                among them refugees, migrants and international students, and twelve residents of
                 the Marienheim. The classes led to the One Community Gala and to the documentary
                 Noch einmal Walzer, released in 2023 and now shown across Germany, Ireland and
                 Austria.
@@ -91,7 +91,7 @@ export default function About() {
           >
             <span className="eyebrow">The premise</span>
             <p className={pages.missionQuote}>
-              Prejudice survives in silence — in the spaces where we don’t meet, don’t speak,
+              Prejudice survives in silence. In the spaces where we don’t meet, don’t speak,
               don’t look at each other long enough.
             </p>
           </div>
@@ -117,7 +117,7 @@ export default function About() {
         <SectionHeading
           eyebrow="Recognition"
           title="On the record"
-          body="Recognition is useful mainly because it opens doors — to partners, to funding, and to the institutions that then use the film with their own people."
+          body="Recognition is useful mainly because it opens doors: to partners, to funding, and to the institutions that then use the film with their own people."
         />
         <div className={pages.awards}>
           {awards.map((a, i) => (

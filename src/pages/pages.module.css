@@ -109,7 +109,7 @@
   background: rgba(26, 25, 15, 0.8);
 }
 /* `.eyebrow` is a global class, so it must be reached with :global() inside a
-   CSS module — without it the white colour never applied and the "Our mission"
+   CSS module. Without it the white colour never applied and the "Our mission"
    label rendered dark green on the dark photo (invisible). */
 .missionCard :global(.eyebrow) {
   position: relative;

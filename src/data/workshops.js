@@ -13,7 +13,7 @@ export const workshops = [
   {
     title: 'Dance',
     tag: 'The waltz classes',
-    body: 'Five months of classes in 2022 brought thirty dancers — refugees, migrants and international students — together with twelve care-home residents. It became the Gala and the film.',
+    body: 'Five months of classes in 2022 brought thirty dancers, among them refugees, migrants and international students, together with twelve care-home residents. It became the Gala and the film.',
   },
   {
     title: 'Storytelling',

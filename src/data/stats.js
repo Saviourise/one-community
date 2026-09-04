@@ -8,7 +8,7 @@
 export const impact = {
   eyebrow: 'The record',
   title: 'A documented floor, not a complete count.',
-  body: 'Every figure below comes from the attendance record kept with the city’s integration office. Screenings we know happened but cannot verify — the 2024 tour reported at 24 locations, the 2025 screenings in Poland — are not included.',
+  body: 'Every figure below comes from the attendance record kept with the city’s integration office. Screenings we know happened but cannot verify are not included, among them the 2024 tour reported at 24 locations and the 2025 screenings in Poland.',
   stats: [
     { value: '1,618', suffix: '', label: 'people reached at documented screenings, workshops and trainings' },
     { value: '38', suffix: '', label: 'bookings since June 2023, holding steady at eleven a year' },

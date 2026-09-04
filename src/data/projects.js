@@ -1,5 +1,5 @@
 /*
- * All projects — mapped to the real One Community archive in Google Drive.
+ * All projects, mapped to the real One Community archive in Google Drive.
  * Images are public Drive files referenced by id via drive().
  * Swap any id, or point `img` at a /public/assets path, to change a photo.
  *
@@ -32,9 +32,9 @@ export const projects = [
       { value: '3', label: 'language versions: German, English and Ukrainian' },
     ],
     body: [
-      'In 2022 the project ran five months of waltz classes, bringing together thirty dancers — among them refugees, migrants and international students — and twelve residents of the Marienheim care home. The classes ended in a gala and in this film.',
+      'In 2022 the project ran five months of waltz classes, bringing together thirty dancers, among them refugees, migrants and international students, and twelve residents of the Marienheim care home. The classes ended in a gala and in this film.',
       'Noch einmal Walzer premiered at the Bauhaus Museum Dessau on 18 June 2023 to a sold-out room of 300. It exists in German, English and Ukrainian, with subtitles, and travels with a method handbook and a session plan for facilitated screenings.',
-      'Since June 2023 it has been shown at 38 documented bookings across Germany, Ireland and Austria — cinemas and festivals, but mostly institutions using it with their own staff and service users.',
+      'Since June 2023 it has been shown at 38 documented bookings across Germany, Ireland and Austria: cinemas and festivals, but mostly institutions using it with their own staff and service users.',
     ],
     links: [{ label: 'Host a screening', to: '/contact' }],
   },
@@ -204,13 +204,13 @@ export const projects = [
     img: drive('1Il9rpZUVB4qdtZcPZG7JRWd4cg17AdqZ', 1200),
     driveFolderId: '1t6WNoj-rihdb58A-RkCKwFrzUYI_EWdd',
     short:
-      'When visits to the care home were not possible, the sessions carried on the only way they could — remotely.',
+      'When visits to the care home were not possible, the sessions carried on the only way they could, remotely.',
     tagline: 'Apart, but not out of contact.',
     featuredHome: false,
     spotlight: false,
     video: driveVideo('11bSdDYbl5RsxjYFxT2nMvUlDD1_uppl4'),
     videoLabel: 'Watch the film',
-    stats: [{ value: '2020–21', label: 'through the pandemic' }],
+    stats: [{ value: '2021', label: 'through the pandemic' }],
     body: [
       'During the pandemic, when residents could not have visitors, the project kept the encounters going through screens and recordings, so the thread of contact held until people could be in a room again.',
     ],

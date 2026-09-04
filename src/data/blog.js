@@ -1,5 +1,5 @@
 /*
- * Homepage press row — real coverage from the Impact Dossier press archive.
+ * Homepage press row. Real coverage from the Impact Dossier press archive.
  * `img` points at a Drive still; empty falls back to a dummy photo.
  */
 
@@ -24,7 +24,7 @@ export const blog = {
       id: 'mz-hetze-und-herzen',
       title: 'Hetze und Herzen',
       excerpt:
-        'A page-three feature in the Mitteldeutsche Zeitung — one of five the paper has run since “Tutipsy rockt das Pflegeheim” in 2020.',
+        'A page-three feature in the Mitteldeutsche Zeitung, one of five the paper has run since “Tutipsy rockt das Pflegeheim” in 2020.',
       category: 'Mitteldeutsche Zeitung',
       date: 'January 2026',
       palette: 'amber',

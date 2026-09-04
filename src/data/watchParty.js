@@ -1,15 +1,17 @@
 /*
- * The "Host a screening" call-to-action card.
- * Set `active: false` to hide the homepage card when nothing is running;
- * it is designed to be removed or swapped without a redesign.
+ * "Host a Small Encounters watch party" call-to-action card (homepage).
+ * Small Encounters is the short film of the TEDxLinz talk "The Power of Small
+ * Encounters", subtitled and made to be watched in a group.
+ * Set `active: false` to hide the homepage card; it is built to be swapped
+ * without a redesign.
  */
 
 export const watchParty = {
   active: true,
-  eyebrow: 'For institutions',
-  title: 'Use the film with your team',
-  body: 'Fewer than a quarter of our bookings are public cinema screenings. Most are institutions using Noch einmal Walzer with their own staff and service users: a Jobcenter, a dementia network, a psychiatric clinic, a youth welfare office, a migration museum, NGO trainings in Dublin. Each screening comes with a method handbook and a session plan for half-day or full-day work.',
-  cta: { label: 'Request a screening', to: '/contact?watch-party=1' },
+  eyebrow: 'Small Encounters',
+  title: 'Host a watch party',
+  body: 'Gather a few people, play the short film, and stay for the conversation it starts. It runs about fifteen minutes, carries subtitles, and needs nothing more than a room and a screen. One in Vienna in July 2026; yours next.',
+  cta: { label: 'Host a watch party', to: '/contact?watch-party=1' },
   cities: ['Dessau-Roßlau', 'Jena', 'Dublin', 'Vienna', 'Your city'],
   palette: 'coral',
 }

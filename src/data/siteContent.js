@@ -29,8 +29,8 @@ export const hero = {
 
 export const closingCta = {
   eyebrow: 'Bring it to your city',
-  title: 'Host a screening or a workshop.',
-  body: 'Institutions across Germany, Ireland and Austria use Noch einmal Walzer with their own staff and the people they serve. Screenings come with a method handbook and a session plan.',
+  title: 'Host a watch party or a screening.',
+  body: 'Anyone can host a Small Encounters watch party: the short film, a room, a conversation after. Institutions can run the full Noch einmal Walzer documentary with a method handbook and a session plan.',
   primary: { label: 'Get in touch', to: '/contact' },
   secondary: { label: 'Explore projects', to: '/projects' },
 }

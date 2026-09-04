@@ -75,7 +75,7 @@ export default function Contact() {
                 </div>
                 <h2>Thank you, {form.name.split(' ')[0] || 'friend'}!</h2>
                 <p className="lede">
-                  Your message is on its way{form.watchParty ? ', with your screening request noted' : ''}
+                  Your message is on its way{form.watchParty ? ', with your watch party noted' : ''}
                   . We’ll be in touch soon.
                 </p>
                 <div style={{ marginTop: '1.4rem' }}>
@@ -113,7 +113,7 @@ export default function Contact() {
 
                 <div className={pages.checkline}>
                   <input id="watchParty" type="checkbox" checked={form.watchParty} onChange={update('watchParty')} />
-                  <label htmlFor="watchParty">I’d like to request a screening for my institution</label>
+                  <label htmlFor="watchParty">I’d like to host a watch party or a screening</label>
                 </div>
 
                 <div>
@@ -140,10 +140,11 @@ export default function Contact() {
                 </p>
               </div>
               <div className={pages.infoCard}>
-                <h3>Request a screening</h3>
+                <h3>Host a watch party</h3>
                 <p>
-                  Bookings so far span Germany, Ireland and Austria. Tick the box and we’ll send
-                  the screening notes, the method handbook and a session plan.
+                  For the short film, we’ll send the link and a one-page host guide. For a
+                  Noch einmal Walzer screening, add the method handbook and a session plan.
+                  Tick the box and say which.
                 </p>
               </div>
               <div className={pages.infoCard}>

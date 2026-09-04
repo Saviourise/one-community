@@ -8,24 +8,24 @@ import pages from './pages.module.css'
 
 const values = [
   {
-    title: 'People before programmes',
-    body: 'We start with the person in front of us. Structures exist to serve encounters, never the other way around.',
+    title: 'Contact, repeated',
+    body: 'Prejudice survives in the absence of contact. One good encounter proves little; the same one, repeated, changes how people see each other. Everything is built around coming back.',
   },
   {
-    title: 'Small is the strategy',
-    body: 'We don’t wait for grand gestures. A shared meal, a first hello, a door held open, small is where belonging is built.',
+    title: 'The person in front of you',
+    body: 'A care-home resident, a schoolchild, an international student, a refugee, a neighbour of forty years. The work starts with who is actually in the room, not a target group.',
   },
   {
-    title: 'Everyone belongs',
-    body: 'No age, postcode or background is a prerequisite. The circle is only ever drawn to include one more.',
+    title: 'Count what you can verify',
+    body: 'Figures come from the attendance record kept with the city’s integration office. Where a screening cannot be verified, it is left out — a documented floor, not a claim.',
   },
 ]
 
 const awards = [
-  { title: 'Integrationspreis', note: 'Sachsen-Anhalt, 2019' },
-  { title: 'Aktiv Preis', note: 'Bundeszentrale für politische Bildung, 2023' },
-  { title: 'TEDx', note: 'Featured talk' },
-  { title: 'Since 2018', note: 'Bringing neighbours together' },
+  { title: 'Integrationspreis Sachsen-Anhalt', note: 'First place, 2019' },
+  { title: 'bpb, Aktiv für Demokratie und Toleranz', note: 'Prize-winning project, 2023' },
+  { title: 'DAAD STIBET I', note: 'For exceptionally engaged students, 2019' },
+  { title: 'Bürgerfest, Schloss Bellevue', note: 'Invited by the Federal President, 2025' },
 ]
 
 export default function About() {
@@ -38,10 +38,11 @@ export default function About() {
       <header className={pages.pageHeader}>
         <div className={`container ${pages.pageHeaderInner}`}>
           <span className="eyebrow">Our story</span>
-          <h1>Belonging isn’t found. It’s built, together.</h1>
+          <h1>A project about repetition.</h1>
           <p className="lede">
-            One Community Project began with a hunch: that the distance between neighbours is
-            smaller than it feels, and that closing it changes everything.
+            The One Community Project has run in Dessau-Roßlau since 2019, in partnership with the
+            city’s integration office and Hochschule Anhalt. Its premise is simple and its method
+            is patient.
           </p>
         </div>
       </header>
@@ -51,18 +52,23 @@ export default function About() {
           <Reveal>
             <div>
               <p className="lede">
-                We are a community of people who believe that connection is the most renewable
-                resource we have. Over the years we’ve turned ordinary moments into
-                lasting relationships, across streets, generations and borders.
+                It began in 2017, when a newly arrived international student started visiting the
+                Marienheim care home each week to make music with residents. That student
+                initiative — “Homies &amp; Omies” — was formalised in 2019 as the One Community
+                Project.
               </p>
               <p>
-                What started as a handful of small encounters has grown into a movement of shared
-                tables, mentorships, screenings and welcomes. We measure success not in events run,
-                but in people who now have someone to call.
+                The project creates repeated encounters between people who would otherwise remain
+                strangers: care-home residents, schoolchildren, international students, refugees
+                and long-standing residents of the city. The methods are music, dance,
+                storytelling and shared meals.
               </p>
               <p>
-                We’re intentionally broad. Belonging is for everyone, the new arrival and the
-                lifelong local, the student and the retiree, the shy and the sure.
+                In 2022 it ran five months of waltz classes bringing together thirty dancers —
+                among them refugees, migrants and international students — and twelve residents of
+                the Marienheim. The classes led to the One Community Gala and to the documentary
+                Noch einmal Walzer, released in 2023 and now shown across Germany, Ireland and
+                Austria.
               </p>
             </div>
           </Reveal>
@@ -83,17 +89,17 @@ export default function About() {
             className={pages.missionCard}
             style={{ backgroundImage: driveCssFallback('15J-a28iKPTp_nQ3oegy0UypJXJbUxoas', 'mission', 1200) }}
           >
-            <span className="eyebrow">Our mission</span>
+            <span className="eyebrow">The premise</span>
             <p className={pages.missionQuote}>
-              To build one stronger community with a sense of belonging, one small encounter at a
-              time.
+              Prejudice survives in the absence of contact. Trust is built not in a single moment
+              but through repetition.
             </p>
           </div>
         </Reveal>
       </section>
 
       <section className="section container">
-        <SectionHeading eyebrow="What we believe" title="The values behind every encounter" center />
+        <SectionHeading eyebrow="How we work" title="Three things that hold true" center />
         <div className={pages.values}>
           {values.map((v, i) => (
             <Reveal key={v.title} delay={i * 0.08}>
@@ -109,9 +115,9 @@ export default function About() {
 
       <section className="section container">
         <SectionHeading
-          eyebrow="Recognitions"
-          title="Trusted, and glad to prove it"
-          body="Recognition helps us open doors, for grants, for partners, and for the people we serve."
+          eyebrow="Recognition"
+          title="On the record"
+          body="Recognition is useful mainly because it opens doors — to partners, to funding, and to the institutions that then use the film with their own people."
         />
         <div className={pages.awards}>
           {awards.map((a, i) => (

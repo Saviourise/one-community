@@ -1,27 +1,28 @@
 /*
- * Community workshops — small, recurring, hands-on gatherings.
- * Editable placeholder content; swap titles / cadence / copy freely.
+ * The four methods the project works with, shown on the homepage.
+ * These are the project's actual practice (music, dance, storytelling,
+ * shared meals), not a fixed class timetable.
  */
 
 export const workshops = [
   {
-    title: 'Storytelling Circles',
-    tag: 'Monthly',
-    body: 'Neighbours share a short story from their own life. Nothing rehearsed, just an hour of listening across cultures and generations.',
+    title: 'Music',
+    tag: 'Where it started',
+    body: 'Weekly sessions in the Marienheim care home, making music with residents. The first encounters, and still the core.',
   },
   {
-    title: 'Kitchen Table',
-    tag: 'Fortnightly',
-    body: 'We cook one dish from someone’s home and eat it together. The recipe changes every time; the welcome never does.',
+    title: 'Dance',
+    tag: 'The waltz classes',
+    body: 'Five months of classes in 2022 brought thirty dancers — refugees, migrants and international students — together with twelve care-home residents. It became the Gala and the film.',
   },
   {
-    title: 'Language Café',
-    tag: 'Weekly',
-    body: 'An informal swap where fluent and beginner speakers pair up over coffee. Everyone teaches, everyone learns.',
+    title: 'Storytelling',
+    tag: 'Facilitated screenings',
+    body: 'Noch einmal Walzer shown as a starting point for group work, guided by the method handbook and the film-based work guide.',
   },
   {
-    title: 'Creative Studio',
-    tag: 'Seasonal',
-    body: 'Music, movement and making, open sessions where the only requirement is a willingness to try something new alongside someone new.',
+    title: 'Shared meals',
+    tag: 'Around the table',
+    body: 'Eating together is not the side event. It is where people who arrived as strangers stay long enough to become something else.',
   },
 ]

@@ -1,0 +1,99 @@
+.wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--primary-deep);
+  aspect-ratio: 16 / 9;
+}
+.video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+/* subtitle-language control, kept top-right so it clears the native control bar */
+.cc {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+}
+.ccBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5em 0.8em;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius-pill);
+  background: rgba(14, 24, 16, 0.72);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--1);
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.ccBtn:hover {
+  background: rgba(14, 24, 16, 0.9);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.ccLabel {
+  letter-spacing: 0.01em;
+}
+.menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 170px;
+  padding: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  gap: 2px;
+}
+.menuItem {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.6em 0.8em;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--step--1);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.menuItem:hover {
+  background: var(--green-tint);
+}
+.menuItemActive {
+  background: var(--primary-deep);
+  color: #fff;
+}
+.menuItemActive:hover {
+  background: var(--primary-deep);
+}
+
+/* readable native caption text */
+.video::cue {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-family: var(--font-body);
+  line-height: 1.4;
+}
+
+@media (max-width: 540px) {
+  .ccLabel {
+    display: none; /* icon-only on small screens */
+  }
+}

@@ -7,6 +7,7 @@ import ProjectGrid from '../components/ProjectGrid.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
 import ClosingCTA from '../components/ClosingCTA.jsx'
 import Gallery from '../components/Gallery.jsx'
+import VideoPlayer from '../components/VideoPlayer.jsx'
 import { getProject, projects } from '../data/projects.js'
 import { getGallery, getGalleryCredit } from '../data/galleries.js'
 import { brand } from '../data/siteContent.js'
@@ -107,16 +108,25 @@ export default function ProjectDetail() {
         </div>
       </section>
 
-      {project.video && (
+      {(project.player || project.video) && (
         <section className="section container">
-          <div className={pages.detailVideo}>
-            <iframe
-              src={project.video}
+          {project.player ? (
+            <VideoPlayer
+              src={project.player.src}
+              poster={project.player.poster}
               title={`${project.title} video`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+              tracks={project.player.tracks}
             />
-          </div>
+          ) : (
+            <div className={pages.detailVideo}>
+              <iframe
+                src={project.video}
+                title={`${project.title} video`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          )}
         </section>
       )}
 

@@ -101,6 +101,15 @@ export const projects = [
     spotlight: true,
     video: 'https://www.youtube.com/embed/DzW-w96L9jo',
     videoLabel: 'Watch the documentary',
+    // Self-hosted trailer via VideoPlayer: subtitle-language switching + download
+    // protection. Captions transcribed (DE) and translated (EN) with Whisper.
+    player: {
+      src: '/videos/walzer-trailer.mp4',
+      tracks: [
+        { src: '/videos/walzer-trailer.de.vtt', srclang: 'de', label: 'Deutsch', default: true },
+        { src: '/videos/walzer-trailer.en.vtt', srclang: 'en', label: 'English' },
+      ],
+    },
     stats: [{ value: '2023', label: 'film premiere' }],
     body: [
       '“Noch einmal Walzer” (One More Waltz) is a documentary that follows a community production from first rehearsal to final bow.',

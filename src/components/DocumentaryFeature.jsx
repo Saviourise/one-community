@@ -1,5 +1,6 @@
 import Reveal from './Reveal.jsx'
 import SectionHeading from './SectionHeading.jsx'
+import VideoPlayer from './VideoPlayer.jsx'
 import { getProject } from '../data/projects.js'
 import styles from './sections.module.css'
 
@@ -22,14 +23,23 @@ export default function DocumentaryFeature() {
         center
       />
       <Reveal>
-        <div className={styles.docVideo}>
-          <iframe
-            src={project.video}
+        {project.player ? (
+          <VideoPlayer
+            src={project.player.src}
+            poster={project.player.poster}
             title={`${project.title} trailer`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            tracks={project.player.tracks}
           />
-        </div>
+        ) : (
+          <div className={styles.docVideo}>
+            <iframe
+              src={project.video}
+              title={`${project.title} trailer`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        )}
       </Reveal>
     </section>
   )

@@ -93,7 +93,7 @@ export const projects = [
     ],
     body: [
       'Homies & Omies started as a student initiative: someone new to the city turning up at the Marienheim care home each week to make music with residents.',
-      'In 2019 it was formalised as the One Community Project, in cooperation with Hochschule Anhalt and the city’s integration office. The weekly sessions never stopped.',
+      'In 2019 it was formalised as the One Community Project, in cooperation with Hochschule Anhalt and the city’s integration office. It grew from there.',
     ],
     links: [],
   },
@@ -124,12 +124,12 @@ export const projects = [
   {
     slug: 'one-community-concert',
     title: 'One Community Concert',
-    kicker: 'Since 2019',
+    kicker: 'Concerts, 2019',
     palette: 'meadow',
     img: drive('1AX2V69JzWj260ZQbw9XqzskM9OILV6Jz', 1200),
     driveFolderId: '1DaupJ4iTPjfyuHlMKsgA5pGzmSjat6DP',
     short:
-      'The concert that marks the year: the cultures that share the city’s streets, on one stage.',
+      'Two concerts in 2019 that put the cultures sharing the city’s streets on one stage, with Homies & Omies residents among the performers.',
     tagline: 'When a community sings together, it stays together.',
     featuredHome: true,
     spotlight: true,
@@ -137,11 +137,11 @@ export const projects = [
     videoLabel: 'Watch the concert film',
     stats: [
       { value: '2019', label: 'first held' },
-      { value: '2', label: 'editions and counting' },
+      { value: '2', label: 'concerts: May and November 2019' },
     ],
     body: [
       'The One Community Concert began in 2019 as a celebration of the many cultures that share the city’s streets, told through music, dance and performance.',
-      'It became the one night a year when the whole community is unmistakably in the same room.',
+      'A second concert followed in November 2019. Both nights brought residents, students, families and performers from many backgrounds into the same hall.',
     ],
     links: [{ label: 'Get involved', to: '/contact' }],
   },

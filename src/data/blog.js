@@ -26,7 +26,7 @@ export const blog = {
       id: 'radio-corax',
       title: 'On air in Halle',
       excerpt:
-        'A broadcast feature on the project and the film by Radio Corax, the community radio station in Halle (Saale).',
+        'A broadcast feature on the project by Radio Corax, the community radio station in Halle (Saale).',
       category: 'Radio Corax',
       date: 'November 2025',
       palette: 'amber',

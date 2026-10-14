@@ -44,7 +44,7 @@ export const closingCta = {
 export const impactCard = {
   years: '2018',
   yearsLabel: 'running since',
-  kicker: 'It began when a newly arrived international student started visiting the Marienheim care home each week to make music with residents. It has not stopped since.',
+  kicker: 'It began when a newly arrived international student started visiting the Marienheim care home each week to make music with residents. Everything else grew from there.',
   eyebrow: 'Why it works',
   tagline: 'Prejudice survives in silence.',
   body: 'In the spaces where we don’t meet, don’t speak, don’t look at each other long enough, distance gives our fears room to grow. Trust needs the opposite: the same people, the same room, again.',

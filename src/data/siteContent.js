@@ -30,7 +30,7 @@ export const hero = {
 export const closingCta = {
   eyebrow: 'Bring it to your city',
   title: 'Host a watch party or a screening.',
-  body: 'Anyone can host a Small Encounters watch party: the short film, a room, a conversation after. Institutions can book Noch einmal Walzer as a facilitated screening, with a conversation or a workshop around it.',
+  body: 'Anyone can host a watch party: the TEDxLinz talk, a room, a conversation after. Institutions can book Noch einmal Walzer as a facilitated screening, with a conversation or a workshop around it.',
   primary: { label: 'Get in touch', to: '/contact' },
   secondary: { label: 'Explore projects', to: '/projects' },
 }
@@ -64,6 +64,7 @@ export const footer = {
         { label: 'Noch einmal Walzer', to: '/projects/noch-einmal-walzer' },
         { label: 'One Community Gala', to: '/projects/tanz-gala' },
         { label: 'TEDx Talk', to: '/projects/tedx-talk' },
+        { label: 'Shoot for the Moon', to: '/projects/shoot-for-the-moon' },
       ],
     },
   ],

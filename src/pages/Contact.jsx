@@ -140,10 +140,10 @@ export default function Contact() {
                 </p>
               </div>
               <div className={pages.infoCard}>
-                <h3>Host a watch party</h3>
+                <h3>Host a watch party or a screening</h3>
                 <p>
-                  For the short film, we’ll send you the link and a few ideas for the
-                  conversation afterwards. For a Noch einmal Walzer screening, we plan the
+                  For a watch party, we’ll send you the link to the TEDx talk and a few ideas for
+                  the conversation afterwards. For a Noch einmal Walzer screening, we plan the
                   session with you. Tick the box and say which.
                 </p>
               </div>

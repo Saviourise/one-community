@@ -115,7 +115,7 @@ export const projects = [
     ],
     body: [
       'The talk distils the project’s method into one argument: a single good encounter changes little; the same encounter repeated changes how people see each other.',
-      'It gives partners, funders and hosts a way to understand the work in under twenty minutes. The short film cut, subtitled, is the one people screen at watch parties.',
+      'It gives partners, funders and hosts a way to understand the work in under twenty minutes. It is also what people watch together at watch parties.',
     ],
     links: [{ label: 'Host a watch party', to: '/contact?watch-party=1' }],
   },
@@ -174,17 +174,21 @@ export const projects = [
     img: drive('1S-hF-LW8oMhtXeK4xZO5fcMrp9NIQg-x', 1200),
     driveFolderId: '1moFe2gjhIbXD6amG5ua0ovdtJX0MAwgB',
     short:
-      'The project’s song, recorded and filmed with community members. It fed into the 2019 state prize.',
+      'The project’s own song and music video, made with community members in 2019. It fed into the state prize that year.',
     tagline: 'One song, many voices.',
     featuredHome: false,
-    spotlight: false,
+    spotlight: true,
     video: driveVideo('1vNZpf362i0UHKjnwehmrJvNJOZLQ3EKA'),
     videoLabel: 'Watch the music video',
-    stats: [{ value: '2019', label: 'released; contributed to the state prize' }],
-    body: [
-      '“Shoot for the Moon” turned the project’s message into something you can hum, made with community members in front of and behind the camera. It was reported to have contributed to a rise in applications to Hochschule Anhalt.',
+    stats: [
+      { value: '2019', label: 'released in November' },
+      { value: '1st', label: 'place, Integrationspreis Sachsen-Anhalt, the same year' },
     ],
-    links: [],
+    body: [
+      '“Shoot for the Moon” turned the project’s message into something you can hum. It was recorded and filmed with community members, in front of and behind the camera.',
+      'The video contributed to the project’s first place in the Integrationspreis des Landes Sachsen-Anhalt in December 2019, and was reported to have contributed to a rise in applications to Hochschule Anhalt.',
+    ],
+    links: [{ label: 'Get involved', to: '/contact' }],
   },
   {
     slug: 'ocg-documentary',
@@ -228,24 +232,24 @@ export const projects = [
   },
   {
     slug: 'watch-parties',
-    title: 'Screenings & watch parties',
-    kicker: 'Two ways to press play',
+    title: 'Watch parties & screenings',
+    kicker: 'Two ways to watch together',
     palette: 'coral',
     img: drive('10g2OPSWRnEaJlreYRgX6l9F5hSClxSMi', 1200),
     driveFolderId: '1TOlkjQdZB5AbOXWDFkqrPWmIxnN3Ge1n',
     short:
-      'A short film anyone can screen at a watch party, and a 50-minute documentary institutions can book as a facilitated screening. Both films exist to be watched together, then talked about.',
+      'Two ways to watch together: a watch party with the TEDxLinz talk, which anyone can host, and a facilitated screening of the documentary Noch einmal Walzer, which institutions book.',
     tagline: 'The film is the easy part. The conversation after is the point.',
     featuredHome: false,
     spotlight: true,
     video: 'https://www.youtube.com/embed/5Fbdq4iLK88',
-    videoLabel: 'Watch The Power of Small Encounters',
+    videoLabel: 'Watch the TEDx talk',
     stats: [
-      { value: '~15 min', label: 'Small Encounters, the short film for watch parties' },
+      { value: '18 min', label: 'The Power of Small Encounters, the TEDxLinz talk for watch parties' },
       { value: '50 min', label: 'Noch einmal Walzer, the documentary for facilitated screenings' },
     ],
     body: [
-      'Small Encounters is the short film of the TEDxLinz talk “The Power of Small Encounters”. It carries subtitles, runs about fifteen minutes, and asks for nothing more than a room, a screen and a few people willing to talk afterwards. Host one wherever you are: a living room, a classroom, a staff room. There was one in Vienna in July 2026.',
+      'A watch party is the simple version. Gather a few people in a living room, a classroom or a staff room, play the TEDxLinz talk “The Power of Small Encounters”, and talk about it afterwards. It runs eighteen minutes. There was one in Vienna in July 2026.',
       'Noch einmal Walzer is the 50-minute documentary. Institutions book it as a facilitated screening: the film, then a guided conversation, sometimes with a music or dance workshop beforehand. Material for facilitators is in development.',
       'Hosts of the documentary so far include a Jobcenter, a dementia network, a psychiatric clinic, a youth welfare office, a migration museum, universities, and three NGO trainings in Dublin.',
     ],

@@ -109,7 +109,7 @@
 }
 .card:hover .explore {
   gap: 0.75rem;
-  color: var(--cta-hover);
+  color: var(--primary-600);
 }
 .explore svg {
   transition: transform 0.3s var(--ease);

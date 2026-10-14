@@ -85,7 +85,7 @@ export default function Gallery({ images = [], label = 'Photos', credit = '' }) 
             <img
               className={styles.img}
               src={drive(id)}
-              alt={`${label} — photo ${i + 1}`}
+              alt={`${label}, photo ${i + 1}`}
               loading="lazy"
               onError={imgFallback(`${label}-${i}`, 800, 560)}
             />
@@ -148,7 +148,7 @@ export default function Gallery({ images = [], label = 'Photos', credit = '' }) 
               <img
                 className={styles.stageImg}
                 src={drive(images[open])}
-                alt={`${label} — photo ${open + 1}`}
+                alt={`${label}, photo ${open + 1}`}
                 onError={imgFallback(`${label}-lg-${open}`, 1200, 800)}
               />
               <span className={styles.caption}>

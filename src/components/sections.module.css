@@ -28,32 +28,31 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  /* flat, solid scrim for text legibility (no gradient) */
-  background: rgba(20, 38, 23, 0.74);
+  /* flat, solid olive scrim for text legibility (no gradient) */
+  background: rgba(26, 25, 15, 0.62);
 }
 .heroContent {
   position: relative;
-  max-width: 720px;
+  max-width: 940px;
   padding-block: clamp(3rem, 2rem + 8vw, 7rem);
 }
 .heroEyebrow {
-  color: #fff;
-}
-.heroEyebrow::before {
-  background: var(--warm);
+  color: rgba(255, 255, 255, 0.85);
 }
 .heroTitle {
   color: #fff;
   font-size: var(--step-5);
-  font-weight: 600;
-  margin: 1rem 0 1.2rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: -0.025em;
+  line-height: 0.96;
+  margin: 1.1rem 0 1.3rem;
 }
 .heroTitle span {
   display: block;
 }
 .heroTitle span:last-child {
   color: var(--warm);
-  font-style: italic;
 }
 .heroBody {
   font-size: var(--step-1);
@@ -130,7 +129,7 @@
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   background: var(--coral-tint);
-  border: 1px solid #ffd8cc;
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -145,8 +144,8 @@
 .wpBody h2 {
   font-size: var(--step-3);
 }
-.wpBody .eyebrow::before {
-  background: var(--cta);
+.wpBody .eyebrow {
+  color: var(--primary-deep);
 }
 .wpCities {
   display: flex;
@@ -160,7 +159,7 @@
   border-radius: var(--radius-pill);
   font-size: var(--step--1);
   font-weight: 700;
-  color: var(--cta-hover);
+  color: var(--primary-deep);
 }
 .wpMedia {
   position: relative;
@@ -169,13 +168,13 @@
   background-position: center;
 }
 .wpMedia::after {
-  content: 'LIVE';
+  content: 'SHORT FILM';
   position: absolute;
   top: 1.1rem;
   left: 1.1rem;
   padding: 0.35em 0.8em;
   background: var(--cta);
-  color: #fff;
+  color: var(--ink);
   font-weight: 800;
   font-size: 0.72rem;
   letter-spacing: 0.2em;
@@ -210,14 +209,14 @@
 .fvPosterOverlay {
   position: absolute;
   inset: 0;
-  background: rgba(23, 45, 26, 0.42);
+  background: rgba(26, 25, 15, 0.42);
   display: flex;
   align-items: flex-end;
   padding: 1.4rem;
   transition: background 0.3s ease;
 }
 .fvMedia:hover .fvPosterOverlay {
-  background: rgba(23, 45, 26, 0.58);
+  background: rgba(26, 25, 15, 0.58);
 }
 .fvPlay {
   position: absolute;
@@ -228,10 +227,10 @@
   height: clamp(64px, 8vw, 92px);
   border-radius: 50%;
   background: var(--cta);
-  color: #fff;
+  color: var(--ink);
   display: grid;
   place-items: center;
-  box-shadow: 0 12px 30px -8px rgba(255, 107, 74, 0.7);
+  box-shadow: 0 12px 30px -8px rgba(47, 46, 29, 0.5);
   transition: transform 0.3s var(--ease);
 }
 .fvMedia:hover .fvPlay {
@@ -274,7 +273,7 @@
 }
 .fvBody .badge {
   background: var(--amber-tint);
-  color: #a85e1c;
+  color: var(--primary-deep);
 }
 
 /* ======================= WORKSHOPS ======================= */
@@ -291,23 +290,23 @@
   gap: 0.55rem;
   padding: 1.7rem;
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  transition: transform 0.35s var(--ease), border-color 0.35s var(--ease);
 }
 .wsCard:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: var(--primary-deep);
 }
 .wsTag {
-  padding: 0.3em 0.8em;
-  background: var(--green-tint);
-  color: var(--primary-deep);
-  border-radius: var(--radius-pill);
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.2rem;
+  border-bottom: 1px solid var(--line-strong);
+  align-self: stretch;
+  color: var(--muted);
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 .wsCard h3 {
@@ -348,7 +347,7 @@
   position: absolute;
   inset: 0;
   /* solid scrim over the photo (no gradient) */
-  background: rgba(23, 45, 26, 0.74);
+  background: rgba(26, 25, 15, 0.74);
 }
 .icYears {
   position: relative;
@@ -391,38 +390,40 @@
   color: var(--primary-deep);
 }
 .icRight p {
-  color: #6b4436;
+  color: var(--muted);
 }
 
 /* ======================= STAT BAND ======================= */
 .sbGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 .sbItem {
-  padding-top: 1.4rem;
-  border-top: 3px solid var(--line-strong);
+  padding: clamp(1.5rem, 1rem + 2vw, 2.6rem);
+  border-top: 1px solid var(--line-strong);
+  border-left: 1px solid var(--line-strong);
 }
+.sbItem:nth-child(1),
 .sbItem:nth-child(2) {
-  border-top-color: var(--cta);
+  border-top: 0;
 }
-.sbItem:nth-child(3) {
-  border-top-color: var(--warm);
-}
-.sbItem:nth-child(4) {
-  border-top-color: var(--primary);
+.sbItem:nth-child(odd) {
+  border-left: 0;
 }
 .sbValue {
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 1.8rem + 3.5vw, 4.4rem);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
   color: var(--primary-deep);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .sbLabel {
-  margin-top: 0.7rem;
+  margin-top: 0.8rem;
   color: var(--muted);
   max-width: 22ch;
 }
@@ -472,7 +473,7 @@
   color: var(--muted);
 }
 .ptTed {
-  color: var(--cta);
+  color: var(--primary-deep);
   letter-spacing: -0.02em;
 }
 .ptTed sup {
@@ -573,7 +574,7 @@
   inset: 0;
   z-index: -1;
   /* solid scrim over the photo (no gradient) */
-  background: rgba(23, 45, 26, 0.78);
+  background: rgba(26, 25, 15, 0.78);
 }
 .ccInner {
   max-width: 660px;
@@ -590,9 +591,6 @@
    pages.module.css) so the label is light on the dark Closing CTA. */
 .cc :global(.eyebrow) {
   color: rgba(255, 255, 255, 0.9);
-}
-.cc :global(.eyebrow)::before {
-  background: var(--warm);
 }
 .cc p {
   color: rgba(255, 255, 255, 0.85);

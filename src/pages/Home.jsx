@@ -41,7 +41,7 @@ export default function Home() {
         <div className={pages.previewHead}>
           <div className="section-head">
             <span className="eyebrow">What we do</span>
-            <h2 id="proj-title">Projects turning moments into belonging</h2>
+            <h2 id="proj-title">The work, strand by strand</h2>
           </div>
           <Button to="/projects" variant="ghost" arrow>
             See all projects

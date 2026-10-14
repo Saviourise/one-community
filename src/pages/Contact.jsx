@@ -48,10 +48,11 @@ export default function Contact() {
     <>
       <header className={pages.pageHeader}>
         <div className={`container ${pages.pageHeaderInner}`}>
-          <span className="eyebrow">Say hello</span>
-          <h1>Let’s start a small encounter.</h1>
+          <span className="eyebrow">Get in touch</span>
+          <h1>Screenings, workshops, partnerships.</h1>
           <p className="lede">
-            Host a watch party, bring a project to your neighbourhood, or just introduce yourself,            every message is read by a real person.
+            Request a screening of Noch einmal Walzer for your institution, ask about a workshop,
+            or propose a partnership. Every message is read by a real person.
           </p>
         </div>
       </header>
@@ -74,7 +75,7 @@ export default function Contact() {
                 </div>
                 <h2>Thank you, {form.name.split(' ')[0] || 'friend'}!</h2>
                 <p className="lede">
-                  Your message is on its way{form.watchParty ? ', and we’re excited you want to host a watch party' : ''}
+                  Your message is on its way{form.watchParty ? ', with your watch party noted' : ''}
                   . We’ll be in touch soon.
                 </p>
                 <div style={{ marginTop: '1.4rem' }}>
@@ -94,7 +95,7 @@ export default function Contact() {
                 <div className={pages.formRow}>
                   <div className={`field ${errors.name ? 'field--error' : ''}`}>
                     <label htmlFor="name">Your name</label>
-                    <input id="name" type="text" value={form.name} onChange={update('name')} placeholder="Jordan Rivera" />
+                    <input id="name" type="text" value={form.name} onChange={update('name')} placeholder="Your name" />
                     {errors.name && <span className="field-error">{errors.name}</span>}
                   </div>
                   <div className={`field ${errors.email ? 'field--error' : ''}`}>
@@ -112,7 +113,7 @@ export default function Contact() {
 
                 <div className={pages.checkline}>
                   <input id="watchParty" type="checkbox" checked={form.watchParty} onChange={update('watchParty')} />
-                  <label htmlFor="watchParty">I’d like to host a watch party in my city</label>
+                  <label htmlFor="watchParty">I’d like to host a watch party or a screening</label>
                 </div>
 
                 <div>
@@ -141,13 +142,14 @@ export default function Contact() {
               <div className={pages.infoCard}>
                 <h3>Host a watch party</h3>
                 <p>
-                  Screenings run worldwide, from Lagos to Cape Town to Sydney. Tick the box and
-                  we’ll send you a host kit.
+                  For the short film, we’ll send you the link and a few ideas for the
+                  conversation afterwards. For a Noch einmal Walzer screening, we plan the
+                  session with you. Tick the box and say which.
                 </p>
               </div>
               <div className={pages.infoCard}>
                 <h3>Response time</h3>
-                <p>We usually reply within two working days. Real people, real replies.</p>
+                <p>We usually reply within two working days.</p>
               </div>
             </div>
           </Reveal>

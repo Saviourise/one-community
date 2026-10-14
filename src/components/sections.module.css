@@ -642,35 +642,27 @@
 /* ===================== YOUNG AND OLD (photo pair) ===================== */
 .together {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-areas:
-    'main selfie'
-    'main side'
+    'selfie side'
     'text text';
   gap: var(--gap);
 }
-.togetherMain { grid-area: main; }
 .togetherSelfie { grid-area: selfie; }
 .togetherSide { grid-area: side; }
-.togetherMain img,
 .togetherSelfie img,
 .togetherSide img {
   display: block;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: var(--radius-lg);
 }
-.togetherMain img {
-  object-position: 45% 40%;
-  min-height: 420px;
-}
-.togetherSelfie img,
-.togetherSide img {
-  aspect-ratio: 16 / 10;
+.togetherSelfie img {
+  object-position: 50% 40%;
 }
 .togetherSide img {
-  object-position: 50% 22%;
+  object-position: 50% 25%;
 }
 .togetherText {
   grid-area: text;
@@ -687,10 +679,6 @@
 @media (max-width: 760px) {
   .together {
     grid-template-columns: 1fr;
-    grid-template-areas: 'main' 'selfie' 'side' 'text';
-  }
-  .togetherMain img {
-    min-height: 0;
-    aspect-ratio: 4 / 3;
+    grid-template-areas: 'selfie' 'side' 'text';
   }
 }

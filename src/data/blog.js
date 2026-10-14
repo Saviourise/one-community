@@ -17,7 +17,8 @@ export const blog = {
       category: 'AufRuhr Magazin',
       date: 'January 2024',
       palette: 'coral',
-      img: drive('1JvnkDs0BdCAvF9cwy_8OGK4I-6OCVt56', 800),
+      // Photo: Reinaldo Coddou, from the AufRuhr reportage (Dessau, November 2023).
+      img: '/assets/press-aufruhr.jpg',
       href: 'https://www.aufruhr-magazin.de/',
     },
     {

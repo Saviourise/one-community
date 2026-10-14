@@ -638,3 +638,46 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ===================== YOUNG AND OLD (photo pair) ===================== */
+.together {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: var(--gap);
+  align-items: stretch;
+}
+.togetherMain img,
+.togetherSide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+.togetherMain img {
+  aspect-ratio: 3 / 2;
+}
+.togetherSide img {
+  aspect-ratio: 4 / 5;
+  object-position: 50% 30%;
+}
+.togetherText {
+  grid-column: 1 / -1;
+  max-width: 62ch;
+  padding-top: 0.6rem;
+}
+.togetherText h2 {
+  margin: 0.6rem 0 0.8rem;
+  text-wrap: balance;
+}
+.togetherText p {
+  color: var(--muted);
+}
+@media (max-width: 760px) {
+  .together {
+    grid-template-columns: 1fr;
+  }
+  .togetherSide img {
+    aspect-ratio: 4 / 3;
+  }
+}

@@ -12,6 +12,7 @@ import BlogRow from '../components/BlogRow.jsx'
 import ClosingCTA from '../components/ClosingCTA.jsx'
 import ProjectGrid from '../components/ProjectGrid.jsx'
 import Workshops from '../components/Workshops.jsx'
+import Together from '../components/Together.jsx'
 import Button from '../components/Button.jsx'
 
 import { projects } from '../data/projects.js'
@@ -32,6 +33,8 @@ export default function Home() {
       <Hero />
       {/* Documentary video sits directly under the hero. */}
       <DocumentaryFeature />
+      {/* Young and old together, before the TEDx talk. */}
+      <Together />
       {/* TEDx video comes before the watch party section. */}
       <FeaturedVideo />
       <WatchPartyCard />

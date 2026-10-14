@@ -26,16 +26,21 @@
   background-position: center;
 }
 @media (max-width: 900px) {
+  /* Flex column, not grid: Safari on iOS sized the photo's grid column from its
+     aspect-ratio and pushed the whole hero wider than the screen. */
   .hero {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     min-height: 0;
   }
   .heroBg {
     order: -1;
-    aspect-ratio: 4 / 3;
+    width: auto;
+    height: min(72vw, 440px);
     margin: 4.6rem 1rem 0;
   }
   .heroContent {
+    align-self: stretch;
     padding-top: 2.2rem;
     margin-left: 0;
   }
@@ -685,7 +690,7 @@
 }
 @media (max-width: 760px) {
   .together {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas: 'selfie' 'side' 'text';
   }
 }

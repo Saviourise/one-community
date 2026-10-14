@@ -112,8 +112,8 @@ export const projects = [
     video: 'https://www.youtube.com/embed/5Fbdq4iLK88',
     videoLabel: 'Watch the TEDx Talk',
     stats: [
-      { value: 'TEDx', label: 'Linz' },
-      { value: '1', label: 'idea: repetition builds trust' },
+      { value: '2026', label: 'TEDxLinz, 21 February' },
+      { value: '18 min', label: 'the length of the talk' },
     ],
     body: [
       'The talk distils the project’s method into one argument: a single good encounter changes little; the same encounter repeated changes how people see each other.',
@@ -200,7 +200,7 @@ export const projects = [
     img: drive('1M2ggpcv30oTIXADy_bv-395vG4izxQfr', 1200),
     driveFolderId: '1j7xKeqV5pLvQqW1jNNySmn3MMhIqh14D',
     short:
-      'An early look back at how a handful of gatherings became a project, told by the neighbours who were there.',
+      'An early short film looking back at how the weekly care-home visits became a project.',
     tagline: 'Where it started, in their own words.',
     featuredHome: false,
     spotlight: false,
@@ -208,7 +208,7 @@ export const projects = [
     videoLabel: 'Watch the film',
     stats: [{ value: '2020', label: 'released' }],
     body: [
-      'A short film from the early years, made with Hochschule Anhalt, looking at how the weekly care-home visits grew into something with a name.',
+      'A short film from the early years, released in December 2020, looking at how the weekly care-home visits grew into something with a name.',
     ],
     links: [],
   },

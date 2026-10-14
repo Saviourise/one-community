@@ -147,10 +147,6 @@ export default function Contact() {
                   session with you. Tick the box and say which.
                 </p>
               </div>
-              <div className={pages.infoCard}>
-                <h3>Response time</h3>
-                <p>We usually reply within two working days.</p>
-              </div>
             </div>
           </Reveal>
         </div>

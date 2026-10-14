@@ -22,8 +22,8 @@ const values = [
 ]
 
 const awards = [
-  { title: 'Integrationspreis Sachsen-Anhalt', note: 'First place, 2019' },
-  { title: 'bpb, Aktiv für Demokratie und Toleranz', note: 'Prize-winning project, 2023' },
+  { title: 'Integrationspreis des Landes Sachsen-Anhalt', note: 'First place, 2019' },
+  { title: 'Aktiv für Demokratie und Toleranz', note: 'Prize-winning project, Bundeszentrale für politische Bildung, 2023' },
   { title: 'DAAD STIBET I', note: 'For exceptionally engaged students, 2019' },
   { title: 'Bürgerfest, Schloss Bellevue', note: 'Invited by the Federal President, 2025' },
 ]
@@ -117,7 +117,7 @@ export default function About() {
         <SectionHeading
           eyebrow="Recognition"
           title="On the record"
-          body="Recognition is useful mainly because it opens doors: to partners, to funding, and to the institutions that then use the film with their own people."
+          body="Recognition for bringing people of different generations and backgrounds together."
         />
         <div className={pages.awards}>
           {awards.map((a, i) => (

@@ -48,7 +48,7 @@ export default function Footer() {
 
       <div className={`container ${styles.bottom}`}>
         <span>
-          © {year} {brand.name}. Made with care by the community.
+          © {year} {brand.name}
         </span>
         <nav className={styles.legal} aria-label="Legal">
           {footer.legal.map((l) => (

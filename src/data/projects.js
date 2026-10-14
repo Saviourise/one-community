@@ -30,6 +30,8 @@ export const projects = [
     // protection. Captions transcribed (DE) and translated (EN) with Whisper.
     player: {
       src: '/videos/walzer-trailer.mp4',
+      // Key art shown before play (the film's 16:9 poster, no 'Offizieller Trailer' text).
+      poster: '/videos/walzer-poster.jpg',
       tracks: [
         { src: '/videos/walzer-trailer.de.vtt', srclang: 'de', label: 'Deutsch', default: true },
         { src: '/videos/walzer-trailer.en.vtt', srclang: 'en', label: 'English' },

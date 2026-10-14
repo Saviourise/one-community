@@ -16,6 +16,7 @@ export default function Together() {
             alt="A young woman in a hijab taking a selfie with a smiling care-home resident and a young man, from the film Noch einmal Walzer"
             loading="lazy"
           />
+          <p className={styles.togetherCaption}>From the documentary Noch einmal Walzer</p>
         </Reveal>
         <Reveal className={styles.togetherSide} delay={0.1}>
           <img
@@ -23,13 +24,16 @@ export default function Together() {
             alt="A young woman in a bright wig and a care-home resident in a carnival mask laughing at the Gala photo booth"
             loading="lazy"
           />
+          <p className={styles.togetherCaption}>Photo booth at the One Community Gala, 25 June 2022</p>
         </Reveal>
         <div className={styles.togetherText}>
           <span className="eyebrow">Young and old</span>
-          <h2 id="together-title">Performers aged 9 to 96, sharing one gala.</h2>
+          <h2 id="together-title">Young and old, side by side.</h2>
           <p>
-            In 2022, five months of waltz classes brought together refugees, migrants,
-            international students and residents of three care homes in Dessau-Roßlau.
+            Both moments come from 2022, when five months of waltz classes brought together
+            refugees, migrants, international students and residents of three care homes in
+            Dessau-Roßlau. The classes ended in the One Community Gala, with performers aged 9
+            to 96.
           </p>
         </div>
       </div>

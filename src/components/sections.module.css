@@ -666,6 +666,11 @@
 .togetherSide img {
   object-position: 50% 25%;
 }
+.togetherCaption {
+  margin: 0.55rem 0 0;
+  font-size: var(--step--1);
+  color: var(--muted);
+}
 .togetherText {
   grid-area: text;
   max-width: 62ch;

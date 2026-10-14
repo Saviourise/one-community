@@ -19,6 +19,7 @@ export const blog = {
       palette: 'coral',
       // Photo: Reinaldo Coddou, from the AufRuhr reportage (Dessau, November 2023).
       img: '/assets/press-aufruhr.jpg',
+      credit: 'Photo: Reinaldo Coddou',
       href: 'https://www.aufruhr-magazin.de/',
     },
     {

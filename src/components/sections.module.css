@@ -513,6 +513,7 @@
   box-shadow: var(--shadow-md);
 }
 .blogMedia {
+  position: relative;
   aspect-ratio: 16 / 10;
   background-size: cover;
   background-position: center;
@@ -654,12 +655,13 @@
 .togetherSide img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: var(--radius-lg);
 }
 .togetherSelfie img {
-  object-position: 50% 40%;
+  /* keep the phone in frame: it sits at the far left of the still */
+  object-position: 0% 50%;
 }
 .togetherSide img {
   object-position: 50% 25%;
@@ -681,4 +683,17 @@
     grid-template-columns: 1fr;
     grid-template-areas: 'selfie' 'side' 'text';
   }
+}
+
+/* Photo credit on press cards */
+.blogCredit {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.5rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: rgba(26, 25, 15, 0.6);
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
 }

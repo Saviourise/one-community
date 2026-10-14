@@ -2,39 +2,43 @@
 
 /* ============================ HERO ============================ */
 .hero {
-  position: relative;
-  min-height: min(92vh, 860px);
-  display: flex;
-  align-items: flex-end;
+  /* Split hero: headline on olive, photo beside it. Stacks on narrow screens. */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  min-height: min(90vh, 820px);
+  background: var(--primary-deep);
   color: #fff;
   overflow: hidden;
-  isolation: isolate;
-}
-.heroBg {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1.05);
-  animation: heroPan 24s ease-in-out infinite alternate;
-}
-@keyframes heroPan {
-  to {
-    transform: scale(1.14) translate3d(-2%, -1%, 0);
-  }
-}
-.heroOverlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  /* flat, solid olive scrim for text legibility (no gradient) */
-  background: rgba(26, 25, 15, 0.62);
 }
 .heroContent {
-  position: relative;
-  max-width: 940px;
-  padding-block: clamp(3rem, 2rem + 8vw, 7rem);
+  align-self: end;
+  min-width: 0;
+  padding: clamp(7rem, 5rem + 6vw, 9rem) clamp(1.25rem, 4vw, 4rem) clamp(3rem, 2rem + 4vw, 5.5rem);
+  max-width: 680px;
+  margin-left: auto;
+}
+.heroBg {
+  /* Framed on the olive ground, clear of the navigation bar. */
+  margin: clamp(5.2rem, 4.6rem + 1vw, 6rem) clamp(1rem, 2vw, 1.75rem) clamp(1rem, 2vw, 1.75rem) 0;
+  border-radius: var(--radius-lg);
+  min-height: 0;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .heroBg {
+    order: -1;
+    aspect-ratio: 4 / 3;
+    margin: 4.6rem 1rem 0;
+  }
+  .heroContent {
+    padding-top: 2.2rem;
+    margin-left: 0;
+  }
 }
 .heroEyebrow {
   color: rgba(255, 255, 255, 0.85);

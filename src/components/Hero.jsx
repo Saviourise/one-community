@@ -1,7 +1,6 @@
 import { motion } from 'motion/react'
 import Button from './Button.jsx'
 import { hero } from '../data/siteContent.js'
-import { driveCssFallback } from '../lib/placeholder.js'
 import styles from './sections.module.css'
 
 const container = {
@@ -16,21 +15,7 @@ const item = {
 export default function Hero() {
   return (
     <section className={styles.hero} aria-labelledby="hero-title">
-      {/* Swap this background for a real full-bleed community photo. */}
-      <div
-        className={styles.heroBg}
-        style={{ backgroundImage: driveCssFallback('11o1Y9DyJ0uFC2gPMrfD1jidsjIodfQTd', 'hero-oc', 1200) }}
-        role="img"
-        aria-label="The One Community Concert, hundreds of neighbours together"
-      />
-      <div className={styles.heroOverlay} />
-
-      <motion.div
-        className={`container ${styles.heroContent}`}
-        variants={container}
-        initial="hidden"
-        animate="show"
-      >
+      <motion.div className={styles.heroContent} variants={container} initial="hidden" animate="show">
         <motion.span className={`eyebrow ${styles.heroEyebrow}`} variants={item}>
           {hero.eyebrow}
         </motion.span>
@@ -52,10 +37,13 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      <span className={styles.heroScroll} aria-hidden="true">
-        Scroll
-        <span className={styles.heroScrollLine} />
-      </span>
+      {/* Photo sits beside the text, never under it, so no face is covered. */}
+      <div
+        className={styles.heroBg}
+        style={{ backgroundImage: `url("${hero.image.src}")`, backgroundPosition: hero.image.position }}
+        role="img"
+        aria-label={hero.image.alt}
+      />
     </section>
   )
 }

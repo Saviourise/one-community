@@ -25,6 +25,11 @@ export const hero = {
   body: 'The One Community Project brings care-home residents, schoolchildren, international students, refugees and long-time locals into the same room, again and again. The methods are music, dance, storytelling and shared meals.',
   primary: { label: 'See the projects', to: '/projects' },
   secondary: { label: 'See the film', to: '/projects/noch-einmal-walzer' },
+  image: {
+    src: '/assets/hero-laughing-resident.jpg',
+    position: '42% 35%',
+    alt: 'A care-home resident in a pink scarf laughing during a Homies & Omies music session',
+  },
 }
 
 export const closingCta = {

@@ -3,8 +3,9 @@ import styles from './sections.module.css'
 
 /*
  * Photo pair between the documentary and the TEDx talk: young and old
- * together, without the founder in frame. Left: a still from Noch einmal
- * Walzer. Right: the photo booth at the One Community Gala, 25 June 2022.
+ * together, without the founder in frame. Left: a waltz still from Noch einmal
+ * Walzer. Right: a selfie still from the film, and the Gala photo booth
+ * (25 June 2022).
  */
 export default function Together() {
   return (
@@ -17,7 +18,14 @@ export default function Together() {
             loading="lazy"
           />
         </Reveal>
-        <Reveal className={styles.togetherSide} delay={0.1}>
+        <Reveal className={styles.togetherSelfie} delay={0.08}>
+          <img
+            src="/assets/together-selfie.jpg"
+            alt="A young woman in a hijab taking a selfie with a smiling care-home resident and a young man, from the film Noch einmal Walzer"
+            loading="lazy"
+          />
+        </Reveal>
+        <Reveal className={styles.togetherSide} delay={0.16}>
           <img
             src="/assets/together-photobooth.jpg"
             alt="A young woman in a bright wig and a care-home resident in a carnival mask laughing at the Gala photo booth"

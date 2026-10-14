@@ -13,8 +13,8 @@ export default function Workshops() {
       <SectionHeading
         id="ws-title"
         eyebrow="The method"
-        title="Four ways of being in a room together"
-        body="The project works with music, dance, storytelling and shared meals. None of them require a shared language. All of them reward showing up more than once."
+        title="Music, dance and film"
+        body="Different ways to take part, share experiences and start a conversation."
       />
       <div className={styles.wsGrid}>
         {workshops.map((w, i) => (

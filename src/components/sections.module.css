@@ -283,7 +283,7 @@
 /* ======================= WORKSHOPS ======================= */
 .wsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(1rem, 0.6rem + 1.5vw, 1.6rem);
 }
 .wsCard {
@@ -625,7 +625,7 @@
   }
   .sbGrid,
   .wsGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .blogGrid {
     grid-template-columns: 1fr;

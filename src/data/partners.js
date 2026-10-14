@@ -7,7 +7,7 @@
 
 export const partners = {
   eyebrow: 'In partnership with',
-  title: 'Partners and hosts',
+  title: 'Partners, hosts and recognition',
   items: [
     { name: 'City of Dessau-Roßlau', note: 'Integrationsbüro' },
     { name: 'Hochschule Anhalt', note: 'University partner' },
@@ -17,7 +17,7 @@ export const partners = {
     { name: 'BOEHNÈL Films', note: 'Production' },
     { name: 'Museum Friedland', note: 'Screening and dance afternoon, 2024' },
     { name: 'Universität Jena', note: 'Screening host' },
-    { name: 'TEDx', note: 'TEDxLinz talk' },
+    { name: 'TEDxLinz', note: 'Talk, 2026' },
     { name: 'bpb', note: 'Aktiv für Demokratie und Toleranz 2023' },
   ],
 }

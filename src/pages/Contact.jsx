@@ -142,9 +142,9 @@ export default function Contact() {
               <div className={pages.infoCard}>
                 <h3>Host a watch party or a screening</h3>
                 <p>
-                  For a watch party, we’ll send you the link to the TEDx talk and a few ideas for
-                  the conversation afterwards. For a Noch einmal Walzer screening, we plan the
-                  session with you. Tick the box and say which.
+                  For a TEDx watch party, you can watch The Power of Small Encounters and discuss
+                  it together. To arrange a screening of Noch einmal Walzer, contact us to plan a
+                  session for your organisation.
                 </p>
               </div>
             </div>

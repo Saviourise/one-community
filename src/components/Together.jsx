@@ -26,11 +26,10 @@ export default function Together() {
         </Reveal>
         <div className={styles.togetherText}>
           <span className="eyebrow">Young and old</span>
-          <h2 id="together-title">From nine to ninety-six, on the same dance floor.</h2>
+          <h2 id="together-title">Performers aged 9 to 96, sharing one gala.</h2>
           <p>
-            In 2022, refugees, migrants, international students and residents of three care homes
-            learned the same steps in the same room, week after week, until they were no longer
-            strangers.
+            In 2022, five months of waltz classes brought together refugees, migrants,
+            international students and residents of three care homes in Dessau-Roßlau.
           </p>
         </div>
       </div>

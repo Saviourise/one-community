@@ -40,12 +40,12 @@ export const projects = [
     stats: [
       { value: '2023', label: 'Germany, 50 min, directed by Robert Boehnèl' },
       { value: '300', label: 'at the sold-out premiere, Bauhaus Museum Dessau' },
-      { value: '38', label: 'documented screenings, workshops and trainings since June 2023' },
+      { value: '38', label: 'documented bookings, June 2023 to 2 September 2026' },
     ],
     body: [
-      'In 2022 the project ran five months of waltz classes, bringing together residents of three care homes in Dessau-Roßlau with refugees, migrants and international students. The youngest dancer was nine, the oldest ninety-six. The classes ended in a gala and in this film.',
+      'In 2022 the project ran five months of waltz classes, bringing together residents of three care homes in Dessau-Roßlau with refugees, migrants and international students. They culminated in the One Community Gala on 25 June 2022, with performers aged 9 to 96. The documentary followed in 2023.',
       'Noch einmal Walzer premiered at the Bauhaus Museum Dessau on 18 June 2023 to a sold-out room of 300. It is subtitled in German and English.',
-      'Since then it has been part of 38 documented screenings, workshops and trainings across Germany, Ireland and Austria: cinemas and festivals, but mostly institutions using it with their own staff and service users.',
+      'The attendance record documents 38 bookings involving screenings, workshops and staff training in Germany, Ireland and Austria between June 2023 and 2 September 2026.',
       'At Museum Friedland in September 2024, during the museum’s intercultural dance week, an afternoon of dances for all generations was followed by the film and an open discussion in German, English and Arabic. The museum wrote afterwards: “Your idea and its realisation should serve as a model for many other places.”',
     ],
     links: [{ label: 'Host a screening', to: '/contact' }],
@@ -58,7 +58,7 @@ export const projects = [
     img: drive('1UX47UeWL-DV3GVa0bp9S6IdDyU0H0N3N', 1200),
     driveFolderId: '16FTs8r5pnw_wv2XU_zF2HtTdiL22qbmW',
     short:
-      'The evening the waltz classes led to: dancers aged nine to ninety-six, from three care homes and many countries, on the same floor.',
+      'The One Community Gala on 25 June 2022 followed five months of waltz classes and brought performers aged 9 to 96 together in Dessau-Roßlau.',
     tagline: 'Different steps, one rhythm.',
     featuredHome: true,
     spotlight: true,
@@ -66,10 +66,10 @@ export const projects = [
     videoLabel: 'Watch the gala film',
     stats: [
       { value: '2022', label: 'five months of classes' },
-      { value: '9 to 96', label: 'the youngest and the oldest dancer' },
+      { value: '9 to 96', label: 'ages of the performers' },
     ],
     body: [
-      'The Gala, on 25 June 2022, closed five months of weekly waltz classes. The people who danced had spent those months learning the same steps in the same room: refugees, migrants, international students and residents of three care homes.',
+      'The Gala followed five months of waltz classes involving refugees, migrants, international students and residents of three care homes.',
       'You do not need a shared language to move together in three-four time. You need to show up, week after week, and offer your hand.',
     ],
     links: [{ label: 'Get involved', to: '/contact' }],
@@ -105,8 +105,8 @@ export const projects = [
     img: drive('1CtYZynaNNnuXcWl5NDlJWByYzUEKDFRo', 1200),
     driveFolderId: '1GUHahUQmqSK_4eAR0rmZaOB4JGiLZ-mr',
     short:
-      'The TEDxLinz talk that lays out the premise: prejudice survives in silence, and contact has to repeat before it counts.',
-    tagline: 'Not one encounter. The same one, again.',
+      'In The Power of Small Encounters, Adetayo Manuwa reflects on belonging and the encounters that shaped his life and the One Community Project.',
+    tagline: 'Small encounters can open new possibilities.',
     featuredHome: false,
     spotlight: true,
     video: 'https://www.youtube.com/embed/5Fbdq4iLK88',
@@ -116,7 +116,7 @@ export const projects = [
       { value: '18 min', label: 'the length of the talk' },
     ],
     body: [
-      'The talk distils the project’s method into one argument: a single good encounter changes little; the same encounter repeated changes how people see each other.',
+      'Recorded at TEDxLinz on 21 February 2026, the 18-minute talk draws on personal experiences of meeting people and finding connection.',
       'It gives partners, funders and hosts a way to understand the work in under twenty minutes. It is also what people watch together at watch parties.',
     ],
     links: [{ label: 'Host a watch party', to: '/contact?watch-party=1' }],
@@ -153,18 +153,18 @@ export const projects = [
     img: drive('1jLDOyNTnN_kKblSKjuGf_pf90wI1VIk4', 1200),
     driveFolderId: '1xePynvZQMAviyPEeqcGDyZ42i_iKwIFh',
     short:
-      'First place in the Integration Prize of Saxony-Anhalt, in the category “Miteinander statt gegeneinander”.',
+      'First place in the Integrationspreis des Landes Sachsen-Anhalt, 2019.',
     tagline: 'Recognised for the quiet work of belonging.',
     featuredHome: false,
     spotlight: false,
     video: '',
     stats: [
-      { value: '2019', label: 'first place, presented in Magdeburg on 4 December' },
+      { value: '2019', label: 'first place, 4 December' },
       { value: '2023', label: 'bpb “Aktiv für Demokratie und Toleranz”, prize-winning project' },
     ],
     body: [
-      'In December 2019 the project won first place in the Integrationspreis des Landes Sachsen-Anhalt, in the category “Miteinander statt gegeneinander: Interkulturelles Zusammenleben gemeinsam gestalten”.',
-      'In 2023 the Federal Agency for Civic Education (bpb) recognised Noch einmal Walzer in its national “Aktiv für Demokratie und Toleranz” competition, as the prize-winning project for Saxony-Anhalt.',
+      'The project received first place in the Integrationspreis des Landes Sachsen-Anhalt on 4 December 2019.',
+      'In 2023, Noch einmal Walzer was recognised in the Aktiv für Demokratie und Toleranz competition of the Bundeszentrale für politische Bildung, as a prize-winning project from Saxony-Anhalt.',
     ],
     links: [{ label: 'Get involved', to: '/contact' }],
   },
@@ -176,7 +176,7 @@ export const projects = [
     img: drive('1S-hF-LW8oMhtXeK4xZO5fcMrp9NIQg-x', 1200),
     driveFolderId: '1moFe2gjhIbXD6amG5ua0ovdtJX0MAwgB',
     short:
-      'The project’s own song and music video, made with community members in 2019. It fed into the state prize that year.',
+      'A song and music video made with community members in 2019.',
     tagline: 'One song, many voices.',
     featuredHome: false,
     spotlight: true,
@@ -188,7 +188,7 @@ export const projects = [
     ],
     body: [
       '“Shoot for the Moon” turned the project’s message into something you can hum. It was recorded and filmed with community members, in front of and behind the camera.',
-      'The video contributed to the project’s first place in the Integrationspreis des Landes Sachsen-Anhalt in December 2019, and was reported to have contributed to a rise in applications to Hochschule Anhalt.',
+      'It was released in November 2019.',
     ],
     links: [{ label: 'Get involved', to: '/contact' }],
   },
@@ -228,7 +228,7 @@ export const projects = [
     videoLabel: 'Watch the film',
     stats: [{ value: '2021', label: 'through the pandemic' }],
     body: [
-      'During the pandemic, when residents could not have visitors, the project kept the encounters going through screens and recordings, so the thread of contact held until people could be in a room again.',
+      'During the pandemic, when residents could not have visitors, the project made music with them at a distance, through screens and recordings.',
     ],
     links: [],
   },
@@ -253,7 +253,7 @@ export const projects = [
     body: [
       'A watch party is the simple version. Gather a few people in a living room, a classroom or a staff room, play the TEDxLinz talk “The Power of Small Encounters”, and talk about it afterwards. It runs eighteen minutes. There was one in Vienna in July 2026.',
       'Noch einmal Walzer is the 50-minute documentary. Institutions book it as a facilitated screening: the film, then a guided conversation, sometimes with a music or dance workshop beforehand. Material for facilitators is in development.',
-      'Hosts of the documentary so far include a Jobcenter, a dementia network, a psychiatric clinic, a youth welfare office, a migration museum, universities, and three NGO trainings in Dublin.',
+      'Hosts have included Museum Friedland, Universität Jena, Heiligenfeld Kliniken, Netzwerk Demenz Vulkaneifel and NGO partners in Dublin.',
     ],
     links: [{ label: 'Host a watch party', to: '/contact?watch-party=1' }],
   },
@@ -265,15 +265,13 @@ export const projects = [
     img: drive('1s6Qo8RgoJRWXv6idM6WiKF5X_8sSFD4n', 1200),
     driveFolderId: '1suoE9O2-eT9xCl5PyI-V14P1tOJhACXW',
     short:
-      'A cooperation making sure no child starts the school year without the basics and a familiar face.',
-    tagline: 'The first weeks of term, made less lonely.',
+      'A 2026 cooperation in Dessau-Roßlau around the start of the school year.',
     featuredHome: false,
     spotlight: false,
     video: '',
     stats: [{ value: '2026', label: 'cooperation' }],
     body: [
-      'Back to School puts the essentials a child needs into their hands before term starts, and pairs them with people who stay in touch through the year.',
-      'A small welcome at the right moment changes how a child reads the year ahead.',
+      'Back to School is a cooperation that began in 2026. More about it will follow here.',
     ],
     links: [{ label: 'Support Back to School', to: '/contact' }],
   },

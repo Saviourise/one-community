@@ -22,9 +22,9 @@ export const nav = [
 export const hero = {
   eyebrow: 'Since 2019',
   title: ['Belonging is built', 'through repetition.'],
-  body: 'The One Community Project brings care-home residents, schoolchildren, international students, refugees and long-time locals into the same room, again and again. The methods are music, dance, storytelling and shared meals.',
+  body: 'The One Community Project brings people of different generations and backgrounds together through music, dance and film. It grew from encounters between students and care-home residents in Dessau-Roßlau.',
   primary: { label: 'See the projects', to: '/projects' },
-  secondary: { label: 'See the film', to: '/projects/noch-einmal-walzer' },
+  secondary: { label: 'About the documentary', to: '/projects/noch-einmal-walzer' },
   image: {
     src: '/assets/hero-laughing-resident.jpg',
     position: '42% 35%',
@@ -43,17 +43,17 @@ export const closingCta = {
 // Brand-level statement (the dual-colour homepage card).
 export const impactCard = {
   years: '2018',
-  yearsLabel: 'running since',
+  yearsLabel: 'first music sessions',
   kicker: 'It began when a newly arrived international student started visiting the Marienheim care home each week to make music with residents. Everything else grew from there.',
-  eyebrow: 'Why it works',
+  eyebrow: 'How it began',
   tagline: 'Prejudice survives in silence.',
-  body: 'In the spaces where we don’t meet, don’t speak, don’t look at each other long enough, distance gives our fears room to grow. Trust needs the opposite: the same people, the same room, again.',
+  body: 'In the spaces where we don’t meet, don’t speak, don’t look at each other long enough, distance gives our fears room to grow. A small encounter can be a beginning. Coming back creates more opportunities to listen, share something and get to know each other.',
   cta: { label: 'Explore our projects', to: '/projects' },
 }
 
 export const footer = {
   blurb:
-    'The One Community Project brings strangers into repeated contact through music, dance, storytelling and shared meals. It grew out of a care home in Dessau-Roßlau and now runs across Germany, Ireland and Austria.',
+    'The One Community Project brings people together through music, dance and film. Rooted in Dessau-Roßlau, its documented screenings, workshops and staff training have taken place in Germany, Ireland and Austria.',
   columns: [
     {
       title: 'Explore',

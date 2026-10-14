@@ -8,24 +8,23 @@ import pages from './pages.module.css'
 
 const values = [
   {
-    title: 'Contact, repeated',
-    body: 'One good encounter proves little; the same one, repeated, changes how people see each other. Everything is built around coming back.',
+    title: 'Coming back',
+    body: 'We make room for people to meet again, share experiences and get to know one another over time.',
   },
   {
     title: 'The person in front of you',
     body: 'A care-home resident, a schoolchild, an international student, a refugee, a neighbour of forty years. The work starts with who is actually in the room, not a target group.',
   },
   {
-    title: 'Count what you can verify',
-    body: 'Figures come from the attendance record kept with the city’s integration office. Where a screening cannot be verified, it is left out. A documented floor, not a claim.',
+    title: 'Count what we can verify',
+    body: 'We publish recorded attendances and documented bookings, with the period they cover. These figures describe participation, not a measured reduction in loneliness or prejudice.',
   },
 ]
 
 const awards = [
   { title: 'Integrationspreis des Landes Sachsen-Anhalt', note: 'First place, 2019' },
   { title: 'Aktiv für Demokratie und Toleranz', note: 'Prize-winning project, Bundeszentrale für politische Bildung, 2023' },
-  { title: 'DAAD STIBET I', note: 'For exceptionally engaged students, 2019' },
-  { title: 'Bürgerfest, Schloss Bellevue', note: 'Invited by the Federal President, 2025' },
+  { title: 'Bürgerfest, Schloss Bellevue', note: 'Adetayo Manuwa attended as a guest of the Federal President, September 2025' },
 ]
 
 export default function About() {
@@ -38,11 +37,11 @@ export default function About() {
       <header className={pages.pageHeader}>
         <div className={`container ${pages.pageHeaderInner}`}>
           <span className="eyebrow">Our story</span>
-          <h1>A project about repetition.</h1>
+          <h1>Music, dance and encounters between generations.</h1>
           <p className="lede">
-            The One Community Project has run since 2019. It is rooted in Dessau-Roßlau, in
-            partnership with the city’s integration office and Hochschule Anhalt, and now works
-            well beyond it. Its premise is simple and its method is patient.
+            Founded in 2019 with Hochschule Anhalt and the Integrationsbüro of the City of
+            Dessau-Roßlau, the One Community Project grew from weekly music sessions at the
+            Marienheim care home.
           </p>
         </div>
       </header>
@@ -58,17 +57,15 @@ export default function About() {
                 Project.
               </p>
               <p>
-                The project creates repeated encounters between people who would otherwise remain
-                strangers: care-home residents, schoolchildren, international students, refugees
-                and long-standing residents of the city. The methods are music, dance,
-                storytelling and shared meals.
+                The project brings care-home residents, international students, refugees, migrants
+                and local residents together through music, dance and film.
               </p>
               <p>
                 In 2022 it ran five months of waltz classes bringing together residents of three
                 care homes with refugees, migrants and international students. The classes led to
-                the One Community Gala and to the documentary Noch einmal Walzer, released in 2023
-                and since part of 38 documented screenings, workshops and trainings in Germany,
-                Ireland and Austria.
+                the One Community Gala and to the documentary Noch einmal Walzer, released in 2023.
+                Records document 38 bookings involving screenings, workshops and staff training in
+                Germany, Ireland and Austria from June 2023 to 2 September 2026.
               </p>
             </div>
           </Reveal>

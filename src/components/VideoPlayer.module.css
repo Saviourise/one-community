@@ -29,7 +29,7 @@
   padding: 0.5em 0.8em;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: var(--radius-pill);
-  background: rgba(14, 24, 16, 0.72);
+  background: rgba(26, 25, 15, 0.72);
   color: #fff;
   font-family: var(--font-body);
   font-weight: 700;
@@ -40,7 +40,7 @@
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 .ccBtn:hover {
-  background: rgba(14, 24, 16, 0.9);
+  background: rgba(26, 25, 15, 0.9);
   border-color: rgba(255, 255, 255, 0.5);
 }
 .ccLabel {

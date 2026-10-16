@@ -11,8 +11,8 @@ export const watchParty = {
   active: true,
   eyebrow: 'The Power of Small Encounters',
   title: 'Host a watch party',
-  body: 'Gather a few people, play the TEDxLinz talk, and stay for the conversation it starts. It runs eighteen minutes and needs nothing more than a room and a screen. There was one in Vienna in July 2026; yours could be next.',
+  body: 'Gather a few people, play the TEDxLinz talk, and stay for the conversation it starts. It runs eighteen minutes and needs nothing more than a room and a screen. Yours could be the next one.',
   cta: { label: 'Host a watch party', to: '/contact?watch-party=1' },
-  cities: ['Dessau-Roßlau', 'Vienna', 'Your city'],
+  cities: ['Dessau-Roßlau', 'Your city'],
   palette: 'coral',
 }

@@ -252,7 +252,7 @@ export const projects = [
     ],
     body: [
       'A watch party is the simple version. Gather a few people in a living room, a classroom or a staff room, play the TEDxLinz talk “The Power of Small Encounters”, and talk about it afterwards. It runs eighteen minutes.',
-      'Noch einmal Walzer is the 50-minute documentary. Institutions book it as a facilitated screening: the film, then a guided conversation, sometimes with a music or dance workshop beforehand. Material for facilitators is in development.',
+      'Noch einmal Walzer is the 50-minute documentary. Institutions book it as a facilitated screening: the film, then a guided conversation, sometimes with a music or dance workshop beforehand. Facilitation scripts and exercises exist for a full-day staff training with the film; a general handbook is in development. The full film is not online; screenings are arranged directly.',
       'Hosts have included Museum Friedland, Universität Jena, Heiligenfeld Kliniken, Netzwerk Demenz Vulkaneifel and NGO partners in Dublin.',
     ],
     links: [{ label: 'Host a watch party', to: '/contact?watch-party=1' }],

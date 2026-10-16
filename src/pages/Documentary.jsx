@@ -36,6 +36,7 @@ export default function Documentary() {
             src={VIDEO_SRC}
             title="Noch einmal Walzer, full documentary"
             tracks={[
+              { src: '/subtitles/walzer-doc.de.vtt', srclang: 'de', label: 'Deutsch' },
               { src: '/subtitles/walzer-doc.en.vtt', srclang: 'en', label: 'English', default: true },
               { src: '/subtitles/walzer-doc.uk.vtt', srclang: 'uk', label: 'Українська' },
             ]}

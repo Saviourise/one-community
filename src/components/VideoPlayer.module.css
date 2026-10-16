@@ -1,5 +1,6 @@
 .wrap {
   position: relative;
+  container-type: size; /* lets the subtitle menu cap its height to the player */
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -49,7 +50,14 @@
   position: absolute;
   top: calc(100% + 0.5rem);
   right: 0;
-  min-width: 170px;
+  min-width: 190px;
+  max-width: calc(100cqw - 1.5rem); /* never wider than the player */
+  /* cap height so a long language list scrolls instead of overflowing the
+     clipped player box (critical on short mobile players) */
+  max-height: min(360px, calc(100cqh - 4.5rem));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   padding: 0.4rem;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -57,10 +65,21 @@
   box-shadow: var(--shadow-lg);
   display: grid;
   gap: 2px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+.menu::-webkit-scrollbar {
+  width: 8px;
+}
+.menu::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 999px;
 }
 .menuItem {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
+  min-height: 40px;
   text-align: left;
   padding: 0.6em 0.8em;
   border: 0;
@@ -84,16 +103,25 @@
   background: var(--primary-deep);
 }
 
-/* readable native caption text */
+/* readable native caption text; font stack covers Latin (Hanken), Arabic +
+   Persian/Farsi (Vazirmatn), and Cyrillic (system) via per-glyph fallback.
+   RTL direction for ar/fa comes automatically from the cue text's Unicode. */
 .video::cue {
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
-  font-family: var(--font-body);
+  font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', 'Vazirmatn Variable', system-ui, -apple-system, sans-serif;
   line-height: 1.4;
 }
 
 @media (max-width: 540px) {
   .ccLabel {
     display: none; /* icon-only on small screens */
+  }
+  .menu {
+    min-width: 170px;
+  }
+  .menuItem {
+    min-height: 44px; /* comfortable touch target */
+    padding: 0.85em 0.9em;
   }
 }

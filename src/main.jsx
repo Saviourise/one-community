@@ -5,6 +5,9 @@ import { BrowserRouter } from 'react-router-dom'
 // Type pairing (variable fonts): Urbanist (display / logo + headings) + Hanken Grotesk (body).
 import '@fontsource-variable/urbanist'
 import '@fontsource-variable/hanken-grotesk'
+// Arabic/Persian caption glyphs (only the arabic subset downloads on demand via
+// unicode-range) — used by the documentary's ar/fa subtitle tracks.
+import '@fontsource-variable/vazirmatn'
 
 import './styles/global.css'
 import App from './App.jsx'

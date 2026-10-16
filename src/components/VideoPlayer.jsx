@@ -17,7 +17,8 @@ import styles from './VideoPlayer.module.css'
  *   sources : [{ src, type }]   e.g. [{ src: '/demo/film.mp4', type: 'video/mp4' }]
  *   src     : string            shorthand for a single mp4 source
  *   poster  : string            poster image URL
- *   tracks  : [{ src, srclang, label, default? }]   WebVTT subtitle files
+ *   tracks  : [{ src, srclang, label, dir?, default? }]   WebVTT subtitle files
+ *             (dir: 'ltr' | 'rtl' — for the menu/label of RTL scripts like ar/fa)
  *   title   : string            accessible label
  *   className, autoPlay, loop, muted
  */
@@ -125,7 +126,7 @@ export default function VideoPlayer({
               <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" strokeWidth="2" />
               <path d="M10 10.2a2 2 0 0 0-3.4 1.5v.6A2 2 0 0 0 10 13.8M18 10.2a2 2 0 0 0-3.4 1.5v.6a2 2 0 0 0 3.4 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
-            <span className={styles.ccLabel}>Subtitles: {activeLabel}</span>
+            <span className={styles.ccLabel}>Subtitles: <bdi>{activeLabel}</bdi></span>
           </button>
 
           {menuOpen && (
@@ -144,6 +145,7 @@ export default function VideoPlayer({
                   key={t.srclang}
                   type="button"
                   role="menuitemradio"
+                  dir={t.dir || 'ltr'}
                   aria-checked={activeLang === t.srclang}
                   className={`${styles.menuItem} ${activeLang === t.srclang ? styles.menuItemActive : ''}`}
                   onClick={() => choose(t.srclang)}

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Button from '../components/Button.jsx'
 import VideoPlayer from '../components/VideoPlayer.jsx'
+import { docTracks } from '../data/docSubtitles.js'
 import { brand } from '../data/siteContent.js'
 import pages from './pages.module.css'
 
@@ -35,11 +36,7 @@ export default function Documentary() {
             className={pages.docPlayer}
             src={VIDEO_SRC}
             title="Noch einmal Walzer, full documentary"
-            tracks={[
-              { src: '/subtitles/walzer-doc.de.vtt', srclang: 'de', label: 'Deutsch', default: true },
-              { src: '/subtitles/walzer-doc.en.vtt', srclang: 'en', label: 'English' },
-              { src: '/subtitles/walzer-doc.uk.vtt', srclang: 'uk', label: 'Українська' },
-            ]}
+            tracks={docTracks}
           />
           <Button to="/projects/noch-einmal-walzer" variant="ghost" arrow>
             Back to the project

@@ -6,6 +6,7 @@ dist-ssr
 .vite
 .netlify/
 .playwright-mcp/
+public/videos/walzer-full.mp4
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

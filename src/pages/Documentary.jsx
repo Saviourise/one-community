@@ -1,10 +1,16 @@
 import { useEffect } from 'react'
 import Button from '../components/Button.jsx'
+import VideoPlayer from '../components/VideoPlayer.jsx'
 import { brand } from '../data/siteContent.js'
 import pages from './pages.module.css'
 
-// Full film on YouTube (unlisted) with switchable EN/UK caption tracks.
-const YT_ID = '4uAoj5X3Be4'
+// Full film, played through our own player: switchable EN/UK subtitles +
+// download protection, no third-party branding or click-out.
+// The MP4 is too big for the repo (GitHub caps in-repo files at 100MB), so it's
+// hosted as a GitHub Release asset (2GB limit) and streamed by URL. Caption
+// files are served from the site itself (same origin), so no CORS needed.
+const VIDEO_SRC =
+  'https://github.com/Saviourise/one-community/releases/download/walzer-doc/walzer-full.mp4'
 
 export default function Documentary() {
   useEffect(() => {
@@ -25,17 +31,15 @@ export default function Documentary() {
 
       <section className="section container">
         <div className={pages.docStage}>
-          <div className={pages.detailVideo}>
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${YT_ID}?rel=0&modestbranding=1&cc_load_policy=1`}
-              title="Noch einmal Walzer, full documentary"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          </div>
-          <p className={pages.docNote}>
-            Subtitles in English and Ukrainian — use the <strong>CC</strong> button in the player.
-          </p>
+          <VideoPlayer
+            className={pages.docPlayer}
+            src={VIDEO_SRC}
+            title="Noch einmal Walzer, full documentary"
+            tracks={[
+              { src: '/subtitles/walzer-doc.en.vtt', srclang: 'en', label: 'English', default: true },
+              { src: '/subtitles/walzer-doc.uk.vtt', srclang: 'uk', label: 'Українська' },
+            ]}
+          />
           <Button to="/projects/noch-einmal-walzer" variant="ghost" arrow>
             Back to the project
           </Button>

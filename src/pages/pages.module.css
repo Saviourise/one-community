@@ -265,7 +265,8 @@
   justify-items: center;
   gap: 1.4rem;
 }
-.docStage .detailVideo {
+.docStage .detailVideo,
+.docStage .docPlayer {
   width: 100%;
 }
 .docNote {

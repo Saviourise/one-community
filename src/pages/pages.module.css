@@ -256,6 +256,30 @@
   box-shadow: var(--shadow-md);
   background: var(--primary-deep);
 }
+
+/* ---------- Documentary page (centred full-film player) ---------- */
+.docStage {
+  max-width: 1000px;
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
+  gap: 1.4rem;
+}
+.docStage .detailVideo {
+  width: 100%;
+}
+.docNote {
+  color: var(--muted);
+  text-align: center;
+  font-weight: 600;
+}
+
+/* CTA under the trailer linking to the full documentary */
+.fullDocCta {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(1.4rem, 1rem + 1.5vw, 2.2rem);
+}
 .detailVideo iframe {
   position: absolute;
   inset: 0;

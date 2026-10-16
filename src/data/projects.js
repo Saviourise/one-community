@@ -110,6 +110,8 @@ export const projects = [
         { src: '/videos/walzer-trailer.en.vtt', srclang: 'en', label: 'English' },
       ],
     },
+    // CTA shown under the trailer, linking to the full-documentary page.
+    fullDoc: { label: 'Watch the full documentary', to: '/documentary' },
     stats: [{ value: '2023', label: 'film premiere' }],
     body: [
       '“Noch einmal Walzer” (One More Waltz) is a documentary that follows a community production from first rehearsal to final bow.',

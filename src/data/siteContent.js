@@ -11,6 +11,7 @@ export const brand = {
 export const nav = [
   { label: 'Home', to: '/' },
   { label: 'Projects', to: '/projects', hasMenu: true },
+  { label: 'Documentary', to: '/documentary' },
   { label: 'About', to: '/about' },
   { label: 'Contact', to: '/contact' },
 ]

@@ -7,6 +7,7 @@ import About from './pages/About.jsx'
 import Projects from './pages/Projects.jsx'
 import ProjectDetail from './pages/ProjectDetail.jsx'
 import Contact from './pages/Contact.jsx'
+import Documentary from './pages/Documentary.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 // Reset scroll on every route change so pages open at the top.
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="projects/:slug" element={<ProjectDetail />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="documentary" element={<Documentary />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

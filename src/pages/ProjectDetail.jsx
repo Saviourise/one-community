@@ -127,6 +127,13 @@ export default function ProjectDetail() {
               />
             </div>
           )}
+          {project.fullDoc && (
+            <div className={pages.fullDocCta}>
+              <Button to={project.fullDoc.to} variant="cta" arrow>
+                {project.fullDoc.label}
+              </Button>
+            </div>
+          )}
         </section>
       )}
 

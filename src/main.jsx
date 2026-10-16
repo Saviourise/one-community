@@ -2,7 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
-// Type pairing (variable fonts): Urbanist (display / logo + headings) + Hanken Grotesk (body).
+// Type pairing (variable fonts): Fraunces (editorial display / logo + headings)
+// + Hanken Grotesk (body / UI). Urbanist kept as a UI fallback.
+import '@fontsource-variable/fraunces'
 import '@fontsource-variable/urbanist'
 import '@fontsource-variable/hanken-grotesk'
 // Arabic/Persian caption glyphs (only the arabic subset downloads on demand via

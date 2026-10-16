@@ -12,9 +12,9 @@ export default function Workshops() {
     <section className="section container" aria-labelledby="ws-title">
       <SectionHeading
         id="ws-title"
-        eyebrow="Get hands-on"
-        title="Workshops that turn strangers into neighbours"
-        body="Small, recurring gatherings anyone can join, no experience needed, just an open evening and an open mind."
+        eyebrow="The method"
+        title="Music, dance and film"
+        body="Different ways to take part, share experiences and start a conversation."
       />
       <div className={styles.wsGrid}>
         {workshops.map((w, i) => (
@@ -29,7 +29,7 @@ export default function Workshops() {
       </div>
       <div className={styles.wsFoot}>
         <Button to="/contact" variant="cta" arrow>
-          Join a workshop
+          Bring the method to your city
         </Button>
       </div>
     </section>

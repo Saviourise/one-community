@@ -1,46 +1,48 @@
 /*
- * Homepage blog row, kept to ~3 summarised cards per the planning notes.
- * Set `img` per post to a real URL/local path; empty falls back to a dummy photo.
+ * Homepage press row. Real coverage from the Impact Dossier press archive.
+ * `img` points at a Drive still; empty falls back to a dummy photo.
  */
 
 import { drive } from '../lib/placeholder.js'
 
 export const blog = {
-  eyebrow: 'From the community',
-  title: 'Stories worth passing on',
+  eyebrow: 'Press',
+  title: 'What has been written about it',
   posts: [
     {
-      id: 'the-night-we-sang',
-      title: 'The night the whole city sang',
+      id: 'aufruhr-dreivierteltakt',
+      title: 'Teilhabe im Dreivierteltakt',
       excerpt:
-        'Behind the scenes of the One Community Concert, where hundreds of neighbours became one audience, and then one community.',
-      category: 'One Community Concert',
-      date: 'June 2026',
+        'AufRuhr Magazin, published by the Stiftung Mercator, on the waltz classes and the film. By Esther Sambale.',
+      category: 'AufRuhr Magazin',
+      date: 'January 2024',
       palette: 'coral',
-      img: drive('1JvnkDs0BdCAvF9cwy_8OGK4I-6OCVt56', 800),
-      href: '#',
+      // Photo: Reinaldo Coddou, from the AufRuhr reportage (Dessau, November 2023).
+      img: '/assets/press-aufruhr.jpg',
+      credit: 'Photo: Reinaldo Coddou',
+      href: 'https://www.aufruhr-magazin.de/',
     },
     {
-      id: 'first-day-feeling',
-      title: 'What a first day should feel like',
+      id: 'radio-corax',
+      title: 'On air in Halle',
       excerpt:
-        'Why a single welcoming face changes how a child sees the whole school year ahead.',
-      category: 'Back to School',
-      date: 'May 2026',
+        'A broadcast feature on the project by Radio Corax, the community radio station in Halle (Saale).',
+      category: 'Radio Corax',
+      date: 'November 2025',
       palette: 'amber',
-      img: drive('1BvZ6ZN71a6oIXpkS4zkHSEho7fPWm-Dw', 800),
-      href: '#',
+      img: drive('1HBWVMpiDgcnBrFdawRmbPSzEvYAwNBFV', 800),
+      href: 'https://radiocorax.de/',
     },
     {
-      id: 'one-more-waltz',
-      title: 'One more waltz, one more chance to meet',
+      id: 'bpb-prize',
+      title: 'The prize-winning project from Saxony-Anhalt',
       excerpt:
-        'The making of “Noch einmal Walzer”, and the strangers who became a cast, and then friends.',
-      category: 'Documentary',
-      date: 'April 2026',
+        'The Federal Agency for Civic Education on Noch einmal Walzer, recognised in its national “Aktiv für Demokratie und Toleranz” competition.',
+      category: 'bpb.de',
+      date: 'November 2023',
       palette: 'forest',
       img: drive('1pLh7EwkYQDJESOWJ80NFdYJ8XoV8cdfE', 800),
-      href: '#',
+      href: 'https://www.bpb.de/',
     },
   ],
 }

@@ -1,18 +1,23 @@
 /*
- * Partner / recognition strip (social proof).
- * TEDx is called out in the planning notes for external credibility (grants, funding).
- * Replace `name` values / add real logo image paths under public/assets when available.
+ * Partner / recognition strip.
+ * Real partners from the Impact Dossier. TEDx keeps its signature styling
+ * in PartnerStrip.jsx; the others render as wordmarks until logo files exist
+ * under public/assets.
  */
 
 export const partners = {
-  eyebrow: 'Recognised & supported by',
-  title: 'Trusted company',
+  eyebrow: 'In partnership with',
+  title: 'Partners, hosts and recognition',
   items: [
-    { name: 'TEDx', note: 'Featured talk' },
-    { name: 'Community Foundation', note: 'Grant partner' },
-    { name: 'City of Lagos', note: 'Civic partner' },
-    { name: 'Cape Town Collective', note: 'Host network' },
-    { name: 'The Belonging Fund', note: 'Supporter' },
-    { name: 'Neighbourhood Trust', note: 'Programme partner' },
+    { name: 'City of Dessau-Roßlau', note: 'Integrationsbüro' },
+    { name: 'Hochschule Anhalt', note: 'University partner' },
+    { name: 'Bauhaus Museum Dessau', note: 'Premiere venue' },
+    { name: 'Marienheim', note: 'Anhaltische Diakonissenanstalt' },
+    { name: 'Anhaltische Philharmonie', note: 'Anhaltisches Theater Dessau' },
+    { name: 'BOEHNÈL Films', note: 'Production' },
+    { name: 'Museum Friedland', note: 'Screening and dance afternoon, 2024' },
+    { name: 'Universität Jena', note: 'Screening host' },
+    { name: 'TEDxLinz', note: 'Talk, 2026' },
+    { name: 'bpb', note: 'Aktiv für Demokratie und Toleranz 2023' },
   ],
 }

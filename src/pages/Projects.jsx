@@ -21,11 +21,11 @@ export default function Projects() {
       <header className={pages.pageHeader}>
         <div className={`container ${pages.pageHeaderInner}`}>
           <span className="eyebrow">Our work</span>
-          <h1>Every project is a way to come closer.</h1>
+          <h1>One method, several strands.</h1>
           <p className="lede">
-            One place, all our initiatives. From a movement that reached the TED stage to a
-            documentary you can screen on your street, here’s what belonging looks like in
-            practice.
+            It runs from weekly music in a care home to a documentary now shown across three
+            countries. Each strand is the same idea in a different room: bring people into
+            contact, then do it again.
           </p>
         </div>
       </header>
@@ -53,8 +53,8 @@ export default function Projects() {
       <section className="section container">
         <Reveal>
           <p className="lede" style={{ maxWidth: '58ch' }}>
-            We run occasional events too, screenings, community tables and watch parties. They’re
-            moments within the movement rather than the headline.{' '}
+            There are also one-off screenings, community tables and staff trainings that do not
+            each need a page. They are logged in the attendance record all the same.{' '}
             <a className="link-arrow" href="/contact">
               Ask what’s coming up
             </a>

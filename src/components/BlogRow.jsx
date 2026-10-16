@@ -29,6 +29,7 @@ export default function BlogRow() {
                   loading="lazy"
                   onError={imgFallback(post.id, 720, 450)}
                 />
+                {post.credit && <span className={styles.blogCredit}>{post.credit}</span>}
               </div>
               <div className={styles.blogInner}>
                 <div className={styles.blogMeta}>

@@ -55,12 +55,10 @@ export default function FeaturedVideo() {
 
         <Reveal className={styles.fvBody} delay={0.1}>
           <span className="badge">{project.kicker}</span>
-          <h2 id="fv-title">Our story, on the TEDx stage</h2>
-          <p className="lede">
-            {project.short} An idea worth spreading, and a way of being with one another.
-          </p>
+          <h2 id="fv-title">The argument, in twenty minutes</h2>
+          <p className="lede">{project.short}</p>
           <Button to={to} variant="dark" arrow>
-            Learn more about the talk
+            More about the talk
           </Button>
         </Reveal>
       </div>

@@ -39,9 +39,16 @@ export default function Footer() {
         ))}
       </div>
 
+      <div className={`container ${styles.wordmarkWrap}`}>
+        <p className={styles.wordmark} aria-hidden="true">
+          <span>one</span>
+          <span>community</span>
+        </p>
+      </div>
+
       <div className={`container ${styles.bottom}`}>
         <span>
-          © {year} {brand.name}. Made with care by the community.
+          © {year} {brand.name}
         </span>
         <nav className={styles.legal} aria-label="Legal">
           {footer.legal.map((l) => (

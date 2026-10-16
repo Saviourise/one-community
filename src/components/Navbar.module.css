@@ -8,7 +8,7 @@
   border-bottom: 1px solid transparent;
 }
 .header.scrolled {
-  background: rgba(244, 247, 238, 0.82);
+  background: rgba(242, 239, 227, 0.85);
   backdrop-filter: saturate(1.4) blur(14px);
   -webkit-backdrop-filter: saturate(1.4) blur(14px);
   border-bottom-color: var(--line);
@@ -129,7 +129,7 @@
 }
 .navLink:hover {
   color: var(--primary-deep);
-  background: rgba(35, 74, 40, 0.05);
+  background: rgba(47, 46, 29, 0.06);
 }
 .navLink.active {
   color: var(--primary-deep);

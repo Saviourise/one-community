@@ -2,58 +2,66 @@
 
 /* ============================ HERO ============================ */
 .hero {
-  position: relative;
-  min-height: min(92vh, 860px);
-  display: flex;
-  align-items: flex-end;
+  /* Split hero: headline on olive, photo beside it. Stacks on narrow screens. */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  min-height: min(90vh, 820px);
+  background: var(--primary-deep);
   color: #fff;
   overflow: hidden;
-  isolation: isolate;
-}
-.heroBg {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1.05);
-  animation: heroPan 24s ease-in-out infinite alternate;
-}
-@keyframes heroPan {
-  to {
-    transform: scale(1.14) translate3d(-2%, -1%, 0);
-  }
-}
-.heroOverlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  /* flat, solid scrim for text legibility (no gradient) */
-  background: rgba(20, 38, 23, 0.74);
 }
 .heroContent {
-  position: relative;
-  max-width: 720px;
-  padding-block: clamp(3rem, 2rem + 8vw, 7rem);
+  align-self: end;
+  min-width: 0;
+  padding: clamp(7rem, 5rem + 6vw, 9rem) clamp(1.25rem, 4vw, 4rem) clamp(3rem, 2rem + 4vw, 5.5rem);
+  max-width: 680px;
+  margin-left: auto;
+}
+.heroBg {
+  /* Framed on the olive ground, clear of the navigation bar. */
+  margin: clamp(5.2rem, 4.6rem + 1vw, 6rem) clamp(1rem, 2vw, 1.75rem) clamp(1rem, 2vw, 1.75rem) 0;
+  border-radius: var(--radius-lg);
+  min-height: 0;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 900px) {
+  /* Flex column, not grid: Safari on iOS sized the photo's grid column from its
+     aspect-ratio and pushed the whole hero wider than the screen. */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .heroBg {
+    order: -1;
+    width: auto;
+    height: min(72vw, 440px);
+    margin: 4.6rem 1rem 0;
+  }
+  .heroContent {
+    align-self: stretch;
+    padding-top: 2.2rem;
+    margin-left: 0;
+  }
 }
 .heroEyebrow {
-  color: #fff;
-}
-.heroEyebrow::before {
-  background: var(--warm);
+  color: rgba(255, 255, 255, 0.85);
 }
 .heroTitle {
   color: #fff;
   font-size: var(--step-5);
-  font-weight: 600;
-  margin: 1rem 0 1.2rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: -0.025em;
+  line-height: 0.96;
+  margin: 1.1rem 0 1.3rem;
 }
 .heroTitle span {
   display: block;
 }
 .heroTitle span:last-child {
   color: var(--warm);
-  font-style: italic;
 }
 .heroBody {
   font-size: var(--step-1);
@@ -130,7 +138,7 @@
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   background: var(--coral-tint);
-  border: 1px solid #ffd8cc;
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -145,8 +153,8 @@
 .wpBody h2 {
   font-size: var(--step-3);
 }
-.wpBody .eyebrow::before {
-  background: var(--cta);
+.wpBody .eyebrow {
+  color: var(--primary-deep);
 }
 .wpCities {
   display: flex;
@@ -160,7 +168,7 @@
   border-radius: var(--radius-pill);
   font-size: var(--step--1);
   font-weight: 700;
-  color: var(--cta-hover);
+  color: var(--primary-deep);
 }
 .wpMedia {
   position: relative;
@@ -169,13 +177,13 @@
   background-position: center;
 }
 .wpMedia::after {
-  content: 'LIVE';
+  content: 'TEDx TALK';
   position: absolute;
   top: 1.1rem;
   left: 1.1rem;
   padding: 0.35em 0.8em;
   background: var(--cta);
-  color: #fff;
+  color: var(--ink);
   font-weight: 800;
   font-size: 0.72rem;
   letter-spacing: 0.2em;
@@ -210,14 +218,14 @@
 .fvPosterOverlay {
   position: absolute;
   inset: 0;
-  background: rgba(23, 45, 26, 0.42);
+  background: rgba(26, 25, 15, 0.42);
   display: flex;
   align-items: flex-end;
   padding: 1.4rem;
   transition: background 0.3s ease;
 }
 .fvMedia:hover .fvPosterOverlay {
-  background: rgba(23, 45, 26, 0.58);
+  background: rgba(26, 25, 15, 0.58);
 }
 .fvPlay {
   position: absolute;
@@ -228,10 +236,10 @@
   height: clamp(64px, 8vw, 92px);
   border-radius: 50%;
   background: var(--cta);
-  color: #fff;
+  color: var(--ink);
   display: grid;
   place-items: center;
-  box-shadow: 0 12px 30px -8px rgba(255, 107, 74, 0.7);
+  box-shadow: 0 12px 30px -8px rgba(47, 46, 29, 0.5);
   transition: transform 0.3s var(--ease);
 }
 .fvMedia:hover .fvPlay {
@@ -274,13 +282,13 @@
 }
 .fvBody .badge {
   background: var(--amber-tint);
-  color: #a85e1c;
+  color: var(--primary-deep);
 }
 
 /* ======================= WORKSHOPS ======================= */
 .wsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(1rem, 0.6rem + 1.5vw, 1.6rem);
 }
 .wsCard {
@@ -291,23 +299,23 @@
   gap: 0.55rem;
   padding: 1.7rem;
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  transition: transform 0.35s var(--ease), border-color 0.35s var(--ease);
 }
 .wsCard:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: var(--primary-deep);
 }
 .wsTag {
-  padding: 0.3em 0.8em;
-  background: var(--green-tint);
-  color: var(--primary-deep);
-  border-radius: var(--radius-pill);
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.2rem;
+  border-bottom: 1px solid var(--line-strong);
+  align-self: stretch;
+  color: var(--muted);
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 .wsCard h3 {
@@ -348,7 +356,7 @@
   position: absolute;
   inset: 0;
   /* solid scrim over the photo (no gradient) */
-  background: rgba(23, 45, 26, 0.74);
+  background: rgba(26, 25, 15, 0.74);
 }
 .icYears {
   position: relative;
@@ -391,38 +399,40 @@
   color: var(--primary-deep);
 }
 .icRight p {
-  color: #6b4436;
+  color: var(--muted);
 }
 
 /* ======================= STAT BAND ======================= */
 .sbGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 .sbItem {
-  padding-top: 1.4rem;
-  border-top: 3px solid var(--line-strong);
+  padding: clamp(1.5rem, 1rem + 2vw, 2.6rem);
+  border-top: 1px solid var(--line-strong);
+  border-left: 1px solid var(--line-strong);
 }
+.sbItem:nth-child(1),
 .sbItem:nth-child(2) {
-  border-top-color: var(--cta);
+  border-top: 0;
 }
-.sbItem:nth-child(3) {
-  border-top-color: var(--warm);
-}
-.sbItem:nth-child(4) {
-  border-top-color: var(--primary);
+.sbItem:nth-child(odd) {
+  border-left: 0;
 }
 .sbValue {
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 1.8rem + 3.5vw, 4.4rem);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
   color: var(--primary-deep);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .sbLabel {
-  margin-top: 0.7rem;
+  margin-top: 0.8rem;
   color: var(--muted);
   max-width: 22ch;
 }
@@ -472,7 +482,7 @@
   color: var(--muted);
 }
 .ptTed {
-  color: var(--cta);
+  color: var(--primary-deep);
   letter-spacing: -0.02em;
 }
 .ptTed sup {
@@ -508,6 +518,7 @@
   box-shadow: var(--shadow-md);
 }
 .blogMedia {
+  position: relative;
   aspect-ratio: 16 / 10;
   background-size: cover;
   background-position: center;
@@ -573,7 +584,7 @@
   inset: 0;
   z-index: -1;
   /* solid scrim over the photo (no gradient) */
-  background: rgba(23, 45, 26, 0.78);
+  background: rgba(26, 25, 15, 0.78);
 }
 .ccInner {
   max-width: 660px;
@@ -590,9 +601,6 @@
    pages.module.css) so the label is light on the dark Closing CTA. */
 .cc :global(.eyebrow) {
   color: rgba(255, 255, 255, 0.9);
-}
-.cc :global(.eyebrow)::before {
-  background: var(--warm);
 }
 .cc p {
   color: rgba(255, 255, 255, 0.85);
@@ -622,7 +630,7 @@
   }
   .sbGrid,
   .wsGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .blogGrid {
     grid-template-columns: 1fr;
@@ -635,4 +643,67 @@
   .wsGrid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ===================== YOUNG AND OLD (photo pair) ===================== */
+.together {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas:
+    'selfie side'
+    'text text';
+  gap: var(--gap);
+}
+.togetherSelfie { grid-area: selfie; }
+.togetherSide { grid-area: side; }
+.togetherSelfie img,
+.togetherSide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+.togetherSelfie img {
+  /* keep the phone in frame: it sits at the far left of the still */
+  object-position: 0% 50%;
+}
+.togetherSide img {
+  object-position: 50% 25%;
+}
+.togetherCaption {
+  margin: 0.55rem 0 0;
+  font-size: var(--step--1);
+  color: var(--muted);
+}
+.togetherText {
+  grid-area: text;
+  max-width: 62ch;
+  padding-top: 0.6rem;
+}
+.togetherText h2 {
+  margin: 0.6rem 0 0.8rem;
+  text-wrap: balance;
+}
+.togetherText p {
+  color: var(--muted);
+}
+@media (max-width: 760px) {
+  .together {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'selfie' 'side' 'text';
+  }
+}
+
+/* Photo credit on press cards */
+.blogCredit {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.5rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: rgba(26, 25, 15, 0.6);
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
 }

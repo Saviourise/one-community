@@ -8,24 +8,23 @@ import pages from './pages.module.css'
 
 const values = [
   {
-    title: 'People before programmes',
-    body: 'We start with the person in front of us. Structures exist to serve encounters, never the other way around.',
+    title: 'Coming back',
+    body: 'We make room for people to meet again, share experiences and get to know one another over time.',
   },
   {
-    title: 'Small is the strategy',
-    body: 'We don’t wait for grand gestures. A shared meal, a first hello, a door held open, small is where belonging is built.',
+    title: 'The person in front of you',
+    body: 'A care-home resident, a schoolchild, an international student, a refugee, a neighbour of forty years. The work starts with who is actually in the room, not a target group.',
   },
   {
-    title: 'Everyone belongs',
-    body: 'No age, postcode or background is a prerequisite. The circle is only ever drawn to include one more.',
+    title: 'Count what we can verify',
+    body: 'We publish recorded attendances and documented bookings, with the period they cover. These figures describe participation, not a measured reduction in loneliness or prejudice.',
   },
 ]
 
 const awards = [
-  { title: 'Integrationspreis', note: 'Sachsen-Anhalt, 2019' },
-  { title: 'Aktiv Preis', note: 'Bundeszentrale für politische Bildung, 2023' },
-  { title: 'TEDx', note: 'Featured talk' },
-  { title: 'Since 2018', note: 'Bringing neighbours together' },
+  { title: 'Integrationspreis des Landes Sachsen-Anhalt', note: 'First place, 2019' },
+  { title: 'Aktiv für Demokratie und Toleranz', note: 'Prize-winning project, Bundeszentrale für politische Bildung, 2023' },
+  { title: 'Bürgerfest, Schloss Bellevue', note: 'Adetayo Manuwa attended as a guest of the Federal President, September 2025' },
 ]
 
 export default function About() {
@@ -38,10 +37,11 @@ export default function About() {
       <header className={pages.pageHeader}>
         <div className={`container ${pages.pageHeaderInner}`}>
           <span className="eyebrow">Our story</span>
-          <h1>Belonging isn’t found. It’s built, together.</h1>
+          <h1>Music, dance and encounters between generations.</h1>
           <p className="lede">
-            One Community Project began with a hunch: that the distance between neighbours is
-            smaller than it feels, and that closing it changes everything.
+            Founded in 2019 with Hochschule Anhalt and the Integrationsbüro of the City of
+            Dessau-Roßlau, the One Community Project grew from weekly music sessions at the
+            Marienheim care home.
           </p>
         </div>
       </header>
@@ -51,18 +51,21 @@ export default function About() {
           <Reveal>
             <div>
               <p className="lede">
-                We are a community of people who believe that connection is the most renewable
-                resource we have. Over the years we’ve turned ordinary moments into
-                lasting relationships, across streets, generations and borders.
+                It began in 2018, when a newly arrived international student started visiting the
+                Marienheim care home each week to make music with residents. That student
+                initiative, “Homies &amp; Omies”, was formalised in 2019 as the One Community
+                Project.
               </p>
               <p>
-                What started as a handful of small encounters has grown into a movement of shared
-                tables, mentorships, screenings and welcomes. We measure success not in events run,
-                but in people who now have someone to call.
+                The project brings care-home residents, international students, refugees, migrants
+                and local residents together through music, dance and film.
               </p>
               <p>
-                We’re intentionally broad. Belonging is for everyone, the new arrival and the
-                lifelong local, the student and the retiree, the shy and the sure.
+                In 2022 it ran five months of waltz classes bringing together residents of three
+                care homes with refugees, migrants and international students. The classes led to
+                the One Community Gala and to the documentary Noch einmal Walzer, released in 2023.
+                Records document 38 bookings involving screenings, workshops and staff training in
+                Germany, Ireland and Austria from June 2023 to 2 September 2026.
               </p>
             </div>
           </Reveal>
@@ -83,17 +86,17 @@ export default function About() {
             className={pages.missionCard}
             style={{ backgroundImage: driveCssFallback('15J-a28iKPTp_nQ3oegy0UypJXJbUxoas', 'mission', 1200) }}
           >
-            <span className="eyebrow">Our mission</span>
+            <span className="eyebrow">The premise</span>
             <p className={pages.missionQuote}>
-              To build one stronger community with a sense of belonging, one small encounter at a
-              time.
+              Prejudice survives in silence. In the spaces where we don’t meet, don’t speak,
+              don’t look at each other long enough.
             </p>
           </div>
         </Reveal>
       </section>
 
       <section className="section container">
-        <SectionHeading eyebrow="What we believe" title="The values behind every encounter" center />
+        <SectionHeading eyebrow="How we work" title="Three things that hold true" center />
         <div className={pages.values}>
           {values.map((v, i) => (
             <Reveal key={v.title} delay={i * 0.08}>
@@ -109,9 +112,9 @@ export default function About() {
 
       <section className="section container">
         <SectionHeading
-          eyebrow="Recognitions"
-          title="Trusted, and glad to prove it"
-          body="Recognition helps us open doors, for grants, for partners, and for the people we serve."
+          eyebrow="Recognition"
+          title="On the record"
+          body="Recognition for bringing people of different generations and backgrounds together."
         />
         <div className={pages.awards}>
           {awards.map((a, i) => (

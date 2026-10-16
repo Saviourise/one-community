@@ -1,5 +1,5 @@
 /*
- * Per-project photo galleries — real Google Drive image ids (public files).
+ * Per-project photo galleries. Real Google Drive image ids (public files).
  * Keyed by project slug. The detail page renders these as a stacked masonry
  * grid. Add/remove ids freely; swap for /public/assets paths to self-host.
  *

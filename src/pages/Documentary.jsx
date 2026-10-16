@@ -20,7 +20,10 @@ export default function Documentary() {
 
   return (
     <>
-      <header className={pages.pageHeader}>
+      <header
+        className={pages.pageHeader}
+        style={{ backgroundImage: 'url("/assets/walzer-still-gala.jpg")' }}
+      >
         <div className={`container ${pages.pageHeaderInner}`}>
           <span className="eyebrow">Full documentary</span>
           <h1>Noch einmal Walzer</h1>

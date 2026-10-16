@@ -13,19 +13,20 @@
  */
 
 export const docSubtitles = [
-  { srclang: 'de', label: 'Deutsch', dir: 'ltr', default: true },
-  { srclang: 'en', label: 'English', dir: 'ltr' },
-  { srclang: 'uk', label: 'Українська', dir: 'ltr' },
+  { srclang: 'de', label: 'Deutsch', dir: 'ltr', default: true }, // source of truth (human)
+  { srclang: 'en', label: 'English', dir: 'ltr' }, // synced, from the client
+  { srclang: 'uk', label: 'Українська', dir: 'ltr' }, // synced, from the client
 
-  // --- Planned (enable each only after the synced, native-checked file is in) ---
-  // { srclang: 'ar', label: 'العربية', dir: 'rtl' },
-  // { srclang: 'tr', label: 'Türkçe', dir: 'ltr' },
-  // { srclang: 'fa', label: 'فارسی', dir: 'rtl' },
-  // { srclang: 'fr', label: 'Français', dir: 'ltr' },
-  // { srclang: 'es', label: 'Español', dir: 'ltr' },
-  // { srclang: 'pl', label: 'Polski', dir: 'ltr' },
-  // { srclang: 'da', label: 'Dansk', dir: 'ltr' },
-  // { srclang: 'ru', label: 'Русский', dir: 'ltr' },
+  // Translated from the German by AI (not native-checked) — published per the
+  // owner's decision; replace any file with a reviewed version when available.
+  { srclang: 'ar', label: 'العربية', dir: 'rtl' },
+  { srclang: 'tr', label: 'Türkçe', dir: 'ltr' },
+  { srclang: 'fa', label: 'فارسی', dir: 'rtl' },
+  { srclang: 'fr', label: 'Français', dir: 'ltr' },
+  { srclang: 'es', label: 'Español', dir: 'ltr' },
+  { srclang: 'pl', label: 'Polski', dir: 'ltr' },
+  { srclang: 'da', label: 'Dansk', dir: 'ltr' },
+  { srclang: 'ru', label: 'Русский', dir: 'ltr' },
 ]
 
 // VideoPlayer `tracks` prop, derived from the config above.

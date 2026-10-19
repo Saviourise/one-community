@@ -81,5 +81,5 @@ export const footer = {
     { label: 'Instagram', href: 'https://www.instagram.com/onecommunityprojekt/' },
     { label: 'Facebook', href: 'https://www.facebook.com/share/1ECL7eBoxn/' },
   ],
-  email: 'hello@onecommunityproject.com',
+  email: 'hello@onecommunityproject.org',
 }

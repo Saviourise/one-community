@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import styles from './VideoPlayer.module.css'
+import { useT } from '../i18n/LanguageContext.jsx'
 
 /**
  * Host-agnostic HTML5 video player with:
@@ -33,6 +34,7 @@ export default function VideoPlayer({
   loop = false,
   muted = false,
 }) {
+  const t = useT()
   const videoRef = useRef(null)
   const menuRef = useRef(null)
   const resolvedSources = sources?.length ? sources : src ? [{ src, type: 'video/mp4' }] : []
@@ -78,7 +80,9 @@ export default function VideoPlayer({
   }
 
   const activeLabel =
-    activeLang === 'off' ? 'Off' : tracks.find((t) => t.srclang === activeLang)?.label || 'On'
+    activeLang === 'off'
+      ? t('videoPlayer.off')
+      : tracks.find((tr) => tr.srclang === activeLang)?.label || t('videoPlayer.on')
 
   return (
     <div className={`${styles.wrap} ${className}`.trim()}>
@@ -110,7 +114,7 @@ export default function VideoPlayer({
             label={t.label}
           />
         ))}
-        Your browser doesn’t support embedded video.
+        {t('videoPlayer.unsupported')}
       </video>
 
       {tracks.length > 0 && (
@@ -126,11 +130,15 @@ export default function VideoPlayer({
               <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" strokeWidth="2" />
               <path d="M10 10.2a2 2 0 0 0-3.4 1.5v.6A2 2 0 0 0 10 13.8M18 10.2a2 2 0 0 0-3.4 1.5v.6a2 2 0 0 0 3.4 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
-            <span className={styles.ccLabel}>Subtitles: <bdi>{activeLabel}</bdi></span>
+            <span className={styles.ccLabel}>
+              {/* prefix via t() with an empty slot, label in <bdi> to isolate RTL track names */}
+              {t('videoPlayer.subtitles', { label: '' })}
+              <bdi>{activeLabel}</bdi>
+            </span>
           </button>
 
           {menuOpen && (
-            <div className={styles.menu} role="menu" aria-label="Subtitle language">
+            <div className={styles.menu} role="menu" aria-label={t('videoPlayer.subtitleAria')}>
               <button
                 type="button"
                 role="menuitemradio"
@@ -138,7 +146,7 @@ export default function VideoPlayer({
                 className={`${styles.menuItem} ${activeLang === 'off' ? styles.menuItemActive : ''}`}
                 onClick={() => choose('off')}
               >
-                Off
+                {t('videoPlayer.off')}
               </button>
               {tracks.map((t) => (
                 <button

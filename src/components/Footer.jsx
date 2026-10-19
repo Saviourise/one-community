@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
-import { brand, footer } from '../data/siteContent.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import styles from './Footer.module.css'
 
 export default function Footer() {
+  const { footer, brand } = useContent()
+  const t = useT()
   const year = 2026 // static build; update or wire to a real date at deploy time
 
   return (
@@ -50,7 +52,7 @@ export default function Footer() {
         <span>
           © {year} {brand.name}
         </span>
-        <nav className={styles.legal} aria-label="Legal">
+        <nav className={styles.legal} aria-label={t('footer.legalAria')}>
           {footer.legal.map((l) => (
             <Link key={l.label} to={l.to}>
               {l.label}

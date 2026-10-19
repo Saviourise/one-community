@@ -1,28 +1,29 @@
 import { useEffect } from 'react'
 import Button from '../components/Button.jsx'
-import { brand } from '../data/siteContent.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import pages from './pages.module.css'
 
 export default function NotFound() {
+  const t = useT()
+  const { brand } = useContent()
+
   useEffect(() => {
-    document.title = `Page not found, ${brand.name}`
-  }, [])
+    document.title = `${t('notFound.docTitle')}, ${brand.name}`
+  }, [t, brand])
 
   return (
     <div className={`container ${pages.notFound}`}>
       <span className="eyebrow" style={{ justifySelf: 'center' }}>
-        Not found
+        {t('notFound.eyebrow')}
       </span>
       <span className={pages.big}>404</span>
-      <p className="lede">
-        This page isn’t here. The projects and the film are.
-      </p>
+      <p className="lede">{t('notFound.lede')}</p>
       <div style={{ display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap' }}>
         <Button to="/" variant="cta" arrow>
-          Back home
+          {t('notFound.backHome')}
         </Button>
         <Button to="/projects" variant="ghost">
-          See our projects
+          {t('notFound.seeProjects')}
         </Button>
       </div>
     </div>

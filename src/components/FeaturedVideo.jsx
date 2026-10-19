@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Button from './Button.jsx'
 import Reveal from './Reveal.jsx'
-import { getProject } from '../data/projects.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import { artworkCss } from '../lib/placeholder.js'
 import styles from './sections.module.css'
 
@@ -17,6 +17,8 @@ const PlayIcon = () => (
  * links through to the project detail page. Deliberately a single action.
  */
 export default function FeaturedVideo() {
+  const { getProject } = useContent()
+  const t = useT()
   const project = getProject('tedx-talk')
   if (!project) return null
   const to = `/projects/${project.slug}`
@@ -31,7 +33,7 @@ export default function FeaturedVideo() {
             <div className={styles.fvMedia} style={{ backgroundImage: poster }}>
               <iframe
                 src={project.video}
-                title={`${project.title} video`}
+                title={t('featuredVideo.videoSuffix', { title: project.title })}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -41,13 +43,13 @@ export default function FeaturedVideo() {
               to={to}
               className={styles.fvMedia}
               style={{ display: 'block', backgroundImage: poster }}
-              aria-label={`${project.videoLabel || 'Watch'}, ${project.title}`}
+              aria-label={`${project.videoLabel || t('featuredVideo.watch')}, ${project.title}`}
             >
               <span className={styles.fvPlay}>
                 <PlayIcon />
               </span>
               <span className={styles.fvPosterOverlay}>
-                <span className={styles.fvCaption}>{project.videoLabel || 'Watch the film'}</span>
+                <span className={styles.fvCaption}>{project.videoLabel || t('featuredVideo.watchFilm')}</span>
               </span>
             </Link>
           )}
@@ -55,10 +57,10 @@ export default function FeaturedVideo() {
 
         <Reveal className={styles.fvBody} delay={0.1}>
           <span className="badge">{project.kicker}</span>
-          <h2 id="fv-title">The argument, in twenty minutes</h2>
+          <h2 id="fv-title">{t('featuredVideo.title')}</h2>
           <p className="lede">{project.short}</p>
           <Button to={to} variant="dark" arrow>
-            More about the talk
+            {t('featuredVideo.more')}
           </Button>
         </Reveal>
       </div>

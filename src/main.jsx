@@ -13,11 +13,14 @@ import '@fontsource-variable/vazirmatn'
 
 import './styles/global.css'
 import App from './App.jsx'
+import { LanguageProvider } from './i18n/LanguageContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </LanguageProvider>
   </StrictMode>,
 )

@@ -3,21 +3,23 @@ import { useSearchParams } from 'react-router-dom'
 
 import Reveal from '../components/Reveal.jsx'
 import Button from '../components/Button.jsx'
-import { brand, footer } from '../data/siteContent.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import { driveCssFallback } from '../lib/placeholder.js'
 import pages from './pages.module.css'
 
 const empty = { name: '', email: '', message: '', watchParty: false }
 
 export default function Contact() {
+  const { brand, footer } = useContent()
+  const t = useT()
   const [params] = useSearchParams()
   const [form, setForm] = useState({ ...empty, watchParty: params.get('watch-party') === '1' })
   const [errors, setErrors] = useState({})
   const [sent, setSent] = useState(false)
 
   useEffect(() => {
-    document.title = `Contact, ${brand.name}`
-  }, [])
+    document.title = `${t('contact.docTitle')}, ${brand.name}`
+  }, [t, brand.name])
 
   const update = (key) => (e) => {
     const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
@@ -27,10 +29,10 @@ export default function Contact() {
 
   const validate = () => {
     const next = {}
-    if (!form.name.trim()) next.name = 'Please tell us your name.'
-    if (!form.email.trim()) next.email = 'We need an email to reply.'
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = 'That email looks off.'
-    if (!form.message.trim()) next.message = 'A short message helps us help you.'
+    if (!form.name.trim()) next.name = t('contact.errName')
+    if (!form.email.trim()) next.email = t('contact.errEmail')
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = t('contact.errEmailBad')
+    if (!form.message.trim()) next.message = t('contact.errMsg')
     return next
   }
 
@@ -44,16 +46,15 @@ export default function Contact() {
     }
   }
 
+  const firstName = form.name.trim().split(' ')[0]
+
   return (
     <>
       <header className={pages.pageHeader}>
         <div className={`container ${pages.pageHeaderInner}`}>
-          <span className="eyebrow">Get in touch</span>
-          <h1>Screenings, workshops, partnerships.</h1>
-          <p className="lede">
-            Request a screening of Noch einmal Walzer for your institution, ask about a workshop,
-            or propose a partnership. Every message is read by a real person.
-          </p>
+          <span className="eyebrow">{t('contact.eyebrow')}</span>
+          <h1>{t('contact.title')}</h1>
+          <p className="lede">{t('contact.lede')}</p>
         </div>
       </header>
 
@@ -73,10 +74,13 @@ export default function Contact() {
                     />
                   </svg>
                 </div>
-                <h2>Thank you, {form.name.split(' ')[0] || 'friend'}!</h2>
+                <h2>
+                  {firstName ? t('contact.thankYou', { name: firstName }) : t('contact.thankYouNoName')}
+                </h2>
                 <p className="lede">
-                  Your message is on its way{form.watchParty ? ', with your watch party noted' : ''}
-                  . We’ll be in touch soon.
+                  {t('contact.sentLede')}
+                  {form.watchParty ? t('contact.sentWatch') : ''}
+                  {t('contact.sentEnd')}
                 </p>
                 <div style={{ marginTop: '1.4rem' }}>
                   <Button
@@ -86,7 +90,7 @@ export default function Contact() {
                       setSent(false)
                     }}
                   >
-                    Send another message
+                    {t('contact.sendAnother')}
                   </Button>
                 </div>
               </div>
@@ -94,31 +98,31 @@ export default function Contact() {
               <form className={pages.form} onSubmit={onSubmit} noValidate>
                 <div className={pages.formRow}>
                   <div className={`field ${errors.name ? 'field--error' : ''}`}>
-                    <label htmlFor="name">Your name</label>
-                    <input id="name" type="text" value={form.name} onChange={update('name')} placeholder="Your name" />
+                    <label htmlFor="name">{t('contact.nameLabel')}</label>
+                    <input id="name" type="text" value={form.name} onChange={update('name')} placeholder={t('contact.namePlaceholder')} />
                     {errors.name && <span className="field-error">{errors.name}</span>}
                   </div>
                   <div className={`field ${errors.email ? 'field--error' : ''}`}>
-                    <label htmlFor="email">Email</label>
-                    <input id="email" type="email" value={form.email} onChange={update('email')} placeholder="you@example.com" />
+                    <label htmlFor="email">{t('contact.emailLabel')}</label>
+                    <input id="email" type="email" value={form.email} onChange={update('email')} placeholder={t('contact.emailPlaceholder')} />
                     {errors.email && <span className="field-error">{errors.email}</span>}
                   </div>
                 </div>
 
                 <div className={`field ${errors.message ? 'field--error' : ''}`}>
-                  <label htmlFor="message">Message</label>
-                  <textarea id="message" value={form.message} onChange={update('message')} placeholder="Tell us what you have in mind…" />
+                  <label htmlFor="message">{t('contact.msgLabel')}</label>
+                  <textarea id="message" value={form.message} onChange={update('message')} placeholder={t('contact.msgPlaceholder')} />
                   {errors.message && <span className="field-error">{errors.message}</span>}
                 </div>
 
                 <div className={pages.checkline}>
                   <input id="watchParty" type="checkbox" checked={form.watchParty} onChange={update('watchParty')} />
-                  <label htmlFor="watchParty">I’d like to host a watch party or a screening</label>
+                  <label htmlFor="watchParty">{t('contact.watchCheckbox')}</label>
                 </div>
 
                 <div>
                   <Button type="submit" variant="cta" arrow>
-                    Send message
+                    {t('contact.send')}
                   </Button>
                 </div>
               </form>
@@ -131,21 +135,17 @@ export default function Contact() {
                 className={pages.asideImg}
                 style={{ backgroundImage: driveCssFallback('1FK6gd5l3bVMKOECFpYOSdWNbmnm7UoLv', 'contact', 900) }}
                 role="img"
-                aria-label="Community members greeting each other"
+                aria-label={t('contact.asideAria')}
               />
               <div className={pages.infoCard}>
-                <h3>Email us</h3>
+                <h3>{t('contact.emailUs')}</h3>
                 <p>
                   <a href={`mailto:${footer.email}`}>{footer.email}</a>
                 </p>
               </div>
               <div className={pages.infoCard}>
-                <h3>Host a watch party or a screening</h3>
-                <p>
-                  For a TEDx watch party, you can watch The Power of Small Encounters and discuss
-                  it together. To arrange a screening of Noch einmal Walzer, contact us to plan a
-                  session for your organisation.
-                </p>
+                <h3>{t('contact.hostTitle')}</h3>
+                <p>{t('contact.hostBody')}</p>
               </div>
             </div>
           </Reveal>

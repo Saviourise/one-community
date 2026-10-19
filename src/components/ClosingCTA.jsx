@@ -1,10 +1,11 @@
 import Button from './Button.jsx'
 import Reveal from './Reveal.jsx'
-import { closingCta } from '../data/siteContent.js'
+import { useContent } from '../i18n/LanguageContext.jsx'
 import { driveCssFallback } from '../lib/placeholder.js'
 import styles from './sections.module.css'
 
 export default function ClosingCTA() {
+  const { closingCta } = useContent()
   return (
     <section className="section container" aria-labelledby="cc-title">
       <Reveal>

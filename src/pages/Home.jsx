@@ -15,14 +15,16 @@ import Workshops from '../components/Workshops.jsx'
 import Together from '../components/Together.jsx'
 import Button from '../components/Button.jsx'
 
-import { projects } from '../data/projects.js'
-import { brand } from '../data/siteContent.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import pages from './pages.module.css'
 
 export default function Home() {
+  const t = useT()
+  const { projects, brand } = useContent()
+
   useEffect(() => {
     document.title = `${brand.name}, ${brand.tagline}`
-  }, [])
+  }, [brand])
 
   // Homepage preview: the projects flagged featuredHome (Concert, Homies & Omies,
   // Back to School). The TEDx Talk already has its own video section above.
@@ -43,11 +45,11 @@ export default function Home() {
       <section className="section container" aria-labelledby="proj-title">
         <div className={pages.previewHead}>
           <div className="section-head">
-            <span className="eyebrow">What we do</span>
-            <h2 id="proj-title">The work, strand by strand</h2>
+            <span className="eyebrow">{t('home.whatWeDo')}</span>
+            <h2 id="proj-title">{t('home.workStrand')}</h2>
           </div>
           <Button to="/projects" variant="ghost" arrow>
-            See all projects
+            {t('home.seeAllProjects')}
           </Button>
         </div>
         <ProjectGrid projects={preview} enableSpotlight={false} showStats />

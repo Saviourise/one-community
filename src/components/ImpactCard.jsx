@@ -1,6 +1,6 @@
 import Button from './Button.jsx'
 import Reveal from './Reveal.jsx'
-import { impactCard } from '../data/siteContent.js'
+import { useContent } from '../i18n/LanguageContext.jsx'
 import { driveCssFallback } from '../lib/placeholder.js'
 import styles from './sections.module.css'
 
@@ -10,6 +10,7 @@ import styles from './sections.module.css'
  * a tagline, and a single button. Content comes from siteContent.impactCard.
  */
 export default function ImpactCard() {
+  const { impactCard } = useContent()
   return (
     <section className="section container" aria-labelledby="ic-title">
       <Reveal>

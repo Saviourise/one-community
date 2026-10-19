@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { drive, imgFallback } from '../lib/placeholder.js'
+import { useT } from '../i18n/LanguageContext.jsx'
 import styles from './Gallery.module.css'
 
 const Icon = ({ d }) => (
@@ -16,7 +17,9 @@ const EXPAND = 'M9 4H5a1 1 0 0 0-1 1v4m11-5h4a1 1 0 0 1 1 1v4M9 20H5a1 1 0 0 1-1
  * so mixed portrait/landscape sit together cleanly with no cropping.
  * `images` is an array of Drive/asset ids; `label` names the set.
  */
-export default function Gallery({ images = [], label = 'Photos', credit = '' }) {
+export default function Gallery({ images = [], label = '', credit = '' }) {
+  const t = useT()
+  const resolvedLabel = label || t('gallery.defaultLabel')
   const [open, setOpen] = useState(null) // index | null
   const count = images.length
   const reduce = useReducedMotion()
@@ -80,14 +83,14 @@ export default function Gallery({ images = [], label = 'Photos', credit = '' }) 
             key={id}
             className={styles.item}
             onClick={(e) => openAt(i, e)}
-            aria-label={`Open photo ${i + 1} of ${count}`}
+            aria-label={t('gallery.openPhoto', { n: i + 1, count })}
           >
             <img
               className={styles.img}
               src={drive(id)}
-              alt={`${label}, photo ${i + 1}`}
+              alt={t('gallery.photoAlt', { label: resolvedLabel, n: i + 1 })}
               loading="lazy"
-              onError={imgFallback(`${label}-${i}`, 800, 560)}
+              onError={imgFallback(`${resolvedLabel}-${i}`, 800, 560)}
             />
             <span className={styles.expand} aria-hidden="true">
               <Icon d={EXPAND} />
@@ -98,7 +101,7 @@ export default function Gallery({ images = [], label = 'Photos', credit = '' }) 
 
       {credit && (
         <p className={styles.credit}>
-          Photos: {credit}
+          {t('gallery.photosCredit', { credit })}
         </p>
       )}
 
@@ -114,9 +117,9 @@ export default function Gallery({ images = [], label = 'Photos', credit = '' }) 
             transition={{ duration: 0.25 }}
             role="dialog"
             aria-modal="true"
-            aria-label={`${label} gallery, photo ${open + 1} of ${count}`}
+            aria-label={t('gallery.dialogAria', { label: resolvedLabel, n: open + 1, count })}
           >
-            <button className={`${styles.ctrl} ${styles.close}`} onClick={close} aria-label="Close gallery">
+            <button className={`${styles.ctrl} ${styles.close}`} onClick={close} aria-label={t('gallery.close')}>
               <Icon d="M6 6l12 12M18 6L6 18" />
             </button>
             {count > 1 && (
@@ -124,14 +127,14 @@ export default function Gallery({ images = [], label = 'Photos', credit = '' }) 
                 <button
                   className={`${styles.ctrl} ${styles.prev}`}
                   onClick={(e) => { e.stopPropagation(); step(-1) }}
-                  aria-label="Previous photo"
+                  aria-label={t('gallery.prev')}
                 >
                   <Icon d="M15 6l-6 6 6 6" />
                 </button>
                 <button
                   className={`${styles.ctrl} ${styles.next}`}
                   onClick={(e) => { e.stopPropagation(); step(1) }}
-                  aria-label="Next photo"
+                  aria-label={t('gallery.next')}
                 >
                   <Icon d="M9 6l6 6-6 6" />
                 </button>
@@ -148,12 +151,12 @@ export default function Gallery({ images = [], label = 'Photos', credit = '' }) 
               <img
                 className={styles.stageImg}
                 src={drive(images[open])}
-                alt={`${label}, photo ${open + 1}`}
-                onError={imgFallback(`${label}-lg-${open}`, 1200, 800)}
+                alt={t('gallery.photoAlt', { label: resolvedLabel, n: open + 1 })}
+                onError={imgFallback(`${resolvedLabel}-lg-${open}`, 1200, 800)}
               />
               <span className={styles.caption}>
-                <b>{label}</b> · {open + 1} / {count}
-                {credit && <> · Photo: {credit}</>}
+                <b>{resolvedLabel}</b> · {open + 1} / {count}
+                {credit && <> · {t('gallery.photoCredit', { credit })}</>}
               </span>
             </motion.div>
           </motion.div>

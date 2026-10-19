@@ -4,14 +4,16 @@ import SectionHeading from '../components/SectionHeading.jsx'
 import ProjectCard from '../components/ProjectCard.jsx'
 import ProjectGrid from '../components/ProjectGrid.jsx'
 import ClosingCTA from '../components/ClosingCTA.jsx'
-import { projects } from '../data/projects.js'
-import { brand } from '../data/siteContent.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import pages from './pages.module.css'
 
 export default function Projects() {
+  const t = useT()
+  const { projects, brand } = useContent()
+
   useEffect(() => {
-    document.title = `Projects, ${brand.name}`
-  }, [])
+    document.title = `${t('projectsPage.docTitle')}, ${brand.name}`
+  }, [t, brand])
 
   const spotlight = projects.filter((p) => p.spotlight)
   const rest = projects.filter((p) => !p.spotlight)
@@ -20,13 +22,9 @@ export default function Projects() {
     <>
       <header className={pages.pageHeader}>
         <div className={`container ${pages.pageHeaderInner}`}>
-          <span className="eyebrow">Our work</span>
-          <h1>One method, several strands.</h1>
-          <p className="lede">
-            It runs from weekly music in a care home to a documentary now shown across three
-            countries. Each strand is the same idea in a different room: bring people into
-            contact, then do it again.
-          </p>
+          <span className="eyebrow">{t('projectsPage.eyebrow')}</span>
+          <h1>{t('projectsPage.title')}</h1>
+          <p className="lede">{t('projectsPage.lede')}</p>
         </div>
       </header>
 
@@ -44,7 +42,7 @@ export default function Projects() {
       {/* Everything else */}
       <section className="section section--tint">
         <div className="container">
-          <SectionHeading eyebrow="More initiatives" title="Ongoing & seasonal projects" />
+          <SectionHeading eyebrow={t('projectsPage.moreEyebrow')} title={t('projectsPage.moreTitle')} />
           <ProjectGrid projects={rest} enableSpotlight={false} showStats />
         </div>
       </section>
@@ -53,10 +51,9 @@ export default function Projects() {
       <section className="section container">
         <Reveal>
           <p className="lede" style={{ maxWidth: '58ch' }}>
-            There are also one-off screenings, community tables and staff trainings that do not
-            each need a page. They are logged in the attendance record all the same.{' '}
+            {t('projectsPage.moreLede')}{' '}
             <a className="link-arrow" href="/contact">
-              Ask what’s coming up
+              {t('projectsPage.askUpcoming')}
             </a>
           </p>
         </Reveal>

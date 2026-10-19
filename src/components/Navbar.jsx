@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'motion/react'
 
-import { brand, nav } from '../data/siteContent.js'
-import { projects } from '../data/projects.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import Button from './Button.jsx'
+import LanguageSwitch from './LanguageSwitch.jsx'
 import styles from './Navbar.module.css'
 
 const DOT_COLORS = {
@@ -23,6 +23,8 @@ const Caret = () => (
 )
 
 export default function Navbar() {
+  const { brand, nav, projects } = useContent()
+  const t = useT()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false) // Projects dropdown
@@ -51,7 +53,7 @@ export default function Navbar() {
       className={`${styles.header} ${scrolled ? styles.scrolled : ''} ${light ? styles.light : ''}`}
     >
       <div className={`container ${styles.inner}`}>
-        <Link to="/" className={styles.brand} aria-label={`${brand.name}, home`}>
+        <Link to="/" className={styles.brand} aria-label={t('nav.brandHome', { name: brand.name })}>
           <span className={styles.mark} aria-hidden="true">
             <span className={styles.markDot} />
           </span>
@@ -61,7 +63,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav className={styles.nav} aria-label="Primary">
+        <nav className={styles.nav} aria-label={t('nav.primaryAria')}>
           {nav.map((item) => (
             <div
               key={item.to}
@@ -90,9 +92,9 @@ export default function Navbar() {
                 <div
                   className={`${styles.menu} ${menuOpen ? styles.menuOpen : ''}`}
                   role="menu"
-                  aria-label="Projects"
+                  aria-label={t('nav.projectsAria')}
                 >
-                  <p className={styles.menuHead}>Our work</p>
+                  <p className={styles.menuHead}>{t('nav.ourWork')}</p>
                   <div className={styles.menuGrid}>
                     {projects.slice(0, 6).map((p) => (
                       <Link
@@ -115,9 +117,11 @@ export default function Navbar() {
                   </div>
                   <div className={styles.menuFoot}>
                     <Link to="/projects" className="link-arrow" onClick={() => setMenuOpen(false)}>
-                      See all projects
+                      {t('nav.seeAllProjects')}
                     </Link>
-                    <span className={styles.menuCount}>{projects.length} initiatives</span>
+                    <span className={styles.menuCount}>
+                      {t('nav.initiatives', { count: projects.length })}
+                    </span>
                   </div>
                 </div>
               )}
@@ -126,12 +130,13 @@ export default function Navbar() {
         </nav>
 
         <div className={styles.actions}>
+          <LanguageSwitch />
           <Button to="/contact" variant="cta" className={styles.cta} arrow>
-            Partner with us
+            {t('nav.partnerWithUs')}
           </Button>
           <button
             className={`${styles.burger} ${open ? styles.open : ''}`}
-            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-label={open ? t('nav.closeMenu') : t('nav.openMenu')}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
@@ -167,7 +172,7 @@ export default function Navbar() {
                 </div>
               ))}
               <Button to="/contact" variant="cta" className={styles.drawerCta} arrow>
-                Partner with us
+                {t('nav.partnerWithUs')}
               </Button>
             </div>
           </motion.div>

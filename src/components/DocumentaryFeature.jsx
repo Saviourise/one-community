@@ -1,7 +1,7 @@
 import Reveal from './Reveal.jsx'
 import SectionHeading from './SectionHeading.jsx'
 import VideoPlayer from './VideoPlayer.jsx'
-import { getProject } from '../data/projects.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import styles from './sections.module.css'
 
 /**
@@ -10,6 +10,8 @@ import styles from './sections.module.css'
  * has no video. Copy is pulled from the project so it stays in sync.
  */
 export default function DocumentaryFeature() {
+  const { getProject } = useContent()
+  const t = useT()
   const project = getProject('noch-einmal-walzer')
   if (!project?.video) return null
 
@@ -17,7 +19,7 @@ export default function DocumentaryFeature() {
     <section className="section container" aria-labelledby="doc-title">
       <SectionHeading
         id="doc-title"
-        eyebrow="Our documentary"
+        eyebrow={t('documentaryFeature.eyebrow')}
         title={project.title}
         body={project.short}
         center
@@ -27,14 +29,14 @@ export default function DocumentaryFeature() {
           <VideoPlayer
             src={project.player.src}
             poster={project.player.poster}
-            title={`${project.title} trailer`}
+            title={t('documentaryFeature.trailerSuffix', { title: project.title })}
             tracks={project.player.tracks}
           />
         ) : (
           <div className={styles.docVideo}>
             <iframe
               src={project.video}
-              title={`${project.title} trailer`}
+              title={t('documentaryFeature.trailerSuffix', { title: project.title })}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />

@@ -8,27 +8,30 @@ import SectionHeading from '../components/SectionHeading.jsx'
 import ClosingCTA from '../components/ClosingCTA.jsx'
 import Gallery from '../components/Gallery.jsx'
 import VideoPlayer from '../components/VideoPlayer.jsx'
-import { getProject, projects } from '../data/projects.js'
 import { getGallery, getGalleryCredit } from '../data/galleries.js'
-import { brand } from '../data/siteContent.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import { artworkCss, drive } from '../lib/placeholder.js'
 import pages from './pages.module.css'
 
 export default function ProjectDetail() {
+  const { getProject, projects, brand } = useContent()
+  const t = useT()
   const { slug } = useParams()
   const project = getProject(slug)
 
   useEffect(() => {
-    document.title = project ? `${project.title}, ${brand.name}` : `Not found, ${brand.name}`
-  }, [project])
+    document.title = project
+      ? `${project.title}, ${brand.name}`
+      : `${t('projectDetail.notFoundDocTitle')}, ${brand.name}`
+  }, [project, brand.name, t])
 
   if (!project) {
     return (
       <div className={`container ${pages.notFound}`}>
-        <h1>Project not found</h1>
-        <p className="lede">We couldn’t find that project, it may have moved.</p>
+        <h1>{t('projectDetail.notFoundTitle')}</h1>
+        <p className="lede">{t('projectDetail.notFoundLede')}</p>
         <Button to="/projects" variant="cta" arrow>
-          Back to all projects
+          {t('projectDetail.backToAll')}
         </Button>
       </div>
     )
@@ -47,7 +50,8 @@ export default function ProjectDetail() {
       <header className={pages.pageHeader} style={{ backgroundImage: banner }}>
         <div className={`container ${pages.pageHeaderInner}`}>
           <span className={pages.crumbs}>
-            <Link to="/projects">Projects</Link> <span aria-hidden="true">/</span> {project.title}
+            <Link to="/projects">{t('projectDetail.breadcrumbProjects')}</Link>{' '}
+            <span aria-hidden="true">/</span> {project.title}
           </span>
           <span className="badge" style={{ justifySelf: 'start' }}>
             {project.kicker}
@@ -66,7 +70,7 @@ export default function ProjectDetail() {
                 backgroundImage: `url("${heroMedia}"), ${artworkCss({ seed: `${project.slug}-hero`, w: 1200, h: 750 })}`,
               }}
               role="img"
-              aria-label={`${project.title} in action`}
+              aria-label={t('projectDetail.inAction', { title: project.title })}
             />
           </Reveal>
         )}
@@ -97,11 +101,11 @@ export default function ProjectDetail() {
                 </Button>
               ) : (
                 <Button to="/contact" variant="cta" arrow>
-                  Get involved
+                  {t('common.getInvolved')}
                 </Button>
               )}
               <Button to="/projects" variant="ghost">
-                All projects
+                {t('common.allProjects')}
               </Button>
             </aside>
           </Reveal>
@@ -114,14 +118,14 @@ export default function ProjectDetail() {
             <VideoPlayer
               src={project.player.src}
               poster={project.player.poster}
-              title={`${project.title} video`}
+              title={t('projectDetail.videoSuffix', { title: project.title })}
               tracks={project.player.tracks}
             />
           ) : (
             <div className={pages.detailVideo}>
               <iframe
                 src={project.video}
-                title={`${project.title} video`}
+                title={t('projectDetail.videoSuffix', { title: project.title })}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -139,14 +143,20 @@ export default function ProjectDetail() {
 
       {gallery.length > 0 && (
         <section className="section container">
-          <SectionHeading eyebrow="Gallery" title={`Inside ${project.title}`} />
+          <SectionHeading
+            eyebrow={t('projectDetail.galleryEyebrow')}
+            title={t('projectDetail.insideTitle', { title: project.title })}
+          />
           <Gallery images={gallery} label={project.title} credit={getGalleryCredit(project.slug)} />
         </section>
       )}
 
       <section className="section section--tint">
         <div className="container">
-          <SectionHeading eyebrow="Keep exploring" title="More from the community" />
+          <SectionHeading
+            eyebrow={t('projectDetail.keepExploring')}
+            title={t('projectDetail.moreFrom')}
+          />
           <ProjectGrid projects={related} enableSpotlight={false} />
         </div>
       </section>

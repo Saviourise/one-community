@@ -1,5 +1,5 @@
 import Reveal from './Reveal.jsx'
-import { partners } from '../data/partners.js'
+import { useContent } from '../i18n/LanguageContext.jsx'
 import styles from './sections.module.css'
 
 // Renders a wordmark placeholder per partner. TEDx gets its signature styling.
@@ -15,6 +15,7 @@ function PartnerMark({ name }) {
 }
 
 export default function PartnerStrip() {
+  const { partners } = useContent()
   return (
     <section className={`section ${styles.ptSection}`} aria-labelledby="partners-title">
       <div className="container">

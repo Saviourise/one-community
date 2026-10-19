@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import Reveal from './Reveal.jsx'
-import { blog } from '../data/blog.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import { artwork, imgFallback } from '../lib/placeholder.js'
 import styles from './sections.module.css'
 
 export default function BlogRow() {
+  const { blog } = useContent()
+  const t = useT()
   return (
     <section className="section container" aria-labelledby="blog-title">
       <div className={styles.blogHead}>
@@ -13,7 +15,7 @@ export default function BlogRow() {
           <h2 id="blog-title">{blog.title}</h2>
         </div>
         <Link to="/projects" className="link-arrow">
-          More stories
+          {t('blog.moreStories')}
         </Link>
       </div>
 
@@ -40,7 +42,7 @@ export default function BlogRow() {
                 <h3 className={styles.blogTitle}>{post.title}</h3>
                 <p className={styles.blogExcerpt}>{post.excerpt}</p>
                 <span className="link-arrow" style={{ marginTop: '0.4rem' }}>
-                  Read story
+                  {t('blog.readStory')}
                 </span>
               </div>
             </a>

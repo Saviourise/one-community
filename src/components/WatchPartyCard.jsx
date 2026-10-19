@@ -1,6 +1,6 @@
 import Button from './Button.jsx'
 import Reveal from './Reveal.jsx'
-import { watchParty } from '../data/watchParty.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import { driveCssFallback } from '../lib/placeholder.js'
 import styles from './sections.module.css'
 
@@ -9,6 +9,8 @@ import styles from './sections.module.css'
  * Returns null when watchParty.active is false (hidden without a redesign).
  */
 export default function WatchPartyCard() {
+  const { watchParty } = useContent()
+  const t = useT()
   if (!watchParty.active) return null
 
   return (
@@ -34,7 +36,7 @@ export default function WatchPartyCard() {
             className={styles.wpMedia}
             style={{ backgroundImage: driveCssFallback('1ioSFbHpSx8_qcrR6tL7XELYRU0vo1T_J', 'watchparty', 1000) }}
             role="img"
-            aria-label="Neighbours gathered together at a community event"
+            aria-label={t('watchPartyCard.aria')}
           />
         </div>
       </Reveal>

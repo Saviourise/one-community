@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 import Button from './Button.jsx'
-import { hero } from '../data/siteContent.js'
+import { useContent } from '../i18n/LanguageContext.jsx'
 import styles from './sections.module.css'
 
 const container = {
@@ -13,6 +13,7 @@ const item = {
 }
 
 export default function Hero() {
+  const { hero } = useContent()
   return (
     <section className={styles.hero} aria-labelledby="hero-title">
       <motion.div className={styles.heroContent} variants={container} initial="hidden" animate="show">

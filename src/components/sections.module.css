@@ -56,6 +56,11 @@
   letter-spacing: -0.025em;
   line-height: 0.96;
   margin: 1.1rem 0 1.3rem;
+  /* Long German compounds (e.g. "Zugehörigkeit", "Wiederholung") are wider than
+     this column at the display size — hyphenate (uses <html lang>) so they wrap
+     cleanly instead of overflowing under the photo. */
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 .heroTitle span {
   display: block;

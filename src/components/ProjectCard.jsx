@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useT } from '../i18n/LanguageContext.jsx'
 import { artwork, imgFallback } from '../lib/placeholder.js'
 import styles from './ProjectCard.module.css'
 
@@ -19,6 +20,7 @@ const ArrowSm = () => (
  * "via other means"). Pass `spotlight` for the large side-by-side treatment.
  */
 export default function ProjectCard({ project, spotlight = false, showStats = false }) {
+  const t = useT()
   return (
     <Link
       to={`/projects/${project.slug}`}
@@ -54,7 +56,7 @@ export default function ProjectCard({ project, spotlight = false, showStats = fa
 
         <div className={styles.footRow}>
           <span className={styles.explore}>
-            Explore project <ArrowSm />
+            {t('common.exploreProject')} <ArrowSm />
           </span>
         </div>
       </div>

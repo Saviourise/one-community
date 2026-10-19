@@ -1,20 +1,22 @@
 import Reveal from './Reveal.jsx'
 import SectionHeading from './SectionHeading.jsx'
 import Button from './Button.jsx'
-import { workshops } from '../data/workshops.js'
+import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import styles from './sections.module.css'
 
 /**
  * Community workshops grid, shown on the homepage after the projects preview.
  */
 export default function Workshops() {
+  const { workshops } = useContent()
+  const t = useT()
   return (
     <section className="section container" aria-labelledby="ws-title">
       <SectionHeading
         id="ws-title"
-        eyebrow="The method"
-        title="Music, dance and film"
-        body="Different ways to take part, share experiences and start a conversation."
+        eyebrow={t('workshops.eyebrow')}
+        title={t('workshops.title')}
+        body={t('workshops.body')}
       />
       <div className={styles.wsGrid}>
         {workshops.map((w, i) => (
@@ -29,7 +31,7 @@ export default function Workshops() {
       </div>
       <div className={styles.wsFoot}>
         <Button to="/contact" variant="cta" arrow>
-          Bring the method to your city
+          {t('workshops.cta')}
         </Button>
       </div>
     </section>

@@ -54,6 +54,34 @@ export const projects = [
     links: [{ label: 'Host a screening', to: '/contact' }],
   },
   {
+    slug: 'screenings-and-workshops',
+    title: 'Screenings & workshops',
+    kicker: 'Our main work since 2023',
+    palette: 'forest',
+    img: '/assets/screening-friedland.jpg',
+    short:
+      'Since 2023, the documentary Noch einmal Walzer has been the starting point for screenings with conversation, workshops and staff trainings in care, education, culture and integration work.',
+    tagline: 'The film opens the room. The conversation is the point.',
+    featuredHome: false,
+    spotlight: true,
+    stats: [
+      { value: '38', label: 'documented bookings since June 2023' },
+      { value: '1,644', label: 'recorded attendances in Germany, Ireland and Austria' },
+    ],
+    body: [
+      'We bring Noch einmal Walzer to you. A screening can be combined with a conversation or a workshop. Together we work out which format suits your group and who will lead the event.',
+      'Most bookings since 2023 have come from organisations using the film with their own staff and the people they serve: a Jobcenter, a dementia network, a psychiatric clinic, a youth welfare office, a migration museum, universities, churches and NGO trainings in Dublin.',
+      'There are three formats. A screening followed by a facilitated conversation. A workshop that combines the film with music, dance or storytelling. And a half-day or full-day training for professional teams.',
+      'At Museum Friedland in September 2024, an afternoon of dances for all generations led into the film and an open conversation in German, English and Arabic.',
+      'In September 2026, Christian Altmann of the city’s integration office led a full-day training for 26 social work professionals: a workshop with the film, then a module on responding to discrimination. 17 of the 19 participants who gave feedback rated the day good or very good.',
+      'Anyone can watch the full film on our Documentary page. For groups, we arrange screenings with a facilitated conversation, workshops and trainings: tell us about your group, your setting and the time you have.',
+    ],
+    links: [
+      { label: 'Request an event', to: '/contact' },
+      { label: 'Watch the full documentary', to: '/documentary' },
+    ],
+  },
+  {
     slug: 'tanz-gala',
     title: 'One Community Gala',
     kicker: 'Dance gala, 2022',
@@ -255,7 +283,7 @@ export const projects = [
     ],
     body: [
       'A watch party is the simple version. Gather a few people in a living room, a classroom or a staff room, play the TEDxLinz talk “The Power of Small Encounters”, and talk about it afterwards. It runs eighteen minutes.',
-      'Noch einmal Walzer is the 50-minute documentary. Institutions book it as a facilitated screening: the film, then a guided conversation, sometimes with a music or dance workshop beforehand. Facilitation scripts and exercises exist for a full-day staff training with the film; a general handbook is in development. The full film is not online; screenings are arranged directly.',
+      'Noch einmal Walzer is the 50-minute documentary. Institutions book it as a facilitated screening: the film, then a guided conversation, sometimes with a music or dance workshop beforehand. Facilitation scripts and exercises exist for a full-day staff training with the film; a general handbook is in development. The full film can be watched on our Documentary page; screenings for groups are arranged directly.',
       'Hosts have included Museum Friedland, Universität Jena, Heiligenfeld Kliniken, Netzwerk Demenz Vulkaneifel and NGO partners in Dublin.',
     ],
     links: [{ label: 'Host a watch party', to: '/contact?watch-party=1' }],

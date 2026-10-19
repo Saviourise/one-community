@@ -34,14 +34,14 @@ export const de = {
     primary: { label: 'Die Projekte ansehen' },
     secondary: { label: 'Über den Dokumentarfilm' },
     image: {
-      alt: 'Eine Pflegeheimbewohnerin mit rosa Schal lacht während einer Homies-&-Omies-Musiksession.',
+      alt: 'Eine Pflegeheimbewohnerin mit rosa Schal lacht während einer Musiksession von Homies & Omies.',
     },
   },
 
   closingCta: {
     eyebrow: 'Bringen Sie es in Ihre Stadt',
     title: 'Veranstalten Sie eine Watch-Party oder eine Vorführung.',
-    body: 'Jede und jeder kann eine Watch-Party veranstalten: der TEDxLinz-Talk, ein Raum, ein Gespräch im Anschluss. Institutionen können „Noch einmal Walzer“ als moderierte Vorführung buchen, mit einem Gespräch oder Workshop darum herum.',
+    body: 'Jede und jeder kann eine Watch-Party veranstalten: der TEDxLinz-Talk, ein Raum, ein Gespräch im Anschluss. Institutionen können „Noch einmal Walzer“ als moderierte Vorführung buchen, begleitet von einem Gespräch oder Workshop.',
     primary: { label: 'Kontakt aufnehmen' },
     secondary: { label: 'Projekte entdecken' },
   },
@@ -56,7 +56,7 @@ export const de = {
   },
 
   footer: {
-    blurb: 'Das One Community Project bringt Menschen durch Musik, Tanz und Film zusammen. Verwurzelt in Dessau-Roßlau, haben seine dokumentierten Vorführungen, Workshops und Mitarbeiterschulungen in Deutschland, Irland und Österreich stattgefunden.',
+    blurb: 'Das One Community Project bringt Menschen durch Musik, Tanz und Film zusammen. Es ist in Dessau-Roßlau verwurzelt; seine dokumentierten Vorführungen, Workshops und Mitarbeiterschulungen fanden in Deutschland, Irland und Österreich statt.',
     columns: [
       {
         title: 'Entdecken',
@@ -73,7 +73,7 @@ export const de = {
       // noch-einmal-walzer
       kicker: 'Dokumentarfilm, 2023',
       short:
-        'Ein 50-minütiger Dokumentarfilm, der fünf Monate Walzerkurse zwischen Geflüchteten, Migrantinnen und Migranten, internationalen Studierenden und Pflegeheimbewohnerinnen und -bewohnern begleitet.',
+        'Ein 50-minütiger Dokumentarfilm, der fünf Monate lang gemeinsame Walzerkurse für Geflüchtete, Migrantinnen und Migranten, internationale Studierende sowie Pflegeheimbewohnerinnen und -bewohner begleitet.',
       tagline: 'Noch ein Walzer und ein Raum voller Menschen, die sich nie zuvor begegnet waren.',
       videoLabel: 'Trailer ansehen',
       fullDoc: { label: 'Den ganzen Film ansehen' },
@@ -97,7 +97,7 @@ export const de = {
         'Die One Community Gala am 25. Juni 2022 folgte auf fünf Monate Walzerkurse und brachte Mitwirkende im Alter von 9 bis 96 Jahren in Dessau-Roßlau zusammen.',
       tagline: 'Verschiedene Schritte, ein Rhythmus.',
       videoLabel: 'Den Gala-Film ansehen',
-      stats: [{ label: 'fünf Monate Kurse' }, { label: 'Alter der Mitwirkenden' }],
+      stats: [{ label: 'fünf Monate Kurse' }, { value: '9 bis 96', label: 'Alter der Mitwirkenden' }],
       body: [
         'Die Gala folgte auf fünf Monate Walzerkurse mit Geflüchteten, Migrantinnen und Migranten, internationalen Studierenden und Bewohnerinnen und Bewohnern dreier Pflegeheime.',
         'Man braucht keine gemeinsame Sprache, um sich gemeinsam im Dreivierteltakt zu bewegen. Man muss nur da sein, Woche für Woche, und die Hand reichen.',
@@ -127,7 +127,7 @@ export const de = {
       videoLabel: 'Den TEDx-Talk ansehen',
       stats: [{ label: 'TEDxLinz, 21. Februar' }, { label: 'Länge des Talks' }],
       body: [
-        'Aufgezeichnet bei TEDxLinz am 21. Februar 2026, schöpft der 18-minütige Talk aus persönlichen Erfahrungen des Aufeinandertreffens und des Findens von Verbindung.',
+        'Der 18-minütige Talk wurde am 21. Februar 2026 bei TEDxLinz aufgezeichnet. Darin geht es um persönliche Erfahrungen mit Begegnungen und darum, Verbundenheit zu finden.',
         'Er gibt Partnern, Förderern und Gastgebern eine Möglichkeit, die Arbeit in unter zwanzig Minuten zu verstehen. Und er ist das, was man gemeinsam bei Watch-Partys ansieht.',
       ],
       links: [{ label: 'Eine Watch-Party veranstalten' }],
@@ -169,7 +169,7 @@ export const de = {
       videoLabel: 'Das Musikvideo ansehen',
       stats: [
         { label: 'veröffentlicht im November' },
-        { value: '1.', label: 'Platz, Integrationspreis Sachsen-Anhalt, im selben Jahr' },
+        { value: '1.', label: 'Platz, Integrationspreis des Landes Sachsen-Anhalt, im selben Jahr' },
       ],
       body: [
         '„Shoot for the Moon“ machte die Botschaft des Projekts zu etwas, das man mitsummen kann. Es wurde mit Mitgliedern der Gemeinschaft aufgenommen und gefilmt, vor und hinter der Kamera.',
@@ -181,7 +181,7 @@ export const de = {
       // ocg-documentary (Einblick)
       kicker: 'Früher Film, 2020',
       short:
-        'Ein früher Kurzfilm, der zurückblickt, wie aus den wöchentlichen Besuchen im Pflegeheim ein Projekt wurde.',
+        'Ein früher Kurzfilm, der darauf zurückblickt, wie aus den wöchentlichen Besuchen im Pflegeheim ein Projekt wurde.',
       tagline: 'Wo es begann, in ihren eigenen Worten.',
       videoLabel: 'Den Film ansehen',
       stats: [{ label: 'veröffentlicht' }],
@@ -215,7 +215,7 @@ export const de = {
         { label: '„Noch einmal Walzer“, der Dokumentarfilm für moderierte Vorführungen' },
       ],
       body: [
-        'Eine Watch-Party ist die einfache Variante. Versammeln Sie ein paar Menschen in einem Wohnzimmer, einem Klassenzimmer oder einem Aufenthaltsraum, spielen Sie den TEDxLinz-Talk „The Power of Small Encounters“ ab und sprechen Sie anschließend darüber. Er dauert achtzehn Minuten.',
+        'Eine Watch-Party ist die einfache Variante. Versammeln Sie ein paar Menschen in einem Wohnzimmer, einem Klassenzimmer oder einem Personalraum, spielen Sie den TEDxLinz-Talk „The Power of Small Encounters“ ab und sprechen Sie anschließend darüber. Er dauert achtzehn Minuten.',
         '„Noch einmal Walzer“ ist der 50-minütige Dokumentarfilm. Institutionen buchen ihn als moderierte Vorführung: der Film, dann ein geführtes Gespräch, manchmal mit einem vorangehenden Musik- oder Tanzworkshop. Für eine ganztägige Mitarbeiterschulung mit dem Film gibt es Moderationsleitfäden und Übungen; ein allgemeines Handbuch ist in Arbeit. Der vollständige Film ist nicht online; Vorführungen werden direkt vereinbart.',
         'Zu den Gastgebern zählten das Museum Friedland, die Universität Jena, die Heiligenfeld Kliniken, das Netzwerk Demenz Vulkaneifel und NGO-Partner in Dublin.',
       ],
@@ -277,7 +277,7 @@ export const de = {
 
   watchParty: {
     title: 'Veranstalten Sie eine Watch-Party',
-    body: 'Versammeln Sie ein paar Menschen, spielen Sie den TEDxLinz-Talk ab und bleiben Sie für das Gespräch, das er anstößt. Er dauert achtzehn Minuten und braucht nicht mehr als einen Raum und einen Bildschirm. Ihre könnte die nächste sein.',
+    body: 'Versammeln Sie ein paar Menschen, spielen Sie den TEDxLinz-Talk ab und bleiben Sie für das Gespräch, das er anstößt. Er dauert achtzehn Minuten und braucht nicht mehr als einen Raum und einen Bildschirm. Vielleicht ist Ihre Watch-Party die nächste.',
     cta: { label: 'Eine Watch-Party veranstalten' },
     cities: ['Dessau-Roßlau', 'Ihre Stadt'],
   },
@@ -319,11 +319,11 @@ export const de = {
       },
       {
         title: 'Der Mensch vor Ihnen',
-        body: 'Eine Pflegeheimbewohnerin, ein Schulkind, eine internationale Studierende, ein Geflüchteter, eine Nachbarin von vierzig Jahren. Die Arbeit beginnt mit denen, die tatsächlich im Raum sind, nicht mit einer Zielgruppe.',
+        body: 'Eine Pflegeheimbewohnerin, ein Schulkind, eine internationale Studierende, ein Geflüchteter, eine Nachbarin seit vierzig Jahren. Die Arbeit beginnt mit denen, die tatsächlich im Raum sind, nicht mit einer Zielgruppe.',
       },
       {
         title: 'Zählen, was wir belegen können',
-        body: 'Wir veröffentlichen erfasste Teilnahmen und dokumentierte Buchungen, mit dem Zeitraum, den sie abdecken. Diese Zahlen beschreiben Teilhabe, nicht einen gemessenen Rückgang von Einsamkeit oder Vorurteilen.',
+        body: 'Wir veröffentlichen erfasste Teilnahmen und dokumentierte Buchungen, mit dem Zeitraum, den sie abdecken. Diese Zahlen beschreiben die Teilnahme, nicht einen gemessenen Rückgang von Einsamkeit oder Vorurteilen.',
       },
     ],
     awards: [

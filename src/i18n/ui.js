@@ -315,7 +315,7 @@ export const ui = {
       thankYou: 'Vielen Dank, {name}!',
       thankYouNoName: 'Vielen Dank!',
       sentLede: 'Ihre Nachricht ist unterwegs',
-      sentWatch: ', mit Ihrer vermerkten Watch-Party',
+      sentWatch: ', und Ihr Wunsch, eine Watch-Party zu veranstalten, ist vermerkt',
       sentEnd: '. Wir melden uns bald bei Ihnen.',
       sendAnother: 'Weitere Nachricht senden',
       nameLabel: 'Ihr Name',
@@ -340,7 +340,7 @@ export const ui = {
       moreEyebrow: 'Weitere Initiativen',
       moreTitle: 'Laufende & saisonale Projekte',
       moreLede:
-        'Es gibt auch einmalige Vorführungen, Gemeinschaftstische und Mitarbeiterschulungen, die nicht jeweils eine eigene Seite brauchen. Sie werden dennoch in der Teilnahmedokumentation erfasst.',
+        'Es gibt auch einmalige Vorführungen, Begegnungen am gemeinsamen Tisch und Mitarbeiterschulungen, die nicht jeweils eine eigene Seite brauchen. Sie werden dennoch in der Teilnahmedokumentation erfasst.',
       askUpcoming: 'Fragen Sie, was ansteht',
     },
     documentary: {

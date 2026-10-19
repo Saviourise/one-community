@@ -70,7 +70,7 @@ export const ui = {
     },
     blog: {
       moreStories: 'Explore the projects',
-      readStory: 'Visit publication website',
+      readStory: 'Read story',
     },
     watchPartyCard: {
       aria: 'Neighbours gathered together at a community event',
@@ -245,7 +245,7 @@ export const ui = {
     },
     blog: {
       moreStories: 'Die Projekte entdecken',
-      readStory: 'Zur Website des Mediums',
+      readStory: 'Beitrag lesen',
     },
     watchPartyCard: {
       aria: 'Nachbar:innen versammelt bei einer Gemeinschaftsveranstaltung',

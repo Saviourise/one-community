@@ -20,7 +20,7 @@ export const blog = {
       // Photo: Reinaldo Coddou, from the AufRuhr reportage (Dessau, November 2023).
       img: '/assets/press-aufruhr.jpg',
       credit: 'Photo: Reinaldo Coddou',
-      href: 'https://www.aufruhr-magazin.de/',
+      href: 'https://www.aufruhr-magazin.de/teilhabe-und-zusammenhalt/teilhabe-rassismuss-dessau-rosslau/',
     },
     {
       id: 'radio-corax',
@@ -31,7 +31,7 @@ export const blog = {
       date: 'November 2025',
       palette: 'amber',
       img: drive('1HBWVMpiDgcnBrFdawRmbPSzEvYAwNBFV', 800),
-      href: 'https://radiocorax.de/',
+      href: 'https://radiocorax.de/noch-einmal-walzer-tanz-begegnung-und-integration-durch-das-one-community-project-in-dessau/',
     },
     {
       id: 'bpb-prize',
@@ -42,7 +42,7 @@ export const blog = {
       date: 'November 2023',
       palette: 'forest',
       img: drive('1pLh7EwkYQDJESOWJ80NFdYJ8XoV8cdfE', 800),
-      href: 'https://www.bpb.de/',
+      href: 'https://www.bpb.de/veranstaltungen/reihen/aktiv-wettbewerb/542958/das-preistraegerprojekt-des-aktiv-wettbewerbs-2023-aus-sachsen-anhalt/',
     },
   ],
 }

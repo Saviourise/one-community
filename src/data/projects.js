@@ -69,6 +69,7 @@ export const projects = [
       { value: '1,644', label: 'recorded attendances in Germany, Ireland and Austria' },
     ],
     body: [
+      'We bring Noch einmal Walzer to you. A screening can be combined with a conversation or a workshop. Together we work out which format suits your group and who will lead the event.',
       'Most bookings since 2023 have come from organisations using the film with their own staff and the people they serve: a Jobcenter, a dementia network, a psychiatric clinic, a youth welfare office, a migration museum, universities, churches and NGO trainings in Dublin.',
       'There are three formats. A screening followed by a facilitated conversation. A workshop that combines the film with music, dance or storytelling. And a half-day or full-day training for professional teams.',
       'At Museum Friedland in September 2024, an afternoon of dances for all generations led into the film and an open conversation in German, English and Arabic.',
@@ -76,7 +77,7 @@ export const projects = [
       'Anyone can watch the full film on our Documentary page. For groups, we arrange screenings with a facilitated conversation, workshops and trainings: tell us about your group, your setting and the time you have.',
     ],
     links: [
-      { label: 'Ask about a screening or workshop', to: '/contact' },
+      { label: 'Request an event', to: '/contact' },
       { label: 'Watch the full documentary', to: '/documentary' },
     ],
   },

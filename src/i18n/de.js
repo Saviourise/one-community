@@ -91,6 +91,27 @@ export const de = {
       links: [{ label: 'Eine Vorführung veranstalten' }],
     },
     {
+      // screenings-and-workshops
+      title: 'Vorführungen & Workshops',
+      kicker: 'Unsere Hauptarbeit seit 2023',
+      short:
+        'Seit 2023 ist der Dokumentarfilm „Noch einmal Walzer“ der Ausgangspunkt für Vorführungen mit Gespräch, Workshops und Mitarbeiterschulungen in Pflege, Bildung, Kultur und Integrationsarbeit.',
+      tagline: 'Der Film öffnet den Raum. Das Gespräch ist der Sinn der Sache.',
+      stats: [
+        { label: 'dokumentierte Buchungen seit Juni 2023' },
+        { value: '1.644', label: 'erfasste Teilnahmen in Deutschland, Irland und Österreich' },
+      ],
+      body: [
+        'Wir bringen „Noch einmal Walzer“ zu Ihnen. Eine Vorführung kann mit einem Gespräch oder einem Workshop verbunden werden. Gemeinsam finden wir heraus, welches Format zu Ihrer Gruppe passt und wer die Veranstaltung leitet.',
+        'Die meisten Buchungen seit 2023 kamen von Organisationen, die den Film mit ihren eigenen Mitarbeitenden und den Menschen einsetzen, mit denen sie arbeiten: ein Jobcenter, ein Demenznetzwerk, eine psychiatrische Klinik, ein Jugendamt, ein Migrationsmuseum, Universitäten, Kirchen und NGO-Schulungen in Dublin.',
+        'Es gibt drei Formate. Eine Vorführung mit anschließendem moderierten Gespräch. Einen Workshop, der den Film mit Musik, Tanz oder Erzählen verbindet. Und eine halb- oder ganztägige Schulung für Fachteams.',
+        'Im Museum Friedland folgte im September 2024 auf einen Nachmittag mit Tänzen für alle Generationen der Film und ein offenes Gespräch auf Deutsch, Englisch und Arabisch.',
+        'Im September 2026 leitete Christian Altmann vom Integrationsbüro der Stadt eine ganztägige Schulung für 26 Fachkräfte der Sozialen Arbeit: ein Workshop mit dem Film, dann ein Modul zum Umgang mit Diskriminierung. 17 der 19 Teilnehmenden, die Rückmeldung gaben, bewerteten den Tag als gut oder sehr gut.',
+        'Den vollständigen Film kann jede und jeder auf unserer Dokumentarfilm-Seite ansehen. Für Gruppen organisieren wir Vorführungen mit moderiertem Gespräch, Workshops und Schulungen: Erzählen Sie uns von Ihrer Gruppe, Ihrem Rahmen und der Zeit, die Ihnen zur Verfügung steht.',
+      ],
+      links: [{ label: 'Eine Veranstaltung anfragen' }, { label: 'Den ganzen Film ansehen' }],
+    },
+    {
       // tanz-gala
       kicker: 'Tanzgala, 2022',
       short:
@@ -216,7 +237,7 @@ export const de = {
       ],
       body: [
         'Eine Watch-Party ist die einfache Variante. Versammeln Sie ein paar Menschen in einem Wohnzimmer, einem Klassenzimmer oder einem Personalraum, spielen Sie den TEDxLinz-Talk „The Power of Small Encounters“ ab und sprechen Sie anschließend darüber. Er dauert achtzehn Minuten.',
-        '„Noch einmal Walzer“ ist der 50-minütige Dokumentarfilm. Institutionen buchen ihn als moderierte Vorführung: der Film, dann ein geführtes Gespräch, manchmal mit einem vorangehenden Musik- oder Tanzworkshop. Für eine ganztägige Mitarbeiterschulung mit dem Film gibt es Moderationsleitfäden und Übungen; ein allgemeines Handbuch ist in Arbeit. Der vollständige Film ist nicht online; Vorführungen werden direkt vereinbart.',
+        '„Noch einmal Walzer“ ist der 50-minütige Dokumentarfilm. Institutionen buchen ihn als moderierte Vorführung: der Film, dann ein geführtes Gespräch, manchmal mit einem vorangehenden Musik- oder Tanzworkshop. Für eine ganztägige Mitarbeiterschulung mit dem Film gibt es Moderationsleitfäden und Übungen; ein allgemeines Handbuch ist in Arbeit. Der vollständige Film kann auf unserer Dokumentarfilm-Seite angesehen werden; Vorführungen für Gruppen werden direkt vereinbart.',
         'Zu den gastgebenden Einrichtungen und Organisationen zählten das Museum Friedland, die Universität Jena, die Heiligenfeld Kliniken, das Netzwerk Demenz Vulkaneifel und NGO-Partner in Dublin.',
       ],
       links: [{ label: 'Eine Watch-Party veranstalten' }],

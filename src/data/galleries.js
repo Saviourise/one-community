@@ -82,12 +82,11 @@ export const getGallery = (slug) => galleries[slug] || []
 
 /*
  * Photo credits shown beneath each gallery. Keyed by project slug; anything not
- * listed falls back to DEFAULT_CREDIT. Replace with the real photographer /
+ * listed falls back to the translated archive credit (ui.js gallery.archiveCredit). Replace with the real photographer /
  * source names as they’re confirmed.
  */
-const DEFAULT_CREDIT = 'One Community Project archive'
 export const galleryCredits = {
   'tedx-talk': 'TEDxLinz',
   'tanz-gala': 'OCG Tanz Gala',
 }
-export const getGalleryCredit = (slug) => galleryCredits[slug] || DEFAULT_CREDIT
+export const getGalleryCredit = (slug) => galleryCredits[slug] || ''

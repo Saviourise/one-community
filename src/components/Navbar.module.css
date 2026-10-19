@@ -125,6 +125,8 @@
   border-radius: var(--radius-pill);
   font-weight: 600;
   color: var(--ink);
+  /* keep multi-word labels (e.g. German "Über uns") on one line */
+  white-space: nowrap;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .navLink:hover {

@@ -128,7 +128,7 @@ export const de = {
       stats: [{ label: 'TEDxLinz, 21. Februar' }, { label: 'Länge des Talks' }],
       body: [
         'Der 18-minütige Talk wurde am 21. Februar 2026 bei TEDxLinz aufgezeichnet. Darin geht es um persönliche Erfahrungen mit Begegnungen und darum, Verbundenheit zu finden.',
-        'Er gibt Partnern, Förderern und Gastgebern eine Möglichkeit, die Arbeit in unter zwanzig Minuten zu verstehen. Und er ist das, was man gemeinsam bei Watch-Partys ansieht.',
+        'Er gibt Partnerorganisationen, Fördernden und Veranstaltenden eine Möglichkeit, die Arbeit in unter zwanzig Minuten zu verstehen. Und er ist das, was man gemeinsam bei Watch-Partys ansieht.',
       ],
       links: [{ label: 'Eine Watch-Party veranstalten' }],
     },
@@ -217,7 +217,7 @@ export const de = {
       body: [
         'Eine Watch-Party ist die einfache Variante. Versammeln Sie ein paar Menschen in einem Wohnzimmer, einem Klassenzimmer oder einem Personalraum, spielen Sie den TEDxLinz-Talk „The Power of Small Encounters“ ab und sprechen Sie anschließend darüber. Er dauert achtzehn Minuten.',
         '„Noch einmal Walzer“ ist der 50-minütige Dokumentarfilm. Institutionen buchen ihn als moderierte Vorführung: der Film, dann ein geführtes Gespräch, manchmal mit einem vorangehenden Musik- oder Tanzworkshop. Für eine ganztägige Mitarbeiterschulung mit dem Film gibt es Moderationsleitfäden und Übungen; ein allgemeines Handbuch ist in Arbeit. Der vollständige Film ist nicht online; Vorführungen werden direkt vereinbart.',
-        'Zu den Gastgebern zählten das Museum Friedland, die Universität Jena, die Heiligenfeld Kliniken, das Netzwerk Demenz Vulkaneifel und NGO-Partner in Dublin.',
+        'Zu den gastgebenden Einrichtungen und Organisationen zählten das Museum Friedland, die Universität Jena, die Heiligenfeld Kliniken, das Netzwerk Demenz Vulkaneifel und NGO-Partner in Dublin.',
       ],
       links: [{ label: 'Eine Watch-Party veranstalten' }],
     },
@@ -296,7 +296,7 @@ export const de = {
 
   partners: {
     eyebrow: 'In Partnerschaft mit',
-    title: 'Partner, Gastgeber und Auszeichnungen',
+    title: 'Partnerorganisationen, gastgebende Einrichtungen und Auszeichnungen',
     items: [
       { name: 'Stadt Dessau-Roßlau' },
       { note: 'Hochschulpartner' },

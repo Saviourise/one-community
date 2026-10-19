@@ -200,7 +200,7 @@ export const ui = {
       ourWork: 'Unsere Arbeit',
       seeAllProjects: 'Alle Projekte ansehen',
       initiatives: '{count} Initiativen',
-      partnerWithUs: 'Partner werden',
+      partnerWithUs: 'Zusammenarbeiten',
       primaryAria: 'Hauptnavigation',
       projectsAria: 'Projekte',
       brandHome: '{name}, Startseite',
@@ -211,7 +211,7 @@ export const ui = {
     footer: { legalAria: 'Rechtliches' },
     home: {
       whatWeDo: 'Was wir tun',
-      workStrand: 'Die Arbeit, Strang für Strang',
+      workStrand: 'Die Arbeit, Bereich für Bereich',
       seeAllProjects: 'Alle Projekte ansehen',
     },
     documentaryFeature: {
@@ -219,7 +219,7 @@ export const ui = {
       trailerSuffix: 'Trailer zu {title}',
     },
     featuredVideo: {
-      title: 'Das Argument, in zwanzig Minuten',
+      title: 'Was für unseren Ansatz spricht – in zwanzig Minuten',
       more: 'Mehr über den Talk',
       watch: 'Ansehen',
       watchFilm: 'Den Film ansehen',
@@ -335,8 +335,8 @@ export const ui = {
     projectsPage: {
       docTitle: 'Projekte',
       eyebrow: 'Unsere Arbeit',
-      title: 'Eine Methode, mehrere Stränge.',
-      lede: 'Sie reicht von wöchentlicher Musik in einem Pflegeheim bis zu einem Dokumentarfilm, der heute in drei Ländern gezeigt wird. Jeder Strang ist dieselbe Idee in einem anderen Raum: Menschen in Kontakt bringen und es dann wieder tun.',
+      title: 'Eine Methode, verschiedene Ansätze.',
+      lede: 'Unsere Arbeit reicht von wöchentlichen Musikangeboten im Pflegeheim bis zu einem Dokumentarfilm, der inzwischen in drei Ländern gezeigt wird. Hinter jedem Ansatz steht dieselbe Idee, jeweils in einem anderen Raum: Menschen miteinander in Kontakt bringen und ihnen immer wieder Gelegenheit zur Begegnung geben.',
       moreEyebrow: 'Weitere Initiativen',
       moreTitle: 'Laufende & saisonale Projekte',
       moreLede:

@@ -147,7 +147,7 @@ export default function ProjectDetail() {
             eyebrow={t('projectDetail.galleryEyebrow')}
             title={t('projectDetail.insideTitle', { title: project.title })}
           />
-          <Gallery images={gallery} label={project.title} credit={getGalleryCredit(project.slug)} />
+          <Gallery images={gallery} label={project.title} credit={getGalleryCredit(project.slug) || t('gallery.archiveCredit')} />
         </section>
       )}
 

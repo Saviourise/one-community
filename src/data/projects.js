@@ -47,7 +47,7 @@ export const projects = [
     ],
     body: [
       'In 2022 the project ran five months of waltz classes, bringing together residents of three care homes in Dessau-Roßlau with refugees, migrants and international students. They culminated in the One Community Gala on 25 June 2022, with performers aged 9 to 96. The documentary followed in 2023.',
-      'Noch einmal Walzer premiered at the Bauhaus Museum Dessau on 18 June 2023 to a sold-out room of 300. It is subtitled in German and English.',
+      'Noch einmal Walzer premiered at the Bauhaus Museum Dessau on 18 June 2023 to a sold-out room of 300. On the Documentary page, you can choose your subtitle language in the video player.',
       'The attendance record documents 38 bookings involving screenings, workshops and staff training in Germany, Ireland and Austria between June 2023 and 2 September 2026.',
       'At Museum Friedland in September 2024, during the museum’s intercultural dance week, an afternoon of dances for all generations was followed by the film and an open discussion in German, English and Arabic. The museum wrote afterwards: “Your idea and its realisation should serve as a model for many other places.”',
     ],
@@ -60,21 +60,21 @@ export const projects = [
     palette: 'forest',
     img: '/assets/screening-friedland.jpg',
     short:
-      'Since 2023, the documentary Noch einmal Walzer has been the starting point for screenings with conversation, workshops and staff trainings in care, education, culture and integration work.',
-    tagline: 'The film opens the room. The conversation is the point.',
+      'Since 2023, the documentary Noch einmal Walzer has been the starting point for screenings with conversation, workshops and staff training in care, education, culture and integration work.',
+    tagline: 'The film starts a conversation.',
     featuredHome: false,
     spotlight: true,
     stats: [
-      { value: '38', label: 'documented bookings since June 2023' },
+      { value: '38', label: 'documented bookings, June 2023 to 2 September 2026' },
       { value: '1,644', label: 'recorded attendances in Germany, Ireland and Austria' },
     ],
     body: [
       'We bring Noch einmal Walzer to you. A screening can be combined with a conversation or a workshop. Together we work out which format suits your group and who will lead the event.',
-      'Most bookings since 2023 have come from organisations using the film with their own staff and the people they serve: a Jobcenter, a dementia network, a psychiatric clinic, a youth welfare office, a migration museum, universities, churches and NGO trainings in Dublin.',
-      'There are three formats. A screening followed by a facilitated conversation. A workshop that combines the film with music, dance or storytelling. And a half-day or full-day training for professional teams.',
+      'Hosts have included Museum Friedland, Universität Jena, Heiligenfeld Kliniken, Netzwerk Demenz Vulkaneifel and NGO partners in Dublin. We agree the audience and format with each host.',
+      'You can enquire about a screening with a facilitated conversation or a workshop using the film. For professional teams, we can discuss whether a training format is possible. Content, duration and facilitation are agreed for each event.',
       'At Museum Friedland in September 2024, an afternoon of dances for all generations led into the film and an open conversation in German, English and Arabic.',
       'In September 2026, Christian Altmann of the city’s integration office led a full-day training for 26 social work professionals: a workshop with the film, then a module on responding to discrimination. 17 of the 19 participants who gave feedback rated the day good or very good.',
-      'Anyone can watch the full film on our Documentary page. For groups, we arrange screenings with a facilitated conversation, workshops and trainings: tell us about your group, your setting and the time you have.',
+      'You can watch the full film on our Documentary page. To discuss a group event, tell us about your audience, venue and available time.',
     ],
     links: [
       { label: 'Request an event', to: '/contact' },
@@ -120,11 +120,11 @@ export const projects = [
     video: '',
     stats: [
       { value: '2018', label: 'first weekly visits to the Marienheim' },
-      { value: '2019', label: 'formalised as the One Community Project' },
+      { value: '2019', label: 'became the One Community Project' },
     ],
     body: [
       'Homies & Omies started as a student initiative: someone new to the city turning up at the Marienheim care home each week to make music with residents.',
-      'In 2019 it was formalised as the One Community Project, in cooperation with Hochschule Anhalt and the city’s integration office. It grew from there.',
+      'In 2019, the initiative became the One Community Project, working with Hochschule Anhalt and the integration office of the City of Dessau-Roßlau.',
     ],
     links: [],
   },
@@ -161,7 +161,7 @@ export const projects = [
     driveFolderId: '1DaupJ4iTPjfyuHlMKsgA5pGzmSjat6DP',
     short:
       'Two concerts in 2019 that put the cultures sharing the city’s streets on one stage, with Homies & Omies residents among the performers.',
-    tagline: 'When a community sings together, it stays together.',
+    tagline: 'Music brought people from across the city together.',
     featuredHome: true,
     spotlight: true,
     video: '',
@@ -215,7 +215,6 @@ export const projects = [
     videoLabel: 'Watch the music video',
     stats: [
       { value: '2019', label: 'released in November' },
-      { value: '1st', label: 'place, Integrationspreis Sachsen-Anhalt, the same year' },
     ],
     body: [
       '“Shoot for the Moon” turned the project’s message into something you can hum. It was recorded and filmed with community members, in front of and behind the camera.',
@@ -239,7 +238,7 @@ export const projects = [
     videoLabel: 'Watch the film',
     stats: [{ value: '2020', label: 'released' }],
     body: [
-      'A short film from the early years, released in December 2020, looking at how the weekly care-home visits grew into something with a name.',
+      'A short film from the early years, released in December 2020, showing how the weekly care-home visits became the One Community Project.',
     ],
     links: [],
   },
@@ -272,7 +271,7 @@ export const projects = [
     driveFolderId: '1TOlkjQdZB5AbOXWDFkqrPWmIxnN3Ge1n',
     short:
       'Two ways to watch together: a watch party with the TEDxLinz talk, which anyone can host, and a facilitated screening of the documentary Noch einmal Walzer, which institutions book.',
-    tagline: 'The film is the easy part. The conversation after is the point.',
+    tagline: 'Watch together and start a conversation.',
     featuredHome: false,
     spotlight: true,
     video: 'https://www.youtube.com/embed/5Fbdq4iLK88',

@@ -45,7 +45,7 @@ export const ui = {
       trailerSuffix: '{title} trailer',
     },
     featuredVideo: {
-      title: 'The argument, in twenty minutes',
+      title: 'The Power of Small Encounters',
       more: 'More about the talk',
       watch: 'Watch',
       watchFilm: 'Watch the film',
@@ -69,8 +69,8 @@ export const ui = {
       cta: 'Bring the method to your city',
     },
     blog: {
-      moreStories: 'More stories',
-      readStory: 'Read story',
+      moreStories: 'Explore the projects',
+      readStory: 'Visit publication website',
     },
     watchPartyCard: {
       aria: 'Neighbours gathered together at a community event',
@@ -85,6 +85,7 @@ export const ui = {
       prev: 'Previous photo',
       next: 'Next photo',
       photoCredit: 'Photo: {credit}',
+      archiveCredit: 'One Community Project archive',
     },
     videoPlayer: {
       defaultTitle: 'Video',
@@ -113,7 +114,7 @@ export const ui = {
       title: 'Music, dance and encounters between generations.',
       lede: 'Founded in 2019 with Hochschule Anhalt and the Integrationsbüro of the City of Dessau-Roßlau, the One Community Project grew from weekly music sessions at the Marienheim care home.',
       intro1:
-        'It began in 2018, when a newly arrived international student started visiting the Marienheim care home each week to make music with residents. That student initiative, “Homies & Omies”, was formalised in 2019 as the One Community Project.',
+        'It began in 2018, when a newly arrived international student started visiting the Marienheim care home each week to make music with residents. That student initiative, “Homies & Omies”, became the One Community Project in 2019.',
       intro2:
         'The project brings care-home residents, international students, refugees, migrants and local residents together through music, dance and film.',
       intro3:
@@ -164,9 +165,9 @@ export const ui = {
       title: 'One method, several strands.',
       lede: 'It runs from weekly music in a care home to a documentary now shown across three countries. Each strand is the same idea in a different room: bring people into contact, then do it again.',
       moreEyebrow: 'More initiatives',
-      moreTitle: 'Ongoing & seasonal projects',
+      moreTitle: 'More from the project',
       moreLede:
-        'There are also one-off screenings, community tables and staff trainings that do not each need a page. They are logged in the attendance record all the same.',
+        'Our attendance record also includes screenings, workshops and staff training that do not have their own project page.',
       askUpcoming: 'Ask what’s coming up',
     },
     documentary: {
@@ -219,7 +220,7 @@ export const ui = {
       trailerSuffix: 'Trailer zu {title}',
     },
     featuredVideo: {
-      title: 'Was für unseren Ansatz spricht – in zwanzig Minuten',
+      title: 'Die Kraft kleiner Begegnungen',
       more: 'Mehr über den Talk',
       watch: 'Ansehen',
       watchFilm: 'Den Film ansehen',
@@ -234,7 +235,7 @@ export const ui = {
       caption2: 'Fotobox bei der One Community Gala, 25. Juni 2022',
       eyebrow: 'Jung und Alt',
       title: 'Jung und Alt, Seite an Seite.',
-      body: 'Beide Momente stammen aus dem Jahr 2022, als fünf Monate Walzerkurse Geflüchtete, Migrantinnen und Migranten, internationale Studierende und Bewohnerinnen und Bewohner dreier Pflegeheime in Dessau-Roßlau zusammenbrachten. Die Kurse mündeten in die One Community Gala mit Mitwirkenden im Alter von 9 bis 96 Jahren.',
+      body: 'Beide Momente stammen aus dem Jahr 2022, als fünf Monate Walzerkurse Geflüchtete, Migrant:innen, internationale Studierende und Bewohner:innen dreier Pflegeheime in Dessau-Roßlau zusammenbrachten. Die Kurse mündeten in die One Community Gala mit Mitwirkenden im Alter von 9 bis 96 Jahren.',
     },
     workshops: {
       eyebrow: 'Die Methode',
@@ -243,11 +244,11 @@ export const ui = {
       cta: 'Bringen Sie die Methode in Ihre Stadt',
     },
     blog: {
-      moreStories: 'Mehr Geschichten',
-      readStory: 'Beitrag lesen',
+      moreStories: 'Die Projekte entdecken',
+      readStory: 'Zur Website des Mediums',
     },
     watchPartyCard: {
-      aria: 'Nachbarinnen und Nachbarn versammelt bei einer Gemeinschaftsveranstaltung',
+      aria: 'Nachbar:innen versammelt bei einer Gemeinschaftsveranstaltung',
     },
     gallery: {
       defaultLabel: 'Fotos',
@@ -259,6 +260,7 @@ export const ui = {
       prev: 'Vorheriges Foto',
       next: 'Nächstes Foto',
       photoCredit: 'Foto: {credit}',
+      archiveCredit: 'Archiv des One Community Project',
     },
     videoPlayer: {
       defaultTitle: 'Video',
@@ -285,13 +287,13 @@ export const ui = {
       docTitle: 'Über uns',
       eyebrowStory: 'Unsere Geschichte',
       title: 'Musik, Tanz und Begegnungen zwischen den Generationen.',
-      lede: 'Gegründet 2019 mit der Hochschule Anhalt und dem Integrationsbüro der Stadt Dessau-Roßlau, wuchs das One Community Project aus wöchentlichen Musiksessions im Pflegeheim Marienheim.',
+      lede: 'Das One Community Project entstand aus wöchentlichen Musiktreffen im Pflegeheim Marienheim. 2019 wurde es gemeinsam mit der Hochschule Anhalt und dem Integrationsbüro der Stadt Dessau-Roßlau gegründet.',
       intro1:
-        'Es begann 2018, als ein neu angekommener internationaler Student das Pflegeheim Marienheim jede Woche zu besuchen begann, um mit den Bewohnerinnen und Bewohnern Musik zu machen. Diese Studierendeninitiative, „Homies & Omies“, wurde 2019 als One Community Project formalisiert.',
+        'Es begann 2018, als ein neu angekommener internationaler Student das Pflegeheim Marienheim jede Woche zu besuchen begann, um mit den Bewohner:innen Musik zu machen. Aus dieser Studierendeninitiative, „Homies & Omies“, wurde 2019 das One Community Project.',
       intro2:
-        'Das Projekt bringt Pflegeheimbewohnerinnen und -bewohner, internationale Studierende, Geflüchtete, Migrantinnen und Migranten sowie Anwohnerinnen und Anwohner durch Musik, Tanz und Film zusammen.',
+        'Das Projekt bringt Bewohner:innen von Pflegeheimen, internationale Studierende, Geflüchtete, Migrant:innen sowie Anwohner:innen durch Musik, Tanz und Film zusammen.',
       intro3:
-        'Im Jahr 2022 veranstaltete es fünf Monate lang Walzerkurse, die Bewohnerinnen und Bewohner dreier Pflegeheime mit Geflüchteten, Migrantinnen und Migranten sowie internationalen Studierenden zusammenbrachten. Die Kurse führten zur One Community Gala und zum Dokumentarfilm „Noch einmal Walzer“, der 2023 veröffentlicht wurde. Aufzeichnungen dokumentieren 38 Buchungen mit Vorführungen, Workshops und Mitarbeiterschulungen in Deutschland, Irland und Österreich von Juni 2023 bis zum 2. September 2026.',
+        'Im Jahr 2022 veranstaltete es fünf Monate lang Walzerkurse, die Bewohner:innen dreier Pflegeheime mit Geflüchteten, Migrant:innen sowie internationalen Studierenden zusammenbrachten. Die Kurse führten zur One Community Gala und zum Dokumentarfilm „Noch einmal Walzer“, der 2023 veröffentlicht wurde. Aufzeichnungen dokumentieren 38 Buchungen mit Vorführungen, Workshops und Fortbildungen in Deutschland, Irland und Österreich von Juni 2023 bis zum 2. September 2026.',
       introAlt: 'Mitglieder der Gemeinschaft unterschiedlichen Alters zusammen',
       premiseEyebrow: 'Die Prämisse',
       premiseQuote:
@@ -338,9 +340,9 @@ export const ui = {
       title: 'Eine Methode, verschiedene Ansätze.',
       lede: 'Unsere Arbeit reicht von wöchentlichen Musikangeboten im Pflegeheim bis zu einem Dokumentarfilm, der inzwischen in drei Ländern gezeigt wird. Hinter jedem Ansatz steht dieselbe Idee, jeweils in einem anderen Raum: Menschen miteinander in Kontakt bringen und ihnen immer wieder Gelegenheit zur Begegnung geben.',
       moreEyebrow: 'Weitere Initiativen',
-      moreTitle: 'Laufende & saisonale Projekte',
+      moreTitle: 'Weitere Einblicke ins Projekt',
       moreLede:
-        'Es gibt auch einmalige Vorführungen, Begegnungen am gemeinsamen Tisch und Mitarbeiterschulungen, die nicht jeweils eine eigene Seite brauchen. Sie werden dennoch in der Teilnahmedokumentation erfasst.',
+        'Unsere Teilnahmedokumentation umfasst auch Vorführungen, Workshops und Fortbildungen, die keine eigene Projektseite haben.',
       askUpcoming: 'Fragen Sie, was ansteht',
     },
     documentary: {

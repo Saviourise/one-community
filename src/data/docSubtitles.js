@@ -27,6 +27,7 @@ export const docSubtitles = [
   { srclang: 'pl', label: 'Polski', dir: 'ltr' },
   { srclang: 'da', label: 'Dansk', dir: 'ltr' },
   { srclang: 'ru', label: 'Русский', dir: 'ltr' },
+  { srclang: 'cs', label: 'Čeština', dir: 'ltr' },
 ]
 
 // VideoPlayer `tracks` prop, derived from the config above.

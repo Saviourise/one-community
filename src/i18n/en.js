@@ -11,6 +11,7 @@ import { workshops } from '../data/workshops.js'
 import { watchParty } from '../data/watchParty.js'
 import { impact } from '../data/stats.js'
 import { partners } from '../data/partners.js'
+import { legal } from '../data/legal.js'
 
 // About-page structured content (the value cards and awards grid). Lives here,
 // not inline in About.jsx, so German can override it like any other content.
@@ -56,4 +57,5 @@ export const en = {
   impact,
   partners,
   about,
+  legal,
 }

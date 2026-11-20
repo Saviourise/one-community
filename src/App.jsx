@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 
 import Layout from './components/Layout.jsx'
 import Home from './pages/Home.jsx'
@@ -20,10 +20,37 @@ function ScrollToTop() {
   return null
 }
 
+// Each route declares its own canonical URL and og:url (not the homepage).
+// Note: link-preview crawlers do not run JavaScript, so per-route share tags
+// in the delivered HTML still need prerendering (see review, for Saviour).
+const SITE = 'https://onecommunityproject.org'
+function RouteMeta() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    const url = SITE + (pathname === '/' ? '/' : pathname.replace(/\/$/, ''))
+    let link = document.querySelector('link[rel="canonical"]')
+    if (!link) {
+      link = document.createElement('link')
+      link.setAttribute('rel', 'canonical')
+      document.head.appendChild(link)
+    }
+    link.setAttribute('href', url)
+    let og = document.querySelector('meta[property="og:url"]')
+    if (!og) {
+      og = document.createElement('meta')
+      og.setAttribute('property', 'og:url')
+      document.head.appendChild(og)
+    }
+    og.setAttribute('content', url)
+  }, [pathname])
+  return null
+}
+
 export default function App() {
   return (
     <>
       <ScrollToTop />
+      <RouteMeta />
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
@@ -34,7 +61,7 @@ export default function App() {
           <Route path="documentary" element={<Documentary />} />
           <Route path="impressum" element={<Impressum />} />
           <Route path="datenschutz" element={<Datenschutz />} />
-          <Route path="privacy" element={<Datenschutz />} />
+          <Route path="privacy" element={<Navigate to="/datenschutz" replace />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

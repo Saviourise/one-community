@@ -95,7 +95,7 @@ export default function VideoPlayer({
         controlsList="nodownload noplaybackrate noremoteplayback"
         disablePictureInPicture
         onContextMenu={(e) => e.preventDefault()}
-        preload="metadata"
+        preload="none"
         playsInline
         autoPlay={autoPlay}
         loop={loop}

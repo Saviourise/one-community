@@ -6,22 +6,19 @@
  * final assets later: drop files into public/assets and change the `img` values
  * in src/data/* (or replace the call sites), the API here stays the same.
  *
- *   artwork({ w, h, seed })      -> "https://picsum.photos/seed/<seed>/<w>/<h>"
+ *   artwork({ w, h })            -> local solid-colour SVG data URI (no external request)
  *   artworkCss({ ... })          -> 'url("...")'  for CSS background-image
  *
  * The `palette`/`label` args are accepted (and ignored) for backwards
  * compatibility with existing call sites.
  */
 
-const BASE = 'https://picsum.photos/seed'
-
-export function artwork({ w = 1200, h = 800, seed = 'oc', grayscale = false, blur = 0 } = {}) {
-  const s = encodeURIComponent(String(seed))
-  const params = []
-  if (grayscale) params.push('grayscale')
-  if (blur > 0) params.push(`blur=${Math.min(10, Math.max(1, Math.round(blur)))}`)
-  const query = params.length ? `?${params.join('&')}` : ''
-  return `${BASE}/${s}/${Math.round(w)}/${Math.round(h)}${query}`
+// No external placeholder service: return a local, solid-colour SVG so that no
+// third-party request is made (privacy). Swap for real assets in src/data/*.
+const FILL = '#2f2e1d'
+export function artwork({ w = 1200, h = 800 } = {}) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${Math.round(w)}" height="${Math.round(h)}"><rect width="100%" height="100%" fill="${FILL}"/></svg>`
+  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`
 }
 
 // Convenience for CSS `background-image` usage.

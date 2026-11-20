@@ -12,8 +12,7 @@
   padding-top: calc(76px + clamp(2.4rem, 1.4rem + 4vw, 4.5rem));
   padding-bottom: clamp(2.6rem, 1.8rem + 4vw, 4.5rem);
   background-color: var(--primary-deep);
-  background-image: url('/assets/10Eb6pQvVwkEOwYKQec-6Q27yGOwT_--d.jpg'),
-    url('https://picsum.photos/seed/oc-header/1600/700');
+  background-image: url('/assets/10Eb6pQvVwkEOwYKQec-6Q27yGOwT_--d.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;

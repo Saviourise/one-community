@@ -8,7 +8,7 @@
  *  - The active content tree is `en` deep-merged with `de`, selected by `lang`.
  *  - `useContent()` gives the merged data tree; `useT()` gives chrome strings.
  *
- * The preference is stored in localStorage and reflected on <html lang>, so the
+ * An explicit choice is stored in sessionStorage and reflected on <html lang>, so the
  * whole site switches reactively (no reload) and remembers the choice.
  */
 
@@ -30,7 +30,7 @@ const isLang = (v) => v === 'en' || v === 'de'
 
 function readInitialLang() {
   try {
-    const saved = localStorage.getItem(STORAGE_KEY)
+    const saved = sessionStorage.getItem(STORAGE_KEY)
     if (isLang(saved)) return saved
   } catch {
     /* storage blocked (private window) — fall through */
@@ -69,15 +69,21 @@ function merge(base, over) {
 const LanguageContext = createContext(null)
 
 export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState(readInitialLang)
+  const [lang, setLangState] = useState(readInitialLang)
 
-  useEffect(() => {
-    document.documentElement.lang = lang
+  // Only an explicit choice is stored, and only for the current browsing
+  // session (sessionStorage). The browser language is used in memory.
+  const setLang = (next) => {
+    setLangState(next)
     try {
-      localStorage.setItem(STORAGE_KEY, lang)
+      sessionStorage.setItem(STORAGE_KEY, next)
     } catch {
       /* ignore */
     }
+  }
+
+  useEffect(() => {
+    document.documentElement.lang = lang
   }, [lang])
 
   const content = useMemo(() => {

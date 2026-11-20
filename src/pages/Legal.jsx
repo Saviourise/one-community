@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
-import { useContent, useT } from '../i18n/LanguageContext.jsx'
+import { useContent, useLang, useT } from '../i18n/LanguageContext.jsx'
 
 /*
- * Impressum and Datenschutzerklärung. German only, as required by German law.
+ * Impressum and Datenschutzerklärung in German, with English translations shown
+ * when English is selected (the German version is authoritative).
  * DRAFT for launch: everything in [square brackets] must be confirmed before
  * the site goes public (address from Christian / Integrationsbüro, mailbox,
  * contact-form provider). Check the privacy text against a generator
@@ -13,7 +14,7 @@ const box = { maxWidth: '68ch', display: 'grid', gap: '1rem', paddingBlock: '3re
 const band = { background: 'var(--primary-deep, #2f2e1d)', color: '#fff', paddingBlock: '8rem 3rem' }
 const h2 = { fontSize: '1.25rem', marginTop: '1.25rem' }
 
-function Shell({ docTitle, heading, children }) {
+function Shell({ docTitle, heading, lang = 'de', children }) {
   const t = useT()
   const { brand } = useContent()
   useEffect(() => {
@@ -21,11 +22,11 @@ function Shell({ docTitle, heading, children }) {
   }, [docTitle, brand])
   const note = t('legal.germanNote')
   return (
-    <div lang="de">
+    <div lang={lang}>
       <div style={band}>
         <div className="container" style={{ display: 'grid', gap: '0.75rem' }}>
-          {note ? (
-            <p lang="en" style={{ opacity: 0.85, margin: 0 }}>
+          {note && lang === 'en' ? (
+            <p style={{ opacity: 0.85, margin: 0 }}>
               {note}
             </p>
           ) : null}
@@ -39,7 +40,7 @@ function Shell({ docTitle, heading, children }) {
   )
 }
 
-export function Impressum() {
+function ImpressumDe() {
   const t = useT()
   return (
     <Shell docTitle={t('legal.impressumDocTitle')} heading="Impressum">
@@ -74,7 +75,7 @@ export function Impressum() {
   )
 }
 
-export function Datenschutz() {
+function DatenschutzDe() {
   const t = useT()
   return (
     <Shell docTitle={t('legal.privacyDocTitle')} heading="Datenschutzerklärung">
@@ -187,4 +188,154 @@ export function Datenschutz() {
       <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Stand: [Datum der Veröffentlichung]</p>
     </Shell>
   )
+}
+
+function ImpressumEn() {
+  const t = useT()
+  return (
+    <Shell docTitle={t('legal.impressumDocTitle')} heading="Legal notice" lang="en">
+      <h2 style={h2}>Provider of this website</h2>
+      <p>
+        One Community Project
+        <br />
+        Adetayo Manuwa
+        <br />
+        [full, legally suitable address: to be clarified with Christian / City of Dessau-Roßlau]
+      </p>
+      <h2 style={h2}>Contact</h2>
+      <p>
+        Email: [working email address, planned hello@onecommunityproject.org]
+        <br />
+        [further direct means of contact, e.g. telephone, if § 5 DDG applies]
+      </p>
+      <h2 style={h2}>Responsible for content</h2>
+      <p>Adetayo Manuwa, address as above [add reference to § 18 MStV after checking]</p>
+      <h2 style={h2}>Links to other websites</h2>
+      <p>
+        The operators of linked websites are responsible for their content. We check reports of
+        unlawful content and remove affected links where necessary.
+      </p>
+      <h2 style={h2}>Rights to photos and films</h2>
+      <p>
+        The rights to photos, films and other content belong to the respective rights holders.
+        Unless use is permitted by law, their prior consent is required.
+      </p>
+    </Shell>
+  )
+}
+
+function DatenschutzEn() {
+  const t = useT()
+  return (
+    <Shell docTitle={t('legal.privacyDocTitle')} heading="Privacy policy" lang="en">
+      <p>
+        This policy explains which personal data are processed when you visit this website.
+      </p>
+
+      <h2 style={h2}>1. Controller</h2>
+      <p>
+        Adetayo Manuwa, One Community Project, [address as in the legal notice]. Email: [working
+        email address]. You can also use this address to exercise your rights.
+      </p>
+
+      <h2 style={h2}>2. Hosting and server log files</h2>
+      <p>
+        This website is hosted by Netlify, Inc., San Francisco, USA. When pages are requested,
+        Netlify processes technically necessary data such as your IP address, the date and time of
+        the request, the page requested and your browser type, in order to deliver the website and
+        protect it against misuse. The legal basis is our legitimate interest in secure and stable
+        operation (Art. 6(1)(f) GDPR).
+      </p>
+      <p>
+        [To be inserted after checking the Netlify account:] A data processing agreement under
+        Art. 28 GDPR is in place with Netlify. Transfers to Netlify in the USA are based on the
+        European Commission&rsquo;s adequacy decision for the EU-U.S. Data Privacy Framework
+        (Art. 45 GDPR). [Confirm current certification and coverage of the services used before
+        publication.] Server log data are stored for [confirmed retention period or clear deletion
+        criteria] and then deleted.
+      </p>
+
+      <h2 style={h2}>3. Language choice, fonts and analytics</h2>
+      <p>
+        We do not use our own analytics or tracking tools. When external videos are loaded, the
+        respective providers may use cookies or similar storage technologies. See the section
+        &ldquo;Embedded videos&rdquo;.
+      </p>
+      <p>
+        If you choose a language, we store this setting in your browser for the current browsing
+        session (sessionStorage), so that your chosen language stays the same as you move between
+        pages. This storage serves the language function you selected (§ 25(2) no. 2 TDDDG). Fonts
+        are loaded directly from our server, not from Google.
+      </p>
+
+      <h2 style={h2}>4. Embedded videos (YouTube, Google Drive)</h2>
+      <p>
+        Some pages contain videos from YouTube or Google Drive (Google Ireland Limited, Gordon House,
+        Barrow Street, Dublin 4, Ireland). The videos are only loaded when you select &ldquo;Load
+        video&rdquo;. Google then receives data such as your IP address and browser information,
+        provides the video and may use cookies or similar storage technologies. We embed YouTube
+        videos via youtube-nocookie.com. Google also processes the data for its own purposes; see
+        policies.google.com/privacy for details. [Add US transfer and retention details from current
+        Google documentation, e.g. policies.google.com/privacy/frameworks.]
+      </p>
+      <p>
+        Loading the videos and the related processing of personal data are based on your consent
+        under Art. 6(1)(a) GDPR. Where information is stored on or read from your device, the legal
+        basis is § 25(1) TDDDG. You can withdraw your consent at any time with effect for the future
+        using &ldquo;Disable video&rdquo;. This does not affect the lawfulness of processing before
+        withdrawal.
+      </p>
+
+      <h2 style={h2}>5. Documentary &ldquo;Noch einmal Walzer&rdquo;</h2>
+      <p>
+        [Check and describe the loading behaviour once hosting is decided.] [Check the film&rsquo;s
+        hosting: currently a video file on GitHub (GitHub, Inc., USA). Either describe the provider,
+        purpose, legal basis, transfer and retention here, or deliver the film through the hosting
+        described in section 2.]
+      </p>
+
+      <h2 style={h2}>6. Contact by email</h2>
+      <p>
+        If you write to us, we process your email address, your message and any other information
+        you provide in order to handle your enquiry. We handle general enquiries on the basis of
+        Art. 6(1)(f) GDPR; our legitimate interest is communicating with interested people and
+        project partners. Where your enquiry concerns a contract with you or pre-contractual
+        measures, the legal basis is Art. 6(1)(b) GDPR. Providing this information is voluntary;
+        without a way to contact you, we cannot reply. Processing takes place via [actual email
+        provider and, if applicable, form provider, recipients and transfer basis]. Once your
+        enquiry has been dealt with, we delete it after [confirmed period or specific deletion
+        criterion], unless statutory retention obligations or other legal reasons prevent this.
+      </p>
+
+      <h2 style={h2}>7. Your rights</h2>
+      <p>
+        Where the legal requirements are met, you have the right of access, rectification, erasure,
+        restriction of processing and data portability.
+      </p>
+      <p>
+        Where we process personal data on the basis of Art. 6(1)(f) GDPR, you may object to this
+        processing on grounds relating to your particular situation.
+      </p>
+      <p>
+        You can withdraw consent at any time with effect for the future. This does not affect the
+        lawfulness of processing before withdrawal.
+      </p>
+      <p>
+        You can lodge a complaint with a data protection supervisory authority, in particular in the
+        Member State of your habitual residence, place of work or place of the alleged infringement.
+      </p>
+
+      <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Last updated: [date of publication]</p>
+    </Shell>
+  )
+}
+
+export function Impressum() {
+  const [lang] = useLang()
+  return lang === 'en' ? <ImpressumEn /> : <ImpressumDe />
+}
+
+export function Datenschutz() {
+  const [lang] = useLang()
+  return lang === 'en' ? <DatenschutzEn /> : <DatenschutzDe />
 }

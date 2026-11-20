@@ -187,7 +187,7 @@ export const ui = {
     legal: {
       impressumDocTitle: 'Legal notice (Impressum)',
       privacyDocTitle: 'Privacy policy',
-      germanNote: 'This page is currently available in German.',
+      germanNote: 'This is an English translation for your convenience. The German version is authoritative.',
     },
     notFound: {
       docTitle: 'Page not found',

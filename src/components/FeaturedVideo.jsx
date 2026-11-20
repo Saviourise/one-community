@@ -32,7 +32,7 @@ export default function FeaturedVideo() {
         <Reveal>
           {project.video ? (
             <div className={styles.fvMedia} style={{ backgroundImage: poster }}>
-              <ConsentEmbed src={project.video} title={t('featuredVideo.videoSuffix', { title: project.title })} />
+              <ConsentEmbed key={project.video} src={project.video} title={t('featuredVideo.videoSuffix', { title: project.title })} />
             </div>
           ) : (
             <Link

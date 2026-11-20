@@ -143,7 +143,7 @@ export function Datenschutz() {
 
       <h2 style={h2}>5. Dokumentarfilm „Noch einmal Walzer“</h2>
       <p>
-        Der Dokumentarfilm wird erst geladen, wenn Sie ihn starten. [Hosting des Films prüfen: derzeit
+        [Ladeverhalten nach Festlegung des Hostings prüfen und hier beschreiben.] [Hosting des Films prüfen: derzeit
         eine Videodatei bei GitHub (GitHub, Inc., USA). Entweder Anbieter, Zweck, Rechtsgrundlage,
         Übermittlung und Speicherdauer hier beschreiben oder den Film über das unter Abschnitt 2
         beschriebene Hosting ausliefern.]

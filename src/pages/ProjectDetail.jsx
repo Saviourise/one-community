@@ -124,7 +124,7 @@ export default function ProjectDetail() {
             />
           ) : (
             <div className={pages.detailVideo}>
-              <ConsentEmbed src={project.video} title={t('projectDetail.videoSuffix', { title: project.title })} />
+              <ConsentEmbed key={project.video} src={project.video} title={t('projectDetail.videoSuffix', { title: project.title })} />
             </div>
           )}
           {project.fullDoc && (

@@ -35,7 +35,7 @@ export default function DocumentaryFeature() {
           />
         ) : (
           <div className={styles.docVideo}>
-            <ConsentEmbed src={project.video} title={t('documentaryFeature.trailerSuffix', { title: project.title })} />
+            <ConsentEmbed key={project.video} src={project.video} title={t('documentaryFeature.trailerSuffix', { title: project.title })} />
           </div>
         )}
       </Reveal>

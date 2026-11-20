@@ -64,7 +64,7 @@ export const de = {
       },
       { title: 'Projekte' },
     ],
-    legal: [{ label: 'Datenschutz' }],
+    legal: [{ label: 'Impressum' }, { label: 'Datenschutz' }],
   },
 
   // Projects — same order as en.js (11 entries).

@@ -12,6 +12,7 @@ import { getGallery, getGalleryCredit } from '../data/galleries.js'
 import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import { artworkCss, drive } from '../lib/placeholder.js'
 import pages from './pages.module.css'
+import ConsentEmbed from '../components/ConsentEmbed.jsx'
 
 export default function ProjectDetail() {
   const { getProject, projects, brand } = useContent()
@@ -123,12 +124,7 @@ export default function ProjectDetail() {
             />
           ) : (
             <div className={pages.detailVideo}>
-              <iframe
-                src={project.video}
-                title={t('projectDetail.videoSuffix', { title: project.title })}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <ConsentEmbed src={project.video} title={t('projectDetail.videoSuffix', { title: project.title })} />
             </div>
           )}
           {project.fullDoc && (

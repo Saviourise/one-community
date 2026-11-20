@@ -3,6 +3,7 @@ import SectionHeading from './SectionHeading.jsx'
 import VideoPlayer from './VideoPlayer.jsx'
 import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import styles from './sections.module.css'
+import ConsentEmbed from './ConsentEmbed.jsx'
 
 /**
  * Single documentary video section, shown just after the hero.
@@ -34,12 +35,7 @@ export default function DocumentaryFeature() {
           />
         ) : (
           <div className={styles.docVideo}>
-            <iframe
-              src={project.video}
-              title={t('documentaryFeature.trailerSuffix', { title: project.title })}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <ConsentEmbed src={project.video} title={t('documentaryFeature.trailerSuffix', { title: project.title })} />
           </div>
         )}
       </Reveal>

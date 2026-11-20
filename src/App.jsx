@@ -9,6 +9,7 @@ import ProjectDetail from './pages/ProjectDetail.jsx'
 import Contact from './pages/Contact.jsx'
 import Documentary from './pages/Documentary.jsx'
 import NotFound from './pages/NotFound.jsx'
+import { Impressum, Datenschutz } from './pages/Legal.jsx'
 
 // Reset scroll on every route change so pages open at the top.
 function ScrollToTop() {
@@ -31,6 +32,9 @@ export default function App() {
           <Route path="projects/:slug" element={<ProjectDetail />} />
           <Route path="contact" element={<Contact />} />
           <Route path="documentary" element={<Documentary />} />
+          <Route path="impressum" element={<Impressum />} />
+          <Route path="datenschutz" element={<Datenschutz />} />
+          <Route path="privacy" element={<Datenschutz />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

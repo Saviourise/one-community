@@ -177,6 +177,16 @@ export const ui = {
       playerTitle: 'Noch einmal Walzer, full documentary',
       back: 'Back to the project',
     },
+    embed: {
+      load: 'Load video',
+      note: 'The video is loaded from {provider}. Data is only sent to {provider} after you click. See our privacy policy.',
+      loadAria: 'Load video: {title} (from {provider})',
+    },
+    legal: {
+      impressumDocTitle: 'Legal notice (Impressum)',
+      privacyDocTitle: 'Privacy policy',
+      germanNote: 'This page is in German, as required by German law.',
+    },
     notFound: {
       docTitle: 'Page not found',
       eyebrow: 'Not found',
@@ -351,6 +361,16 @@ export const ui = {
       lede: 'Der ganze Film: eine Gemeinschaftsproduktion, begleitet von der ersten Probe bis zur letzten Verbeugung.',
       playerTitle: 'Noch einmal Walzer, ganzer Dokumentarfilm',
       back: 'Zurück zum Projekt',
+    },
+    embed: {
+      load: 'Video laden',
+      note: 'Das Video wird von {provider} geladen. Erst nach deinem Klick werden Daten an {provider} übertragen. Mehr dazu in unserer Datenschutzerklärung.',
+      loadAria: 'Video laden: {title} (von {provider})',
+    },
+    legal: {
+      impressumDocTitle: 'Impressum',
+      privacyDocTitle: 'Datenschutzerklärung',
+      germanNote: '',
     },
     notFound: {
       docTitle: 'Seite nicht gefunden',

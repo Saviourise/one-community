@@ -74,7 +74,10 @@ export const footer = {
       ],
     },
   ],
-  legal: [{ label: 'Privacy Policy', to: '/contact' }],
+  legal: [
+    { label: 'Legal notice', to: '/impressum' },
+    { label: 'Privacy policy', to: '/datenschutz' },
+  ],
   // Placeholder address until the real inbox is set up.
   social: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/company/one-community-projekt/' },

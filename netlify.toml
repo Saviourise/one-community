@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "/privacy"
+  to = "/datenschutz"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

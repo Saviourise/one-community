@@ -4,6 +4,7 @@ import Reveal from './Reveal.jsx'
 import { useContent, useT } from '../i18n/LanguageContext.jsx'
 import { artworkCss } from '../lib/placeholder.js'
 import styles from './sections.module.css'
+import ConsentEmbed from './ConsentEmbed.jsx'
 
 const PlayIcon = () => (
   <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -31,12 +32,7 @@ export default function FeaturedVideo() {
         <Reveal>
           {project.video ? (
             <div className={styles.fvMedia} style={{ backgroundImage: poster }}>
-              <iframe
-                src={project.video}
-                title={t('featuredVideo.videoSuffix', { title: project.title })}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <ConsentEmbed key={project.video} src={project.video} title={t('featuredVideo.videoSuffix', { title: project.title })} />
             </div>
           ) : (
             <Link

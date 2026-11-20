@@ -63,17 +63,7 @@ export default function Contact() {
           <Reveal>
             {sent ? (
               <div className={pages.success} role="status" aria-live="polite">
-                <div className={pages.successMark} aria-hidden="true">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="m5 13 4 4L19 7"
-                      stroke="currentColor"
-                      strokeWidth="2.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
+                {/* Preview: the form is not connected, so no success mark is shown. */}
                 <h2>
                   {firstName ? t('contact.thankYou', { name: firstName }) : t('contact.thankYouNoName')}
                 </h2>

@@ -36,29 +36,55 @@ All content lives in `src/data/`:
 | `stats.js` | Homepage impact band numbers |
 | `partners.js` | Partner / TEDx recognition strip |
 | `blog.js` | Homepage blog cards |
+| `legal.js` | Impressum and privacy policy (English; German in `src/i18n/de.js`) |
 
-- **Real photos:** the image engine in `src/lib/placeholder.js` returns deterministic
-  dummy photos from Lorem Picsum (`picsum.photos`), keyed by a `seed`. To use final
-  assets, drop files into `public/assets/` and reference them as `/assets/your-file.jpg`
-  in the `artwork(...)` call sites / `img` values. (Picsum requires a network connection
-  while the placeholders are in use.)
+- **Real photos:** drop files into `public/assets/` and reference them as `/assets/your-file.jpg`.
+  `src/lib/placeholder.js` returns a local solid-colour fallback, so no external
+  placeholder service is called.
 - **TED Talk / documentary video:** paste an embed URL into a project's `video` field in
-  `projects.js` and it renders inline (homepage featured video + detail page).
+  `projects.js`. It renders through `ConsentEmbed`, which only loads YouTube/Google Drive
+  after the visitor clicks "Load video" (YouTube via youtube-nocookie.com) and offers
+  "Disable video" afterwards.
 - **Logo:** currently a typographic wordmark in `src/components/Navbar.jsx` / `Footer.jsx`.
 
 ## Contact form
 
-`src/pages/Contact.jsx` validates in the browser and shows a success state, but **does not
-transmit data**, connect a form service or backend endpoint where marked before launch.
-The Privacy Policy / Imprint footer links are placeholders pointing at `/contact`.
+`src/pages/Contact.jsx` validates in the browser but **does not transmit data**. It
+says so honestly ("The contact form is not active yet"). Connect a form service or
+backend endpoint before launch and update the privacy policy.
+
+## Translations (English and German)
+
+The site is bilingual. **Every new page or piece of content must be translated in
+the project's format; never hardcode text in a component.**
+
+1. Put the English content in `src/data/<topic>.js` (canonical shape).
+2. Add it to the English tree in `src/i18n/en.js`.
+3. Add the German version under the same key in `src/i18n/de.js`, with exactly the
+   same shape (same keys, same array lengths and order). German overrides are
+   deep-merged onto the English base element by element.
+4. Read it in the component with `useContent()`.
+5. Short UI labels (buttons, aria-labels, document titles) go in `src/i18n/ui.js`
+   under both `en` and `de`, and are read with `useT()`.
+
+Example: the legal pages use `src/data/legal.js` + the `legal` block in
+`src/i18n/de.js`, rendered by `src/pages/Legal.jsx`.
+
+## Legal pages and SEO
+
+- `/impressum` and `/datenschutz` (`/privacy` redirects). Items in [square brackets]
+  must be confirmed before launch.
+- `public/sitemap.xml`, `public/robots.txt`, `public/og-image.jpg`; Open Graph and
+  Organization metadata in `index.html`; per-route canonical set in `src/App.jsx`.
 
 ## Structure
 
 ```
 src/
   components/   layout, nav, footer, reusable UI + homepage sections
-  pages/        Home, About, Projects, ProjectDetail, Contact, NotFound
-  data/         all editable content
+  pages/        Home, About, Projects, ProjectDetail, Documentary, Contact, Legal, NotFound
+  data/         all editable content (English)
+  i18n/         en.js / de.js content trees, ui.js labels, LanguageContext
   lib/          placeholder art engine
   styles/       global.css (design tokens + base)
 ```

@@ -426,7 +426,7 @@ export const de = {
         {
           "heading": "5. Dokumentarfilm „Noch einmal Walzer“",
           "paragraphs": [
-            "Der Dokumentarfilm wird als Videodatei über GitHub bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Wenn Sie den Film starten, erhält GitHub Daten wie Ihre IP-Adresse und Angaben zu Ihrem Browser, um die Videodatei auszuliefern. Rechtsgrundlage ist unser berechtigtes Interesse, den Film auf unserer Website zu zeigen (Art. 6 Abs. 1 lit. f DSGVO). [Übermittlungsgrundlage und Speicherdauer von GitHub vor Veröffentlichung bestätigen, z. B. im GitHub Privacy Statement, docs.github.com.]"
+            "Der Dokumentarfilm wird als Videodatei über GitHub bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Wenn Sie eine Seite mit dem Film aufrufen, kann Ihr Browser bereits eine Verbindung zu GitHub herstellen, um die Videodatei oder Angaben dazu zu laden. GitHub erhält dabei Daten wie Ihre IP-Adresse und Angaben zu Ihrem Browser. Rechtsgrundlage ist unser berechtigtes Interesse, den Film auf unserer Website zu zeigen (Art. 6 Abs. 1 lit. f DSGVO). [Übermittlungsgrundlage und Speicherdauer von GitHub vor Veröffentlichung bestätigen, z. B. im GitHub Privacy Statement, docs.github.com.]"
           ]
         },
         {

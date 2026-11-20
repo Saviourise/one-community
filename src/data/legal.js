@@ -55,8 +55,8 @@ export const legal = {
       {
         "heading": "2. Hosting and server log files",
         "paragraphs": [
-          "This website is hosted by Netlify, Inc., San Francisco, USA. When pages are requested, Netlify processes technically necessary data such as your IP address, the date and time of the request, the page requested and your browser type, in order to deliver the website and protect it against misuse. The legal basis is our legitimate interest in secure and stable operation (Art. 6(1)(f) GDPR).",
-          "[To be inserted after checking the Netlify account:] A data processing agreement under Art. 28 GDPR is in place with Netlify. Transfers to Netlify in the USA are based on the European Commission’s adequacy decision for the EU-U.S. Data Privacy Framework (Art. 45 GDPR). [Confirm current certification and coverage of the services used before publication.] Server log data are stored for [confirmed retention period or clear deletion criteria] and then deleted."
+          "This website is hosted by Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA. When pages are requested, Cloudflare processes technically necessary data such as your IP address, the date and time of the request, the page requested and your browser type, in order to deliver the website and protect it against misuse. The legal basis is our legitimate interest in secure and stable operation (Art. 6(1)(f) GDPR).",
+          "[Confirm in the Cloudflare account before publication:] A data processing agreement under Art. 28 GDPR is in place with Cloudflare. Transfers to Cloudflare in the USA are based on the European Commission’s adequacy decision for the EU-U.S. Data Privacy Framework (Art. 45 GDPR). [Confirm current certification.] Log data are stored for [confirmed retention period or clear deletion criteria] and then deleted."
         ]
       },
       {
@@ -76,7 +76,7 @@ export const legal = {
       {
         "heading": "5. Documentary “Noch einmal Walzer”",
         "paragraphs": [
-          "[Check and describe the loading behaviour once hosting is decided.] [Check the film’s hosting: currently a video file on GitHub (GitHub, Inc., USA). Either describe the provider, purpose, legal basis, transfer and retention here, or deliver the film through the hosting described in section 2.]"
+          "The documentary is provided as a video file via GitHub (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). When you start the film, GitHub receives data such as your IP address and browser information in order to deliver the video file. The legal basis is our legitimate interest in showing the film on our website (Art. 6(1)(f) GDPR). [Confirm GitHub’s transfer basis and retention before publication, e.g. in the GitHub Privacy Statement, docs.github.com.]"
         ]
       },
       {

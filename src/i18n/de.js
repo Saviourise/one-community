@@ -405,8 +405,8 @@ export const de = {
         {
           "heading": "2. Hosting und Server-Logdateien",
           "paragraphs": [
-            "Diese Website wird bei Netlify, Inc., San Francisco, USA, gehostet. Beim Aufruf der Seiten verarbeitet Netlify technisch notwendige Daten wie IP-Adresse, Datum und Uhrzeit des Abrufs, aufgerufene Seite und Browsertyp, um die Website auszuliefern und vor Missbrauch zu schützen. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und stabilen Betrieb (Art. 6 Abs. 1 lit. f DSGVO).",
-            "[Nach Prüfung des Netlify-Kontos einsetzen:] Mit Netlify besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO. Die Übermittlung an Netlify in den USA stützt sich auf den Angemessenheitsbeschluss der Europäischen Kommission zum EU-U.S. Data Privacy Framework (Art. 45 DSGVO). [Aktuelle Zertifizierung und Geltung für die eingesetzten Leistungen vor Veröffentlichung bestätigen.] Server-Logdaten werden [bestätigte Speicherdauer oder nachvollziehbare Löschkriterien] gespeichert und anschließend gelöscht."
+            "Diese Website wird bei Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA, gehostet. Beim Aufruf der Seiten verarbeitet Cloudflare technisch notwendige Daten wie IP-Adresse, Datum und Uhrzeit des Abrufs, aufgerufene Seite und Browsertyp, um die Website auszuliefern und vor Missbrauch zu schützen. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und stabilen Betrieb (Art. 6 Abs. 1 lit. f DSGVO).",
+            "[Vor Veröffentlichung im Cloudflare-Konto bestätigen:] Mit Cloudflare besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO. Die Übermittlung an Cloudflare in den USA stützt sich auf den Angemessenheitsbeschluss der Europäischen Kommission zum EU-U.S. Data Privacy Framework (Art. 45 DSGVO). [Aktuelle Zertifizierung bestätigen.] Logdaten werden [bestätigte Speicherdauer oder nachvollziehbare Löschkriterien] gespeichert und anschließend gelöscht."
           ]
         },
         {
@@ -426,7 +426,7 @@ export const de = {
         {
           "heading": "5. Dokumentarfilm „Noch einmal Walzer“",
           "paragraphs": [
-            "[Ladeverhalten nach Festlegung des Hostings prüfen und hier beschreiben.] [Hosting des Films prüfen: derzeit eine Videodatei bei GitHub (GitHub, Inc., USA). Entweder Anbieter, Zweck, Rechtsgrundlage, Übermittlung und Speicherdauer hier beschreiben oder den Film über das unter Abschnitt 2 beschriebene Hosting ausliefern.]"
+            "Der Dokumentarfilm wird als Videodatei über GitHub bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Wenn Sie den Film starten, erhält GitHub Daten wie Ihre IP-Adresse und Angaben zu Ihrem Browser, um die Videodatei auszuliefern. Rechtsgrundlage ist unser berechtigtes Interesse, den Film auf unserer Website zu zeigen (Art. 6 Abs. 1 lit. f DSGVO). [Übermittlungsgrundlage und Speicherdauer von GitHub vor Veröffentlichung bestätigen, z. B. im GitHub Privacy Statement, docs.github.com.]"
           ]
         },
         {
